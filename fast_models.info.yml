@@ -1,0 +1,8 @@
+name: fast_models
+type: module
+description: -- simple module for building drupal site very fast --
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - formatage_models
