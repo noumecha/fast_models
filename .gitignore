@@ -1,1 +1,3 @@
 wbu-atomique-theme/
+vendor/
+composer.lock
