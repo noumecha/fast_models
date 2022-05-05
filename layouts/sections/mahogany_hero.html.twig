@@ -1,16 +1,16 @@
 {{ attach_library('fast_models/mahogany_hero') }}
 {% if content %}
-<section class="hero-section">
+<section {{attribute.addClass('mhgy-hero-section')}}>
     <div class="container-flex">
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="slider-item">
                     {% if content.image %}
-                    <div class="slider-image">
+                    <div {{region_attributes.image.addClass('slider-image')}}>
                         {{ content.image }}
                     </div>
                     {% endif %}
-                    <div class="slider-content text-center">
+                    <div {{region_attributes.titled.addClass('slider-content, text-center')}}>
                         {% if content.titled %}
                         <h1 class="slider-title">
                             {{ content.titled }}
@@ -22,7 +22,7 @@
                         </a>
                         {% endif %}
                         {% if content.bullets %}
-                        <div class="slider-bullets">
+                        <div {{region_attributes.title.addClass('slider-bullets')}}>
                             {{ content.bullets }}
                         </div>
                         {% endif %}

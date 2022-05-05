@@ -90,9 +90,13 @@ class MahoganyHeroSection extends FormatageModels {
                         ]
                     ],
                   'boutton' => [
-                      'text_html' => [
+                      'url' => [
                           'label' => 'Bouton',
-                          'value' => "Visit Online Store"
+                          'value' => [
+                              'link' => '#',
+                              'text' => 'Visit Online Store',
+                              'class' => 'btn btn-primary btn-lg text-center'
+                          ]
                         ]
                     ],
                   'bullets' => [
