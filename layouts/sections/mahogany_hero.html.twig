@@ -1,0 +1,35 @@
+{{ attach_library('fast_models/mahogany_hero') }}
+{% if content %}
+<section class="hero-section">
+    <div class="container-flex">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="slider-item">
+                    {% if content.image %}
+                    <div class="slider-image">
+                        {{ content.image }}
+                    </div>
+                    {% endif %}
+                    <div class="slider-content text-center">
+                        {% if content.titled %}
+                        <h1 class="slider-title">
+                            {{ content.titled }}
+                        </h1>
+                        {% endif %}
+                        {% if content.boutton %}
+                        <a href="" class="btn btn-primary btn-lg text-center">
+                            {{ content.boutton }}
+                        </a>
+                        {% endif %}
+                        {% if content.bullets %}
+                        <div class="slider-bullets">
+                            {{ content.bullets }}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
