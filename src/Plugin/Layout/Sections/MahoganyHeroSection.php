@@ -16,7 +16,7 @@ use Drupal\formatage_models\Plugin\Layout\FormatageModels;
  *  path = "layouts/sections",
  *  template = "mahogany_hero",
  *  library = "fast_models/mahogany_hero",
- *  default_region = "title",
+ *  default_region = "image",
  *  regions = {
  *      "image" = {
  *          "label" = @Translation("image"),      
@@ -24,8 +24,8 @@ use Drupal\formatage_models\Plugin\Layout\FormatageModels;
  *      "titled" = {
  *          "label" = @Translation("titled"),     
  *      },
- *      "boutton" = {
- *          "label" = @Translation("boutton"),     
+ *      "link" = {
+ *          "label" = @Translation("link"),     
  *      },
  *      "bullets" = {
  *          "label" = @Translation("bullets"),     
@@ -89,13 +89,13 @@ class MahoganyHeroSection extends FormatageModels {
                           'fids' => []
                         ]
                     ],
-                  'boutton' => [
+                  'link' => [
                       'url' => [
-                          'label' => 'Bouton',
+                          'label' => "Boutton",
                           'value' => [
-                              'link' => '#',
-                              'text' => 'Visit Online Store',
-                              'class' => 'btn btn-primary btn-lg text-center'
+                              "link" => "#",
+                              "text" => "Visit Online Store",
+                              "class" => "btn btn-primary btn-lg text-center"
                           ]
                         ]
                     ],
