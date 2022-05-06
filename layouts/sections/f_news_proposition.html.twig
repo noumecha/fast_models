@@ -1,0 +1,269 @@
+{{ attach_library('fast_models/f_news_proposition')}}
+{% if content %}
+<section {{attributes.addClass('post-proposition-section-handler')}}>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 ">
+            {% if content %}
+                <div {{region_attributes.title_left.addClass('latest-post-title')}}>
+                    <p>
+                        {{content.title_left}}
+                    </p>
+                </div>
+            {% endif %}
+                <div {{attributes.addClass('all-single-latest-post')}} class="all-single-latest-post">
+                    <div {{attributes.addClass('single-post', 'd-flex')}} class="single-post d-flex">
+                        {% if content %}
+                        <div {{region_attributes.addClass('post-img-handler')}}>
+                            {{content.small_image}}
+                        </div>
+                        {% endif %}
+                        <div class="info d-block">
+                            {% if content %}
+                            <div {{region_attributes.small_image_text.addClass('post-link')}}>
+                                {{ content.small_image_text }}
+                            </div>
+                            {% endif %}
+                            {% if content %}
+                            <div {{region_attributes.small_image_date.addClass('posted-date')}}>
+                                {{ content.small_image_date }}
+                            </div>
+                            {% endif %}
+                        </div>
+
+                    </div>
+                    <div class="single-post d-flex">
+                        <div class="post-img-handler">
+                            <a href="#" class="link">
+                                <img height="80px"
+                                     src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-05/mt-post-17.jpg?itok=SOsCQMtS"
+                                     alt="" class="post-img">
+                            </a>
+                        </div>
+                        <div class="info d-block">
+
+                            <div class="post-link">
+                                <a href="#">Stocks making the biggest moves midday</a>
+                            </div>
+                            <div class="posted-date">
+                                <p>
+                                    04 May, 2020
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="single-post d-flex">
+                        <div class="post-img-handler">
+                            <a href="#" class="link">
+                                <img height="80px"
+                                     src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-05/mt-post-16.jpg?itok=ZiSiWhGA"
+                                     alt="" class="post-img">
+                            </a>
+                        </div>
+                        <div class="info d-block">
+
+                            <div class="post-link">
+                                <a href="#">simple steps to spring clean your finances</a>
+                            </div>
+                            <div class="posted-date">
+                                <p>
+                                    04 May, 2020
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="single-post d-flex">
+                        <div class="post-img-handler">
+                            <a href="#" class="link">
+                                <img height="80px"
+                                     src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-04/mt-post-15.jpg?itok=auXz3mfG"
+                                     alt="" class="post-img">
+                            </a>
+                        </div>
+                        <div class="info d-block">
+
+                            <div class="post-link">
+                                <a href="#">habits every runner should have in their routine</a>
+                            </div>
+                            <div class="posted-date">
+                                <p>
+                                    04 May, 2020
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="single-post d-flex">
+                        <div class="post-img-handler">
+                            <a href="#" class="link">
+                                <img height="80px"
+                                     src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-04/mt-post-14.jpg?itok=HHoDHXj3"
+                                     alt="" class="post-img">
+                            </a>
+                        </div>
+                        <div class="info d-block">
+
+                            <div class="post-link">
+                                <a href="#">Stylish office chairs</a>
+                            </div>
+                            <div class="posted-date">
+                                <p>
+                                    04 May, 2020
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="single-post d-flex">
+                        <div class="post-img-handler">
+                            <a href="#" class="link">
+                                <img height="80px"
+                                     src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-04/mt-post-13.jpg?itok=6iRdfWyk"
+                                     alt="" class="post-img">
+                            </a>
+                        </div>
+                        <div class="info d-block">
+
+                            <div class="post-link">
+                                <a href="#">Things that can help to boost your immune system</a>
+                            </div>
+                            <div class="posted-date">
+                                <p>
+                                    04 May, 2020
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="single-post d-flex">
+                        <div class="post-img-handler">
+                            <a href="#" class="link">
+                                <img height="80px"
+                                     src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-04/mt-post-12.jpg?itok=8FzLk5k9"
+                                     alt="" class="post-img">
+                            </a>
+                        </div>
+                        <div class="info d-block">
+
+                            <div class="post-link">
+                                <a href="#">What to expect when calling a mental health
+                                    hotline</a>
+                            </div>
+                            <div class="posted-date">
+                                <p>
+                                    04 May, 2020
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 most-read-section ">
+                <div class="most-read-title">
+                    <p>
+                        Most Read
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="featured-single-card">
+                            <div class="img-handler">
+
+                                <a href="#" class="img-sup"><img class="card-img"
+                                         src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/2020-05/mt-post-18.jpg?itok=UdwkXLYg"
+                                         alt=""></a>
+                            </div>
+                            <div class="pub-info">
+                                <p>
+                                    Apr 30, 2020 / Health
+                                </p>
+                            </div>
+                            <div class="card-text-descriptor">
+                                <a href="">Things that can help to boost your immune system</a>
+                            </div>
+                            <div class="role">
+                                <p>Admin</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="featured-single-card">
+                            <div class="img-handler">
+
+                                <a href="#" class="img-sup"><img class="card-img"
+                                         src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/2020-05/mt-post-17.jpg?itok=x-SjIpHf"
+                                         alt=""></a>
+                            </div>
+                            <div class="pub-info">
+                                <p>
+                                    Apr 30, 2020 / Health
+                                </p>
+                            </div>
+                            <div class="card-text-descriptor">
+                                <a href="">Things that can help to boost your immune system</a>
+                            </div>
+                            <div class="role">
+                                <p>Admin</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="featured-single-card">
+                            <div class="img-handler">
+
+                                <a href="#" class="img-sup"><img class="card-img"
+                                         src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/2020-05/mt-post-16.jpg?itok=VzOi5lt_"
+                                         alt=""></a>
+                            </div>
+                            <div class="pub-info">
+                                <p>
+                                    Apr 30, 2020 / Health
+                                </p>
+                            </div>
+                            <div class="card-text-descriptor">
+                                <a href="">Things that can help to boost your immune system</a>
+                            </div>
+                            <div class="role">
+                                <p>Admin</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="featured-single-card">
+                            <div class="img-handler">
+
+                                <a href="#" class="img-sup"><img class="card-img"
+                                         src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/2020-04/mt-post-15.jpg?itok=x6E9VFYp"
+                                         alt=""></a>
+                            </div>
+                            <div class="pub-info">
+                                <p>
+                                    Apr 30, 2020 / Health
+                                </p>
+                            </div>
+                            <div class="card-text-descriptor">
+                                <a href="">Things that can help to boost your immune system</a>
+                            </div>
+                            <div class="role">
+                                <p>Admin</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" more-link ">
+                    <a class="  " href="#" class="link">More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

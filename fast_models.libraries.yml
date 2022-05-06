@@ -44,3 +44,12 @@ mahogany_hero:
   css:
     theme: 
       layouts/css/mahogany_hero.css: {}
+
+# f_news library
+
+f_news_proposition:
+  js:
+    layouts/js/f_news_proposition.js: {}
+  css:
+    theme:
+      layouts/css/f_new_proposition.css: {}

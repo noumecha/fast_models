@@ -69,7 +69,7 @@ class MahoganyHeroSection extends FormatageModels {
   public function defaultConfiguration()
     {
       return parent::defaultConfiguration() + [
-
+            'css' => '',
             'mahogany' => [
               'builder-form' => true,
               'info' => [
