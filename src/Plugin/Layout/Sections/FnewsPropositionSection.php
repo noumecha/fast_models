@@ -152,7 +152,7 @@ class FnewsPropositionSection extends FormatageModels
   public function __construct(array $configuration, $plugin_id, $plugin_definition) {
     // TODO Auto-generated method stub
     parent::__construct($configuration, $plugin_id, $plugin_definition);
-    $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/fnews_proposition_map.jpg");
+    $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/fnews_proposition_map.png");
   }
   
   /**

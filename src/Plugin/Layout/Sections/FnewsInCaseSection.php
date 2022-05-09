@@ -111,7 +111,7 @@ class FnewsInCaseSection extends FormatageModels
     {
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition);
-        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/fnews_in_case_map.jpg");
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/fnews_in_case_map.png");
     }
 
     /**

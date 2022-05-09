@@ -59,3 +59,9 @@ f_news_in_case:
   css:
     theme:
       layouts/css/f_news_in_case.css: {}
+f_news_footer:
+  js:
+    layouts/js/f_news_footer.js: {}
+  css:
+    theme:
+      layouts/css/f_news_footer.css: {}
