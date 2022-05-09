@@ -15,124 +15,124 @@ use Drupal\formatage_models\Plugin\Layout\FormatageModels;
  *  path = "layouts/sections",
  *  template = "f_news_proposition",
  *  library = "fast_models/f_news_proposition",
- *  default_region = "",
+ *  default_region = "content",
  *  regions = {
  *      "title_left" = {
  *          "label" = @Translation("title_left"),     
  *      },
- *      "title_right" = {
- *          "label" = @Translation("title_right"),
+ *      "title_r" = {
+ *          "label" = @Translation("title_r"),
  *      },
  *      "small_image" = {
  *          "label" = @Translation("small_image"),     
  *      },
  *      "small_image_text" = {
  *          "label" = @Translation("small_image_text"),     
- *      }
+ *      },
  *      "small_image_date" = {
  *          "label" = @Translation("small_image_date"),     
  *      },
- *      "small_image1" = {
- *          "label" = @Translation("small_image"),     
+ *      "small_image_one" = {
+ *          "label" = @Translation("small_image_one"),     
  *      },
- *      "small_image_text1" = {
- *          "label" = @Translation("small_image_text"),     
- *      }
- *      "small_image_date1" = {
- *          "label" = @Translation("small_image_date"),     
+ *      "small_image_text_one" = {
+ *          "label" = @Translation("small_image_text_one"),     
  *      },
- *      "small_image2" = {
- *          "label" = @Translation("small_image"),     
+ *      "small_image_date_one" = {
+ *          "label" = @Translation("small_image_date_one"),     
  *      },
- *      "small_image_text2" = {
- *          "label" = @Translation("small_image_text"),     
- *      }
- *      "small_image_date2" = {
- *          "label" = @Translation("small_image_date"),     
+ *      "small_image_two" = {
+ *          "label" = @Translation("small_image_two"),     
  *      },
- *      "small_image3" = {
- *          "label" = @Translation("small_image"),     
+ *      "small_image_text_two" = {
+ *          "label" = @Translation("small_image_text_two"),     
  *      },
- *      "small_image_text3" = {
- *          "label" = @Translation("small_image_text"),     
- *      }
- *      "small_image_date3" = {
- *          "label" = @Translation("small_image_date"),     
+ *      "small_image_date_two" = {
+ *          "label" = @Translation("small_image_date_two"),     
  *      },
- *      "small_image4" = {
- *          "label" = @Translation("small_image"),     
+ *      "small_image_three" = {
+ *          "label" = @Translation("small_image_three"),     
  *      },
- *      "small_image_text4" = {
- *          "label" = @Translation("small_image_text"),     
- *      }
- *      "small_image_date4" = {
- *          "label" = @Translation("small_image_date"),     
+ *      "small_image_text_three" = {
+ *          "label" = @Translation("small_image_text_three"),     
  *      },
- *      "small_image5" = {
- *          "label" = @Translation("small_image"),     
+ *      "small_image_date_three" = {
+ *          "label" = @Translation("small_image_date_three"),     
  *      },
- *      "small_image_text5" = {
- *          "label" = @Translation("small_image_text"),     
- *      }
- *      "small_image_date5" = {
- *          "label" = @Translation("small_image_date"),     
+ *      "small_image_four" = {
+ *          "label" = @Translation("small_image_four"),     
  *      },
- *      "small_image6" = {
- *          "label" = @Translation("small_image"),     
+ *      "small_image_text_four" = {
+ *          "label" = @Translation("small_image_text_four"),     
  *      },
- *      "small_image_text6" = {
- *          "label" = @Translation("small_image_text"),     
- *      }
- *      "small_image_date6" = {
- *          "label" = @Translation("small_image_date"),     
+ *      "small_image_date_four" = {
+ *          "label" = @Translation("small_image_date_four"),     
  *      },
- *      "image_right" = {
- *          "label" = @Translation("image_right"),     
+ *      "small_image_five" = {
+ *          "label" = @Translation("small_image_five"),     
  *      },
- *      "image_right_date" = {
- *          "label" = @Translation("image_right_date"),     
+ *      "small_image_text_five" = {
+ *          "label" = @Translation("small_image_text_five"),     
  *      },
- *      "image_right_text" = {
- *          "label" = @Translation("image_righ_text"),
+ *      "small_image_date_five" = {
+ *          "label" = @Translation("small_image_date_five"),     
  *      },
- *      "image_right_author" = {
- *          "label" = @Translation("image_right_author"),     
+ *      "small_image_six" = {
+ *          "label" = @Translation("small_image_six"),     
  *      },
- *      "image_right1" = {
- *          "label" = @Translation("image_right"),     
+ *      "small_image_text_six" = {
+ *          "label" = @Translation("small_image_text_six"),     
  *      },
- *      "image_right_date1" = {
- *          "label" = @Translation("image_right_date"),     
+ *      "small_image_date_six" = {
+ *          "label" = @Translation("small_image_date_six"),     
  *      },
- *      "image_right_text1" = {
- *          "label" = @Translation("image_righ_text"),
+ *      "image_r" = {
+ *          "label" = @Translation("image_r"),     
  *      },
- *      "image_right_author1" = {
- *          "label" = @Translation("image_right_author"),     
+ *      "image_r_date" = {
+ *          "label" = @Translation("image_r_date"),     
  *      },
- *      "image_right2" = {
- *          "label" = @Translation("image_right"),     
+ *      "image_r_text" = {
+ *          "label" = @Translation("image_r_text"),
  *      },
- *      "image_right_date2" = {
- *          "label" = @Translation("image_right_date"),     
+ *      "image_r_author" = {
+ *          "label" = @Translation("image_r_author"),     
  *      },
- *      "image_right_text2" = {
- *          "label" = @Translation("image_righ_text"),
+ *      "image_r_one" = {
+ *          "label" = @Translation("image_r_one"),     
  *      },
- *      "image_right_author2" = {
- *          "label" = @Translation("image_right_author"),     
+ *      "image_r_date_one" = {
+ *          "label" = @Translation("image_r_date_one"),     
  *      },
- *      "image_right3" = {
- *          "label" = @Translation("image_right"),     
+ *      "image_r_text_one" = {
+ *          "label" = @Translation("image_r_text_one"),
  *      },
- *      "image_right_date3" = {
- *          "label" = @Translation("image_right_date"),     
+ *      "image_r_author_one" = {
+ *          "label" = @Translation("image_r_author_one"),     
  *      },
- *      "image_right_text3" = {
- *          "label" = @Translation("image_righ_text"),
+ *      "image_r_two" = {
+ *          "label" = @Translation("image_r_two"),     
  *      },
- *      "image_right_author3" = {
- *          "label" = @Translation("image_right_author"),     
+ *      "image_r_date_two" = {
+ *          "label" = @Translation("image_r_date_two"),     
+ *      },
+ *      "image_r_text_two" = {
+ *          "label" = @Translation("image_r_text_two"),
+ *      },
+ *      "image_r_author_two" = {
+ *          "label" = @Translation("image_r_author_two"),     
+ *      },
+ *      "image_r_three" = {
+ *          "label" = @Translation("image_r_three"),     
+ *      },
+ *      "image_r_date_three" = {
+ *          "label" = @Translation("image_r_date_three"),     
+ *      },
+ *      "image_r_text_three" = {
+ *          "label" = @Translation("image_r_text_three"),
+ *      },
+ *      "image_r_author_three" = {
+ *          "label" = @Translation("image_r_author_three"),     
  *      },
  *      "link" = {
  *          "label" = @Translation("link"),     
@@ -186,7 +186,9 @@ class FnewsPropositionSection extends FormatageModels
                 'title_left' => [
                     'text_html' => [
                         'label' => 'Titre Gauche',
-                        'value' => 'Latest Post'
+                        'value' => "<p>
+                                        Latest Posts
+                                    </p>"
                     ]
                 ],
                 'small_image' => [
@@ -222,22 +224,29 @@ class FnewsPropositionSection extends FormatageModels
                 'loader' => 'static'
             ],
             'fields' => [
-                'small_image1' => [
+                'small_image_one' => [
                     'text_html' => [
-                        'label' => 'small image',
-                        'value' => ''
+                        'label' => 'small image one',
+                        'value' => "
+                            <a href='#' class='link'>
+                                <img height='80px'
+                                     src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-05/mt-post-17.jpg?itok=SOsCQMtS'
+                                     alt='' class='post-img'>
+                            </a>"
                     ]
                 ],
-                'small_image_text1' => [
+                'small_image_text_one' => [
                     'text_html' => [
-                        'label' => 'small image text',
-                        'value' => ''
+                        'label' => 'small image text one',
+                        'value' => "<a href='#'>Stocks making the biggest moves midday</a>"
                     ]
                 ],
-                'small_image_date1' => [
+                'small_image_date_one' => [
                     'text_html' => [
-                        'label' => 'small image date',
-                        'value' => ''
+                        'label' => 'small image date one',
+                        'value' => "<p>
+                                    04 May, 2020
+                                    </p>"
                     ]
                 ]
 
@@ -250,22 +259,28 @@ class FnewsPropositionSection extends FormatageModels
                 'loader' => 'static'
             ],
             'fields' => [
-                'small_image2' => [
+                'small_image_two' => [
                     'text_html' => [
                         'label' => 'small image',
-                        'value' => ''
+                        'value' => "<a href='#' class='link'>
+                                    <img height='80px'
+                                        src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-05/mt-post-16.jpg?itok=ZiSiWhGA'
+                                        alt='' class='post-img'>
+                                </a>"
                     ]
                 ],
-                'small_image_text2' => [
+                'small_image_text_two' => [
                     'text_html' => [
                         'label' => 'small image text',
-                        'value' => ''
+                        'value' => "<a href='#'>simple steps to spring clean your finances</a>"
                     ]
                 ],
-                'small_image_date2' => [
+                'small_image_date_two' => [
                     'text_html' => [
                         'label' => 'small image date',
-                        'value' => ''
+                        'value' => "<p>
+                                        04 May, 2020
+                                    </p>"
                     ]
                 ]
 
@@ -278,22 +293,28 @@ class FnewsPropositionSection extends FormatageModels
                 'loader' => 'static'
             ],
             'fields' => [
-                'small_image3' => [
+                'small_image_three' => [
                     'text_html' => [
                         'label' => 'small image',
-                        'value' => ''
+                        'value' => "<a href='#' class='link'>
+                                    <img height='80px'
+                                        src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-04/mt-post-15.jpg?itok=auXz3mfG'
+                                        alt='' class='post-img'>
+                                </a>"
                     ]
                 ],
-                'small_image_text3' => [
+                'small_image_text_three' => [
                     'text_html' => [
                         'label' => 'small image text',
-                        'value' => ''
+                        'value' => "<a href='#'>habits every runner should have in their routine</a>"
                     ]
                 ],
-                'small_image_date3' => [
+                'small_image_date_three' => [
                     'text_html' => [
                         'label' => 'small image date',
-                        'value' => ''
+                        'value' => "<p>
+                                        04 May, 2020
+                                    </p>"
                     ]
                 ]
 
@@ -306,22 +327,28 @@ class FnewsPropositionSection extends FormatageModels
                 'loader' => 'static'
             ],
             'fields' => [
-                'small_image4' => [
+                'small_image_four' => [
                     'text_html' => [
                         'label' => 'small image',
-                        'value' => ''
+                        'value' => "<a href='#' class='link'>
+                                    <img height='80px'
+                                        src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-04/mt-post-14.jpg?itok=HHoDHXj3'
+                                        alt='' class='post-img'>
+                                </a>"
                     ]
                 ],
-                'small_image_text4' => [
+                'small_image_text_four' => [
                     'text_html' => [
                         'label' => 'small image text',
-                        'value' => ''
+                        'value' => "<a href='#'>Stylish office chairs</a>"
                     ]
                 ],
-                'small_image_date4' => [
+                'small_image_date_four' => [
                     'text_html' => [
                         'label' => 'small image date',
-                        'value' => ''
+                        'value' => "<p>
+                                        04 May, 2020
+                                    </p>"
                     ]
                 ]
 
@@ -334,22 +361,28 @@ class FnewsPropositionSection extends FormatageModels
                 'loader' => 'static'
             ],
             'fields' => [
-                'small_image5' => [
+                'small_image_five' => [
                     'text_html' => [
                         'label' => 'small image',
-                        'value' => ''
+                        'value' => "<a href='#' class='link'>
+                                    <img height='80px'
+                                        src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-04/mt-post-13.jpg?itok=6iRdfWyk'
+                                        alt='' class='post-img'>
+                                    </a>"
                     ]
                 ],
-                'small_image_text5' => [
+                'small_image_text_five' => [
                     'text_html' => [
                         'label' => 'small image text',
-                        'value' => ''
+                        'value' => "<a href='#'>Things that can help to boost your immune system</a>"
                     ]
                 ],
-                'small_image_date5' => [
+                'small_image_date_five' => [
                     'text_html' => [
                         'label' => 'small image date',
-                        'value' => ''
+                        'value' => "<p>
+                                        04 May, 2020
+                                    </p>"
                     ]
                 ]
 
@@ -362,22 +395,28 @@ class FnewsPropositionSection extends FormatageModels
                 'loader' => 'static'
             ],
             'fields' => [
-                'small_image6' => [
+                'small_image_six' => [
                     'text_html' => [
                         'label' => 'small image',
-                        'value' => ''
+                        'value' => "<a href='#' class='link'>
+                                    <img height='80px'
+                                        src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_teaser_compact/public/2020-04/mt-post-12.jpg?itok=8FzLk5k9'
+                                        alt='' class='post-img'>
+                                </a>"
                     ]
                 ],
-                'small_image_text6' => [
+                'small_image_text_six' => [
                     'text_html' => [
                         'label' => 'small image text',
-                        'value' => ''
+                        'value' => "<a href='#'>What to expect when calling a mental health hotline</a>"
                     ]
                 ],
-                'small_image_date6' => [
+                'small_image_date_six' => [
                     'text_html' => [
                         'label' => 'small image date',
-                        'value' => ''
+                        'value' => "<p>
+                                        04 May, 2020
+                                    </p>"
                     ]
                 ]
 
@@ -386,38 +425,44 @@ class FnewsPropositionSection extends FormatageModels
         'prop_right' => [
             'builder-form' => true,
             'info' => [
-                'title' => 'Contenu',
+                'title' => 'Contenu Droit',
                 'loader' => 'static'
             ],
             'fields' => [
-                'title_right' => [
+                'title_r' => [
                     'text_html' => [
-                        'label' => 'Titre Droite',
-                        'value' => ''
+                        'label' => 'Titre Droit',
+                        'value' => "<p>
+                                        Most Read
+                                    </p>"
                     ]
                 ],
-                'image_right' => [
+                'image_r' => [
                     'text_html' => [
-                        'label' => 'image right',
-                        'value' => ''
+                        'label' => 'image r',
+                        'value' => "<a href='#' class='img-sup'><img class='card-img'
+                                            src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/2020-05/mt-post-18.jpg?itok=UdwkXLYg'
+                                            alt=''></a>"
                     ]
                 ],
-                'image_right_date' => [
+                'image_r_date' => [
                     'text_html' => [
-                        'label' => 'image right date',
-                        'value' => ''
+                        'label' => 'image r date',
+                        'value' => "<p>
+                                        Apr 30, 2020 / Health
+                                    </p>"
                     ]
                 ],
-                'image_right_text' => [
+                'image_r_text' => [
                     'text_html' => [
-                        'label' => 'image right text',
-                        'value' => ''
+                        'label' => 'image r text',
+                        'value' => "<a href=''>Things that can help to boost your immune system</a>"
                     ]
                 ],
-                'image_right_author' => [
+                'image_r_author' => [
                     'text_html' => [
-                        'label' => 'image right author',
-                        'value' => ''
+                        'label' => 'image r author',
+                        'value' => "<p>Admin</p>"
                     ]
                 ]
             ]
@@ -429,28 +474,32 @@ class FnewsPropositionSection extends FormatageModels
                 'loader' => 'static'
             ],
             'fields' => [
-                'image_right1' => [
+                'image_r_one' => [
                     'text_html' => [
-                        'label' => 'image right',
-                        'value' => ''
+                        'label' => 'image r one',
+                        'value' => "<a href='#' class='img-sup'><img class='card-img'
+                                            src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/2020-05/mt-post-17.jpg?itok=x-SjIpHf'
+                                            alt=''></a>"
                     ]
                 ],
-                'image_right_date1' => [
+                'image_r_date_one' => [
                     'text_html' => [
-                        'label' => 'image right date',
-                        'value' => ''
+                        'label' => 'image r date one',
+                        'value' => "<p>
+                                        Apr 30, 2020 / Health
+                                    </p>"
                     ]
                 ],
-                'image_right_text1' => [
+                'image_r_text_one' => [
                     'text_html' => [
-                        'label' => 'image right text',
-                        'value' => ''
+                        'label' => 'image r text one',
+                        'value' => "<a href=''>Things that can help to boost your immune system</a>"
                     ]
                 ],
-                'image_right_author1' => [
+                'image_r_author_one' => [
                     'text_html' => [
-                        'label' => 'image right author',
-                        'value' => ''
+                        'label' => 'image r author one',
+                        'value' => "<p>Admin</p>"
                     ]
                 ]
             ]
@@ -462,28 +511,32 @@ class FnewsPropositionSection extends FormatageModels
                 'loader' => 'static'
             ],
             'fields' => [
-                'image_right2' => [
+                'image_r_two' => [
                     'text_html' => [
-                        'label' => 'image right',
-                        'value' => ''
+                        'label' => 'image r two',
+                        'value' => "<a href='#' class='img-sup'><img class='card-img'
+                                            src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/2020-05/mt-post-16.jpg?itok=VzOi5lt_'
+                                            alt=''></a>"
                     ]
                 ],
-                'image_right_date2' => [
+                'image_r_date_two' => [
                     'text_html' => [
-                        'label' => 'image right date',
-                        'value' => ''
+                        'label' => 'image r date two',
+                        'value' => "<p>
+                                        Apr 30, 2020 / Health
+                                    </p>"
                     ]
                 ],
-                'image_right_text2' => [
+                'image_r_text_two' => [
                     'text_html' => [
-                        'label' => 'image right text',
-                        'value' => ''
+                        'label' => 'image r text two',
+                        'value' => "<a href=''>Things that can help to boost your immune system</a>"
                     ]
                 ],
-                'image_right_author2' => [
+                'image_r_author_two' => [
                     'text_html' => [
-                        'label' => 'image right author',
-                        'value' => ''
+                        'label' => 'image r author two',
+                        'value' => "<p>Admin</p>"
                     ]
                 ]
             ]
@@ -495,28 +548,32 @@ class FnewsPropositionSection extends FormatageModels
                 'loader' => 'static'
             ],
             'fields' => [
-                'image_right3' => [
+                'image_r_three' => [
                     'text_html' => [
-                        'label' => 'image right',
-                        'value' => ''
+                        'label' => 'image right three',
+                        'value' => "<a href='#' class='img-sup'><img class='card-img'
+                                            src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/2020-04/mt-post-15.jpg?itok=x6E9VFYp'
+                                            alt=''></a>"
                     ]
                 ],
-                'image_right_date3' => [
+                'image_r_date_three' => [
                     'text_html' => [
-                        'label' => 'image right date',
-                        'value' => ''
+                        'label' => 'image right date three',
+                        'value' => "<p>
+                                        Apr 30, 2020 / Health
+                                    </p>"
                     ]
                 ],
-                'image_right_text3' => [
+                'image_r_text_three' => [
                     'text_html' => [
-                        'label' => 'image right text',
-                        'value' => ''
+                        'label' => 'image right text three',
+                        'value' => "<a href=''>Things that can help to boost your immune system</a>"
                     ]
                 ],
-                'image_right_author3' => [
+                'image_r_author_three' => [
                     'text_html' => [
-                        'label' => 'image right author',
-                        'value' => ''
+                        'label' => 'image right author three',
+                        'value' => "<p>Admin</p>"
                     ]
                 ],
                 'link' => [
@@ -525,7 +582,7 @@ class FnewsPropositionSection extends FormatageModels
                         'value' => [
                             "link" => "#",
                             "text" => "More",
-                            "class" => ""
+                            "class" => "link"
                         ]
                     ]
                 ]

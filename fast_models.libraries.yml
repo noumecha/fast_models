@@ -52,4 +52,4 @@ f_news_proposition:
     layouts/js/f_news_proposition.js: {}
   css:
     theme:
-      layouts/css/f_new_proposition.css: {}
+      layouts/css/f_news_proposition.css: {}
