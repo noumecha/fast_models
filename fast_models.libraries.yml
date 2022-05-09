@@ -45,7 +45,7 @@ mahogany_hero:
     theme: 
       layouts/css/mahogany_hero.css: {}
 
-# f_news library
+# f_news libraries
 
 f_news_proposition:
   js:
@@ -53,3 +53,9 @@ f_news_proposition:
   css:
     theme:
       layouts/css/f_news_proposition.css: {}
+f_news_in_case:
+  js:
+    layouts/js/f_news_in_case.js: {}
+  css:
+    theme:
+      layouts/css/f_news_in_case.css: {}

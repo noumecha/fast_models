@@ -1,0 +1,151 @@
+{{ attach_library('fast_models/f_news_in_case')}}
+{% if content %}
+<div {{ attributes.addClass('in-case-fnews ')}}>
+    <div class="container">
+        {% if content %}
+        <h3 {{ region_attributes.title_center.addClass('icf-title') }}>
+            {{ content.title_center }}
+        </h3>
+        {% endif %}
+        <div class="row  icf-content">
+            <div class="bloc-img ">
+                {% if content %}
+                    {{ content.image_bg }}
+                {% endif %}
+                <div class="bloc-img__body d-flex flex-column">
+                    {% if content %}
+                    <a {{ region_attributes.text_link.addClass('bib-title') }}>
+                        {{ content.text_link }}
+                    </a>
+                    {% endif %}
+                    {% if content %}
+                    <span {{ region_attributes.date_link.addClass('bib-date') }}>
+                        {{ content.date_link }}
+                    </span>
+                    {% endif %}
+                </div>
+                {% if content %}
+                <div {{ region_attributes.author.addClass('bib-creator') }}>
+                    {{ content.author }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="bloc-img ">
+                {% if content %}
+                    {{ content.image_bg_one }}
+                {% endif %}
+                <div class="bloc-img__body d-flex flex-column">
+                    {% if content %}
+                    <a {{ region_attributes.text_link_one.addClass('bib-title') }}>
+                        {{ content.text_link_one }}
+                    </a>
+                    {% endif %}
+                    {% if content %}
+                    <span {{ region_attributes.date_link_one.addClass('bib-date') }}>
+                        {{ content.date_link_one }}
+                    </span>
+                    {% endif %}
+                </div>
+                {% if content %}
+                <div {{ region_attributes.author_one.addClass('bib-creator') }}>
+                    {{ content.author_one }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="bloc-img ">
+                {% if content %}
+                    {{ content.image_bg_two }}
+                {% endif %}
+                <div class="bloc-img__body d-flex flex-column">
+                    {% if content %}
+                    <a {{ region_attributes.text_link_two.addClass('bib-title') }}>
+                        {{ content.text_link_two }}
+                    </a>
+                    {% endif %}
+                    {% if content %}
+                    <span {{ region_attributes.date_link_two.addClass('bib-date') }}>
+                        {{ content.date_link_two }}
+                    </span>
+                    {% endif %}
+                </div>
+                {% if content %}
+                <div {{ region_attributes.author_two.addClass('bib-creator') }}>
+                    {{ content.author_two }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="bloc-img ">
+                {% if content %}
+                    {{ content.image_bg_three }}
+                {% endif %}
+                <div class="bloc-img__body d-flex flex-column">
+                    {% if content %}
+                    <a {{ region_attributes.text_link_three.addClass('bib-title') }}>
+                        {{ content.text_link_three }}
+                    </a>
+                    {% endif %}
+                    {% if content %}
+                    <span {{ region_attributes.date_link_three.addClass('bib-date') }}>
+                        {{ content.date_link_three }}
+                    </span>
+                    {% endif %}
+                </div>
+                {% if content %}
+                <div {{ region_attributes.author_three.addClass('bib-creator') }}>
+                    {{ content.author_three }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="bloc-img ">
+                {% if content %}
+                    {{ content.image_bg_four }}
+                {% endif %}
+                <div class="bloc-img__body d-flex flex-column">
+                    {% if content %}
+                    <a {{ region_attributes.text_link_four.addClass('bib-title') }}>
+                        {{ content.text_link_four }}
+                    </a>
+                    {% endif %}
+                    {% if content %}
+                    <span {{ region_attributes.date_link_four.addClass('bib-date') }}>
+                        {{ content.date_link_four }}
+                    </span>
+                    {% endif %}
+                </div>
+                {% if content %}
+                <div {{ region_attributes.author_four.addClass('bib-creator') }}>
+                    {{ content.author_four }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="bloc-img ">
+                {% if content %}
+                    {{ content.image_bg_five }}
+                {% endif %}
+                <div class="bloc-img__body d-flex flex-column">
+                    {% if content %}
+                    <a {{ region_attributes.text_link_five.addClass('bib-title') }}>
+                        {{ content.text_link_five }}
+                    </a>
+                    {% endif %}
+                    {% if content %}
+                    <span {{ region_attributes.date_link_five.addClass('bib-date') }}>
+                        {{ content.date_link_five }}
+                    </span>
+                    {% endif %}
+                </div>
+                {% if content %}
+                <div {{ region_attributes.author_five.addClass('bib-creator') }}>
+                    {{ content.author_five }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% if content %}
+        <div class=" icf-more">
+            {{ content.link }}
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
