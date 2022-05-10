@@ -85,7 +85,13 @@ f_news_hero_blog:
       layouts/css/f_news_hero_blog.css: {}
 f_news_first_service:
   js:
-    layouts/js/f_news_first_service:
+    layouts/js/f_news_first_service.js: {}
   css:
     theme:
       layouts/css/f_news_first_service.css: {}
+f_news_filter_section:
+  js:
+    layouts/js/f_news_filter_section.js: {}
+  css:
+    theme:
+      layouts/css/f_news_filter_section.css: {}
