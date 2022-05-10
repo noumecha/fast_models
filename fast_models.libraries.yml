@@ -71,3 +71,9 @@ f_news_archive:
   css:
     theme:
       layouts/css/f_news_archive.css: {}
+f_news_single_showcase:
+  js:
+    layouts/js/f_news_single_showcase.js: {}
+  css:
+    theme:
+      layouts/css/f_news_single_showcase.css: {}
