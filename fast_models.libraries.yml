@@ -83,3 +83,9 @@ f_news_hero_blog:
   css:
     theme:
       layouts/css/f_news_hero_blog.css: {}
+f_news_first_service:
+  js:
+    layouts/js/f_news_first_service:
+  css:
+    theme:
+      layouts/css/f_news_first_service.css: {}

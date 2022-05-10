@@ -1,0 +1,62 @@
+{{ attach_library('fast_models/f_news_first_service')}}
+{% if content %}
+<section class="first-service-fnews">
+    <div class="container">
+        <div class="first-service row">
+            <div class="col-12 col-lg-8">
+                <a href="#" class="first-service__img ">
+                    {% if content %}
+                        {{ content.image_left }}
+                    {% endif %}
+                    <div class="date-show">
+                        {% if content %}
+                        <span {{ region_attributes.service_day.addClass('date-show__day')}}>
+                            {{ content.service_day }}
+                        </span>
+                        {% endif %}
+                        {% if content %}
+                        <span {{ region_attributes.service_date.addClass('date-show__date')}}>*
+                            {{ content.service_date }}
+                        </span>
+                        {% endif %}
+                    </div>
+                </a>
+
+            </div>
+            <div class="first-service__body col-12 col-lg-4">
+
+                <ul class="head-nav">
+                    <li>
+                    {% if content %}                        
+                    <span {{ region_attributes.service_promote.addClass('promoted-label')}}>
+                        {{ content.service_promote }}
+                    </span>
+                    {% endif %}
+                    </li>                    
+                    <li>
+                    {% if content %}
+                        {{ content.service_tristique }}
+                    {% endif %} 
+                    </li>
+                    <li>
+                    {% if content %}  
+                        {{ content.service_allo}}
+                    {% endif %}
+                    </li>
+                 </ul>
+                {% if content %}
+                    {{ content.service_link }}
+                {% endif %}
+                {% if content %}
+                <p {{ region_attributes.service_text.addClass('node-desc')}}>
+                    {{ content.service_text }}
+                </p>
+                {% endif %}
+                {% if content %}
+                    {{ content.service_link_one }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
