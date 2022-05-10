@@ -15,8 +15,8 @@ module.exports = {
     "./src/js/sections/f_news_hero_blog.js",
   "f_news_first_service":
     "./src/js/sections/f_news_first_service.js",
-  "f_news_filter_section":
-    "./src/js/sections/f_news_filter_section.js",
+  "f_news_teaser_service":
+    "./src/js/sections/f_news_teaser_service.js",
 };
 
 // export default {

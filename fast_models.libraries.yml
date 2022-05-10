@@ -45,7 +45,7 @@ mahogany_hero:
     theme: 
       layouts/css/mahogany_hero.css: {}
 
-# f_news libraries
+# f_news sections libraries
 
 f_news_proposition:
   js:
@@ -89,9 +89,11 @@ f_news_first_service:
   css:
     theme:
       layouts/css/f_news_first_service.css: {}
-f_news_filter_section:
+
+#f_news teasers libraries
+f_news_teaser_service:
   js:
-    layouts/js/f_news_filter_section.js: {}
+    layouts/js/f_news_teaser_service.js: {}
   css:
     theme:
-      layouts/css/f_news_filter_section.css: {}
+      layouts/css/f_news_teaser_service.css: {}
