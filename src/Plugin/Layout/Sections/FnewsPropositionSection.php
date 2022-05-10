@@ -143,7 +143,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * 
  */
 
-class FnewsPropositionSection extends FormatageModels 
+class FnewsPropositionSection extends FormatageModelsSection 
 {
    /**
    *

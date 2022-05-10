@@ -89,67 +89,80 @@ class FnewsTeaserService extends FormatageModelsTeasers
                     'teaser_image' => [
                         'text_html' => [
                             'label' => 'Image',
-                            'value' => ""
+                            'value' => "<img src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/2019-07/mt-service-teaser-3.jpg?itok=-TumY7Ot'
+                                 alt=''>"
                         ]
                     ],
                     'teaser_day' => [
                         'text_html' => [
                             'label' => 'Jour',
-                            'value' => ""
+                            'value' => "9"
                         ]
                     ],
                     'teaser_date' => [
                         'text_html' => [
                             'label' => 'Date',
-                            'value' => ""
+                            'value' => "july,2019"
                         ]
                     ],
                     'teaser_color' => [
                         'text_html' => [
                             'label' => 'Coleur un',
-                            'value' => "",
+                            'value' => "green",
                         ]
                     ],
                     'teaser_color_one' => [
                         'text_html' => [
                             'label' => 'Couleur deux',
-                            'value' => ""
+                            'value' => "purpple"
                         ]
                     ],
                     'teaser_color_two' => [
                         'text_html' => [
                             'label' => 'Couleur trois',
-                            'value' => ""
+                            'value' => "green"
                         ]
                     ],
                     'teaser_color_three' => [
                         'text_html' => [
                             'label' => 'Couleur quatre',
-                            'value' => ""
+                            'value' => "purpple"
                         ]
                     ],
                     'teaser_link' => [
-                        'text_html' => [
+                        'url' => [
                             'label' => 'Lien 1',
-                            'value' => ""
+                            'value' => [
+                                'link' => "#",
+                                'text' => "tristique",
+                                'class' => "link-label"
+                            ]
                         ]
                     ],
                     'teaser_link_one' => [
-                        'text_html' => [
+                        'url' => [
                             'label' => 'Lien 2',
-                            'value' => ""
+                            'value' => [
+                                'link' => "#",
+                                'text' => "vitae",
+                                'class' => "link-label"
+                            ]
                         ]
                     ],
                     'teaser_title' => [
-                        'text_html' => [
+                        'url' => [
                             'label' => 'Titre',
-                            'value' => ""
+                            'value' => [
+                                'link' => "#",
+                                'text' => "First Service",
+                                'class' => "node-title"
+                            ]
                         ]
                     ],
                     'teaser_price' => [
                         'text_html' => [
                             'label' => 'Price',
-                            'value' => ""
+                            'value' => "$29.00"
                         ]
                     ]
                 ]
