@@ -77,3 +77,9 @@ f_news_single_showcase:
   css:
     theme:
       layouts/css/f_news_single_showcase.css: {}
+f_news_hero_blog:
+  js:
+    layouts/js/f_news_hero_blog.js: {}
+  css:
+    theme:
+      layouts/css/f_news_hero_blog.css: {}
