@@ -3,6 +3,7 @@
 namespace Drupal\fast_models\Plugin\Layout\Teasers;
 
 use Drupal\bootstrap_styles\StylesGroup\StylesGroupManager;
+use Drupal\formatage_models\FormatageModelsThemes;
 use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
 
 /**
@@ -17,8 +18,8 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *  library = "fast_models/f_news_teaser_service",
  *  default_region = "content",
  *  regions = {
- *      "teaser_image" = {
- *          "label" = @Translation("teaser_image"),
+ *      "t_image" = {
+ *          "label" = @Translation("t_image"),
  *      },
  *      "teaser_day" = {
  *          "label" = @Translation("teaser_day"),
@@ -67,7 +68,23 @@ class FnewsTeaserService extends FormatageModelsTeasers
     {
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
-        $this->pluginDefinition->set('icon', drupal_get_path('module', 'formatage_models') . "/icones/teasers/f_news_teaser_service.png");
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/teasers/f_news_teaser_service_map.png");
+    }
+
+    /**
+     * 
+     * {@inheritdoc}
+     * @see \Drupal\formatage_models\Plugin\Layout\FormatageModels:build()
+     * 
+     */
+    public function build(array $regions) 
+    {
+        
+        // TODO Auto-generated method stub
+        $build = parent::build($regions);
+        FormatageModelsThemes::formatSettingValues($build);
+        
+        return $build;
     }
 
     /**
@@ -86,7 +103,7 @@ class FnewsTeaserService extends FormatageModelsTeasers
                     'loader' => 'static'
                 ],
                 'fields' => [
-                    'teaser_image' => [
+                    't_image' => [
                         'text_html' => [
                             'label' => 'Image',
                             'value' => "<img src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/2019-07/mt-service-teaser-3.jpg?itok=-TumY7Ot'

@@ -1,13 +1,13 @@
 {% if content %}
-<section class="teaser-service-fnews">
+<section {{ attributes.addClass('teaser-service-fnews') }}>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 ">
                 <div class="teaser-service">
                     <div class="">
                         <a href="#" class="teaser-service__img ">
-                            {% if content%}
-                                {{ content.teaser_image }}
+                            {% if content %}
+                                {{ content.t_image }}
                             {% endif %}
                             <div class="date-show">
                                 {% if content %}
