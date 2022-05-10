@@ -65,3 +65,9 @@ f_news_footer:
   css:
     theme:
       layouts/css/f_news_footer.css: {}
+f_news_archive:
+  js:
+    layouts/js/f_news_archive.js: {}
+  css:
+    theme:
+      layouts/css/f_news_archive.css: {}

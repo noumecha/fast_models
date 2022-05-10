@@ -1,0 +1,85 @@
+{{ attach_library('fast_models/f_news_archive')}}
+{% if content %}
+<div {{ attributes.addClass('archive-fnews ') }}>
+    <div class="container">
+        <div class="row af-content">
+            <ul class=" col-12 col-md-5 afc-month">
+                {% if content %}
+                <li {{ region_attributes.left_link.addClass('afc-month__item') }}>
+                    {{ content.left_link }}                    
+                </li>
+                {% endif %}
+                {% if content %}
+                <li {{ region_attributes.left_link_one.addClass('afc-month__item') }}>
+                    {{ content.left_link_one }}                    
+                </li>
+                {% endif %}
+                {% if content %}
+                <li {{ region_attributes.left_link_two.addClass('afc-month__item') }}>
+                    {{ content.left_link_two }}                    
+                </li>
+                {% endif %}
+                {% if content %}
+                <li {{ region_attributes.left_link_three.addClass('afc-month__item') }}>
+                    {{ content.left_link_three }}                    
+                </li>
+                {% endif %}
+                {% if content %}
+                <li {{ region_attributes.left_link_four.addClass('afc-month__item') }}>
+                    {{ content.left_link_four }}                    
+                </li>
+                {% endif %}
+                {% if content %}
+                <li {{ region_attributes.left_link_five.addClass('afc-month__item') }}>
+                    {{ content.left_link_five }}                    
+                </li>
+                {% endif %}
+                {% if content %}
+                <li {{ region_attributes.left_link_six.addClass('afc-month__item') }}>
+                    {{ content.left_link_six }}                    
+                </li>
+                {% endif %}
+            </ul>
+            <div class="col-12 col-md-5 afc-second">
+                <div class="afc-search">
+                    {% if content %}
+                        {{ content.s_title}}                        
+                    {% endif %}
+                    {% if content %}
+                    <div {{region_attributes.s_bar.addClass('afc-search__input')}}>
+                        {{ content.s_bar }}
+                    </div>
+                    {% endif %}
+                </div>
+                <ul class="afc-nav">
+                    {% if content %}
+                    <li {{ region_attributes.search_link.addClass('afc-nav__item')}}>
+                        {{ content.search_link }}
+                    </li>
+                    {% endif %}
+                    {% if content %}
+                    <li {{ region_attributes.search_link_one.addClass('afc-nav__item')}}>
+                        {{ content.search_link_one }}
+                    </li>
+                    {% endif %}
+                    {% if content %}
+                    <li {{ region_attributes.search_link_two.addClass('afc-nav__item')}}>
+                        {{ content.search_link_two }}
+                    </li>
+                    {% endif %}
+                    {% if content %}
+                    <li {{ region_attributes.search_link_three.addClass('afc-nav__item')}}>
+                        {{ content.search_link_three }}
+                    </li>
+                    {% endif %}
+                    {% if content %}
+                    <li {{ region_attributes.search_link_four.addClass('afc-nav__item')}}>
+                        {{ content.search_link_four }}
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
