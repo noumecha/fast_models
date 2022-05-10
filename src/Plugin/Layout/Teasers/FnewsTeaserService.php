@@ -2,8 +2,8 @@
 
 namespace Drupal\fast_models\Plugin\Layout\Teasers;
 
-use Drupal\formatage_models\FormatageModelsThemes;
-use Drupal\formatage_models\Plugin\Layout\FormatageModels;
+use Drupal\bootstrap_styles\StylesGroup\StylesGroupManager;
+use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
 
 /**
  * 
@@ -32,6 +32,12 @@ use Drupal\formatage_models\Plugin\Layout\FormatageModels;
  *      "teaser_color_one" = {
  *          "label" = @Translation("teaser_color_one"),     
  *      },
+ *      "teaser_color_two" = {
+ *          "label" = @Translation("teaser_color_two"),
+ *      },
+ *      "teaser_color_three" = {
+ *          "label" = @Translation("teaser_color_three"),
+ *      },
  *      "teaser_link" = {
  *          "label" = @Translation("teaser_link"),
  *      },
@@ -49,35 +55,19 @@ use Drupal\formatage_models\Plugin\Layout\FormatageModels;
  * 
  */
 
-class FnewsTeaserService extends FormatageModels
+class FnewsTeaserService extends FormatageModelsTeasers
 {
 
-     /**
+    /**
      *
      * {@inheritdoc}
      * @see \Drupal\formatage_models\Plugin\Layout\FormatageModels::__construct()
      */
-    public function __construct(array $configuration, $plugin_id, $plugin_definition) 
+    public function __construct(array $configuration, $plugin_id, $plugin_definition, StylesGroupManager $styles_group_manager)
     {
         // TODO Auto-generated method stub
-        parent::__construct($configuration, $plugin_id, $plugin_definition);
-        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/fnews_first_service_map.png");
-    }
-
-    /**
-     * 
-     * {@inheritdoc}
-     * @see \Drupal\formatage_models\Plugin\Layout\FormatageModels:build()
-     * 
-     */
-    public function build(array $regions) 
-    {
-        
-        // TODO Auto-generated method stub
-        $build = parent::build($regions);
-        FormatageModelsThemes::formatSettingValues($build);
-        
-        return $build;
+        parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'formatage_models') . "/icones/teasers/f_news_teaser_service.png");
     }
 
     /**
@@ -99,6 +89,66 @@ class FnewsTeaserService extends FormatageModels
                     'teaser_image' => [
                         'text_html' => [
                             'label' => 'Image',
+                            'value' => ""
+                        ]
+                    ],
+                    'teaser_day' => [
+                        'text_html' => [
+                            'label' => 'Jour',
+                            'value' => ""
+                        ]
+                    ],
+                    'teaser_date' => [
+                        'text_html' => [
+                            'label' => 'Date',
+                            'value' => ""
+                        ]
+                    ],
+                    'teaser_color' => [
+                        'text_html' => [
+                            'label' => 'Coleur un',
+                            'value' => "",
+                        ]
+                    ],
+                    'teaser_color_one' => [
+                        'text_html' => [
+                            'label' => 'Couleur deux',
+                            'value' => ""
+                        ]
+                    ],
+                    'teaser_color_two' => [
+                        'text_html' => [
+                            'label' => 'Couleur trois',
+                            'value' => ""
+                        ]
+                    ],
+                    'teaser_color_three' => [
+                        'text_html' => [
+                            'label' => 'Couleur quatre',
+                            'value' => ""
+                        ]
+                    ],
+                    'teaser_link' => [
+                        'text_html' => [
+                            'label' => 'Lien 1',
+                            'value' => ""
+                        ]
+                    ],
+                    'teaser_link_one' => [
+                        'text_html' => [
+                            'label' => 'Lien 2',
+                            'value' => ""
+                        ]
+                    ],
+                    'teaser_title' => [
+                        'text_html' => [
+                            'label' => 'Titre',
+                            'value' => ""
+                        ]
+                    ],
+                    'teaser_price' => [
+                        'text_html' => [
+                            'label' => 'Price',
                             'value' => ""
                         ]
                     ]

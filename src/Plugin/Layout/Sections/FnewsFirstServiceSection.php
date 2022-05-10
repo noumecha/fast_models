@@ -2,8 +2,9 @@
 
 namespace Drupal\fast_models\Plugin\Layout\Sections;
 
+use Drupal\bootstrap_styles\StylesGroup\StylesGroupManager;
 use Drupal\formatage_models\FormatageModelsThemes;
-use Drupal\formatage_models\Plugin\Layout\FormatageModels;
+use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
 
 /**
  * 
@@ -50,7 +51,7 @@ use Drupal\formatage_models\Plugin\Layout\FormatageModels;
  * 
  */
 
-class FnewsFirstServiceSection extends FormatageModels
+class FnewsFirstServiceSection extends FormatageModelsSection
 {
 
     /**
@@ -58,10 +59,10 @@ class FnewsFirstServiceSection extends FormatageModels
      * {@inheritdoc}
      * @see \Drupal\formatage_models\Plugin\Layout\FormatageModels::__construct()
      */
-    public function __construct(array $configuration, $plugin_id, $plugin_definition) 
+    public function __construct(array $configuration, $plugin_id, $plugin_definition, StylesGroupManager $styles_group_manager) 
     {
         // TODO Auto-generated method stub
-        parent::__construct($configuration, $plugin_id, $plugin_definition);
+        parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
         $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/fnews_first_service_map.png");
     }
 
