@@ -16,7 +16,11 @@ module.exports = {
   "f_news_first_service":
     "./src/js/sections/f_news_first_service.js",
   "f_news_teaser_service":
-    "./src/js/sections/f_news_teaser_service.js",
+    "./src/js/teasers/f_news_teaser_service.js",
+  "f_news_blog_teaser":
+    "./src/js/teasers/f_news_blog_teaser.js",
+  "f_news_teaser_metro_service":
+    "./src/js/teasers/f_news_teaser_metro_service.js"
 };
 
 // export default {

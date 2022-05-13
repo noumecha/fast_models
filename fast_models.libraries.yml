@@ -97,3 +97,15 @@ f_news_teaser_service:
   css:
     theme:
       layouts/css/f_news_teaser_service.css: {}
+f_news_blog_teaser:
+  js:
+    layouts/js/f_news_blog_teaser.js: {}
+  css:
+    theme:
+      layouts/css/f_news_blog_teaser.css: {}
+f_news_teaser_metro_service:
+  js:
+    layouts/js/f_news_teaser_metro_service.js: {}
+  css:
+    theme:
+      layouts/css/f_news_teaser_metro_service.css: {}
