@@ -27,6 +27,8 @@ module.exports = {
     "./src/js/sections/f_news_text_btn_right.js",
   "f_news_teaser_testimony":
     "./src/js/teasers/f_news_teaser_testimony.js",
+  "f_news_teaser_member":
+    "./src/js/teasers/f_news_teaser_member.js"
 };
 
 // export default {
