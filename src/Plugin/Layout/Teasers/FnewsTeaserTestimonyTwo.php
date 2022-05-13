@@ -15,7 +15,7 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *  label = @Translation("f_news_teaser_testimony_two"),
  *  category = @Translation("fast_models"),
  *  path = "layouts/teasers",
- *  template = "ff_news_teaser_testimony_two",
+ *  template = "f_news_teaser_testimony_two",
  *  library = "fast_models/f_news_teaser_testimony_two",
  *  default_region = "content",
  *  regions = {
