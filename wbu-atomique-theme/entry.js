@@ -20,7 +20,9 @@ module.exports = {
   "f_news_blog_teaser":
     "./src/js/teasers/f_news_blog_teaser.js",
   "f_news_teaser_metro_service":
-    "./src/js/teasers/f_news_teaser_metro_service.js"
+    "./src/js/teasers/f_news_teaser_metro_service.js",
+  "f_news_right_left_image":
+    "./src/js/sections/f_news_right_left_image.js",
 };
 
 // export default {
