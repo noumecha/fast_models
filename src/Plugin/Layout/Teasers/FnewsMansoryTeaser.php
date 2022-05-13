@@ -45,7 +45,7 @@ class FnewsMansoryTeaser extends FormatageModelsTeasers
     {
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
-        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/teasers/f_news_mansory_tease_map.png");
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/teasers/f_news_mansory_teaser_map.png");
     }
 
     /**
