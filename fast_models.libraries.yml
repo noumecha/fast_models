@@ -139,3 +139,9 @@ f_news_teaser_testimony_two:
   css:
     theme:
       layouts/css/f_news_teaser_testimony_two.css: {}
+f_news_mansory_teaser:
+  js:
+    layouts/js/f_news_mansory_teaser.js: {}
+  css:
+    theme:
+      layouts/css/f_news_mansory_teaser.css: {}

@@ -1,0 +1,29 @@
+{% if content %}
+<section {{ attributes.addClass('leader-mansory-handler')}}>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-6  p-sm-0">
+                <div class="single-mansory-card">
+                    {% if content %}
+                    <a href="#" {{ region_attributes.mansory_teaser_image.addClass('img-link')}}>
+                        {{ content.mansory_teaser_image }}                        
+                    </a>
+                    {% endif %}
+                    <div class="smc-body">
+                        {% if content %}
+                        <div class="member-name">
+                            {{ content.mansory_teaser_name }}
+                        </div>
+                        {% endif %}
+                        {% if content %}
+                        <div {{ region_attributes.mansory_teaser_role.addClass('member-role')}}>
+                            {{ content.mansory_teaser_role }}                            
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

@@ -31,6 +31,8 @@ module.exports = {
     "./src/js/teasers/f_news_teaser_member.js",
   "f_news_teaser_testimony_two":
     "./src/js/teasers/f_news_teaser_testimony_two.js",
+  "f_news_mansory_teaser":
+    "./src/js/teasers/f_news_mansory_teaser.js",
 };
 
 // export default {
