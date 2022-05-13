@@ -121,3 +121,9 @@ f_news_teaser_metro_service:
   css:
     theme:
       layouts/css/f_news_teaser_metro_service.css: {}
+f_news_teaser_testimony:
+  js:
+    layouts/js/f_news_teaser_testimony.js: {}
+  css:
+    theme:
+      layouts/css/f_news_teaser_testimony.css: {}

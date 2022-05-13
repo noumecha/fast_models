@@ -1,0 +1,36 @@
+{% if content %}
+<section {{ attributes.addClass('testimony-section-handler') }}>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="single-card-testimony">
+                    {% if content %}
+                    <p {{ region_attributes.teaser_testimony_text.addClass('testimony')}} >
+                        {{ content.teaser_testimony_text }}
+                    </p>
+                    {% endif %}
+                    <div class="testimony-info ">
+                        <div class="img-profiles">
+                            {% if content %}
+                            <a href="#" {{ region_attributes.teaser_testimony_image.addClass('img-link')}}>
+                                {{ content.teaser_testimony_image }}
+                            </a>
+                            {% endif %}
+                        </div>
+                        <div class="info">
+                            {% if content %}
+                                {{ content.teaser_testimony_name }}
+                            {% endif %}
+                            {% if content %}                                
+                            <div {{ region_attributes.teaser_testimony_role.addClass('role')}}>
+                                {{ content.teaser_testimony_role }}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</section>
+{% endif %}
