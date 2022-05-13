@@ -8,36 +8,36 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
 
 /**
  * 
- *  Fnews Teaser Metro service 
+ *  Fnews Teaser Metro service Small
  *  @Layout(
- *  id = "f_news_teaser_metro_service",
- *  label = @Translation("f_news_teaser_metro_service"),
+ *  id = "f_news_teaser_metro_service_small",
+ *  label = @Translation("f_news_teaser_metro_service_small"),
  *  category = @Translation("fast_models"),
  *  path = "layouts/teasers",
- *  template = "f_news_teaser_metro_service",
+ *  template = "f_news_teaser_metro_service_small",
  *  library = "fast_models/f_news_teaser_metro_service",
  *  default_region = "content",
  *  regions = {
- *      "metro_teaser_image" = {
+ *      "metro_teaser_small_image" = {
  *          "label" = @Translation("metro_teaser_image"),     
  *      },
- *      "metro_teaser_title" = {
+ *      "metro_teaser_small_title" = {
  *          "label" = @Translation("metro_teaser_title"),     
  *      },
- *      "metro_teaser_link" = {
+ *      "metro_teaser_small_link" = {
  *          "label" = @Translation("metro_teaser_link"),     
  *      },
- *      "metro_teaser_link_one" = {
+ *      "metro_teaser_small_link_one" = {
  *          "label" = @Translation("metro_teaser_link_one"),     
  *      },
- *      "metro_teaser_link_date" = {
+ *      "metro_teaser_small_link_date" = {
  *          "label" = @Translation("metro_teaser_link_date"),     
  *      }
  *  }
  * ) 
  */
 
-class FnewsTeaserMetroService extends FormatageModelsTeasers
+class FnewsTeaserMetroServiceSmall extends FormatageModelsTeasers
 {
     /**
      *
@@ -48,7 +48,7 @@ class FnewsTeaserMetroService extends FormatageModelsTeasers
     {
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
-        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/teasers/f_news_teaser_metro_service_small_map.png");
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/teasers/f_news_teaser_metro_service_map.png");
     }
 
     /**
@@ -76,21 +76,21 @@ class FnewsTeaserMetroService extends FormatageModelsTeasers
     {
         return parent::defaultConfiguration() + [
             'css' => '',
-            'fntms' => [
+            'fntmss' => [
                 'builder-form' => true,
                 'info' => [
                     'title' => 'Contenu',
                     'loader' => 'static'
                 ],
                 'fields' => [
-                    'metro_teaser_image' => [
+                    'metro_teaser_small_image' => [
                         'text_html' => [
                             'label' => 'Image',
                             'value' => "<img src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_metro_tile_square/public/2019-07/mt-service-teaser-1.jpg?itok=imyoNul2'
                                  alt=''>"
                         ]
                     ],
-                    'metro_teaser_title' => [
+                    'metro_teaser_small_title' => [
                         'url' => [
                             'label' => 'Titre',
                             'value' => [
@@ -100,7 +100,7 @@ class FnewsTeaserMetroService extends FormatageModelsTeasers
                             ]
                         ]
                     ],
-                    'metro_teaser_link' => [
+                    'metro_teaser_small_link' => [
                         'url' => [
                             'label' => ' Lien 1',
                             'value' => [
@@ -110,7 +110,7 @@ class FnewsTeaserMetroService extends FormatageModelsTeasers
                             ]
                         ]
                     ],
-                    'metro_teaser_link_one' => [
+                    'metro_teaser_small_link_one' => [
                         'url' => [
                             'label' => ' Lien 2',
                             'value' => [
@@ -120,7 +120,7 @@ class FnewsTeaserMetroService extends FormatageModelsTeasers
                             ]
                         ]
                     ],
-                    'metro_teaser_link_date' => [
+                    'metro_teaser_small_link_date' => [
                         'text_html' => [
                             'label' => 'Date',
                             'value' => "19 Jul, 2019"
@@ -130,5 +130,4 @@ class FnewsTeaserMetroService extends FormatageModelsTeasers
             ]
         ];
     }
-
 }

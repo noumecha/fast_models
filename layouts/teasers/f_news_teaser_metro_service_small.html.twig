@@ -1,0 +1,41 @@
+{% if content %}
+<section {{ attributes.addClass('metro-service-fnews')}}>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 ">
+                <div class="metro-service">
+                    <div class="">
+                        {% if content %}
+                        <a href="#" {{ region_attributes.metro_teaser_small_image.addClass('metro-service__img ')}}>
+                            {{ content.metro_teaser_small_image }}                            
+                        </a>
+                        {% endif %}
+                    </div>
+                    <div class="metro-service__body ">
+                        {% if content %}
+                            {{ content.metro_teaser_small_title }}
+                        {% endif %}
+                        <ul class="head-nav">
+                            {% if content %}
+                            <li> 
+                                {{ content.metro_teaser_small_link }}
+                            </li>
+                            {% endif %}
+                            {% if content %}
+                            <li> 
+                                {{ content.metro_teaser_small_link_one }}
+                            </li>
+                            {% endif %}
+                        </ul>
+                        {% if content %}
+                        <div {{ region_attributes.metro_teaser_small_link_date.addClass('node-date')}}>
+                            {{ content.metro_teaser_small_link_date }}                            
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
