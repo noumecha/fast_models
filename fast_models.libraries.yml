@@ -95,6 +95,12 @@ f_news_right_left_image:
   css:
     theme:
       layouts/css/f_news_right_left_image.css: {}
+f_news_text_btn_right:
+  js:
+    layouts/js/f_news_text_btn_right.js: {}
+  css:
+    theme:
+      layouts/css/f_news_text_btn_right.css: {}
 
 #f_news teasers libraries
 f_news_teaser_service:

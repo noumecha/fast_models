@@ -23,6 +23,8 @@ module.exports = {
     "./src/js/teasers/f_news_teaser_metro_service.js",
   "f_news_right_left_image":
     "./src/js/sections/f_news_right_left_image.js",
+  "f_news_text_btn_right":
+    "./src/js/sections/f_news_text_btn_right.js",
 };
 
 // export default {

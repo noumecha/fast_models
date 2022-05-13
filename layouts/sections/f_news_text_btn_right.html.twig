@@ -1,0 +1,22 @@
+{% if content %}
+<section {{ attributes.addClass('text-btn-right-fnews')}} >
+    <div class="container">
+        <div class="tbr-bloc row justify-content-between">
+            <div class="tbr-bloc__text col-12 col-md-6">
+                {% if content %}
+                <h5 {{ region_attributes.text_btn_right_title.addClass('tbr-bloc__title')}}>
+                    {{ content.text_btn_right_title }}
+                </h5>
+                {% endif %}
+            </div>
+            <div class="tbr-bloc__btn col-12 col-md-6">
+                {% if content %}
+                <a {{ region_attributes.text_btn_right_button.addClass('lmb-full')}} href="#">
+                    {{ content.text_btn_right_button}}
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
