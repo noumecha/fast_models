@@ -89,6 +89,12 @@ f_news_first_service:
   css:
     theme:
       layouts/css/f_news_first_service.css: {}
+f_news_right_left_image:
+  js:
+    layouts/js/f_news_right_left_image.js: {}
+  css:
+    theme:
+      layouts/css/f_news_right_left_image.css: {}
 
 #f_news teasers libraries
 f_news_teaser_service:

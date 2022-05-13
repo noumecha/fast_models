@@ -1,0 +1,32 @@
+{% if content %}
+<section {{ attributes.addClass('img-rl-fnews')}}>
+    <div class="container">
+        <div class="irl-bloc row justify-content-between">
+            <div class="irl-bloc__text col-12 col-md-6">
+                {% if content %}
+                    <h4 {{ region_attributes.right_left_title('irl-bloc__title')}}>
+                        {{ content.right_left_title }}                        
+                    </h4>
+                {% endif %}
+                {% if content %}
+                <p {{ region_attributes.right_left_text.addClass('irl-bloc__desc')}}>
+                    {{ content.right_left_text }}                    
+                </p>
+                {% endif %}
+                {% if content %}
+                <a {{ region_attributes.right_left_button.addClass('load-more-button')}} href="#">
+                    {{ content.right_left_button }}
+                </a>
+                {% endif %}
+            </div>
+            <div class="irl-bloc__img col-12 col-md-6">
+                {% if content %}
+                <a href="#" {{ region_attributes.right_left_image.addClass('ibi__img')}}>
+                    {{ content.right_left_image }}                    
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
