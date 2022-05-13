@@ -133,3 +133,9 @@ f_news_teaser_member:
   css:
     theme:
       layouts/css/f_news_teaser_member.css: {}
+f_news_teaser_testimony_two:
+  js:
+    layouts/js/f_news_teaser_testimony_two.js: {}
+  css:
+    theme:
+      layouts/css/f_news_teaser_testimony_two.css: {}

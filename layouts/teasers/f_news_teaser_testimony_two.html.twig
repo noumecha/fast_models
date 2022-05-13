@@ -1,0 +1,38 @@
+{% if content %}
+<section {{ attributes.addClass('testimony-2-fnews')}}>
+    <div class="container">
+        <div class="row">            
+            <div class="col-lg-4 col-md-6">
+                <div class="single-card-testimonials">
+                    <div class="img-profiles text-center">
+                        {% if content %}
+                        <a href="#" {{ region_attributes.teaser_testimony_two_image.addClass('img-link') }}>
+                            {{ content.teaser_testimony_two_image }}                            
+                        </a>
+                        {% endif %}
+                    </div>
+                    {% if content %}
+                    <p {{ region_attributes.teaser_testimony_two_text.addClass('testimony')}}>
+                        {{ content.teaser_testimony_two_text }}                        
+                    </p>
+                    {% endif %}
+                    <div class="testimony-info ">
+                        <div class="info">
+                            {% if content %}
+                            <h6>
+                                {{ content.teaser_testimony_two_name }}
+                            </h6>
+                            {% endif %}
+                            {% if content %}
+                            <div {{ region_attributes.teaser_testimony_two_role.addClass('role')}}>
+                                {{ content.teaser_testimony_two_role }}                                
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
