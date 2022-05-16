@@ -33,6 +33,8 @@ module.exports = {
     "./src/js/teasers/f_news_teaser_testimony_two.js",
   "f_news_mansory_teaser":
     "./src/js/teasers/f_news_mansory_teaser.js",
+  "f_news_home_bottom_text":
+    "./src/js/sections/f_news_home_bottom_text.js",
 };
 
 // export default {

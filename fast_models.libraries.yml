@@ -145,3 +145,9 @@ f_news_mansory_teaser:
   css:
     theme:
       layouts/css/f_news_mansory_teaser.css: {}
+f_news_home_bottom_text:
+  js:
+    layouts/js/f_news_home_bottom_text.js: {}
+  css:
+    theme:
+      layouts/css/f_news_home_bottom_text.css: {}
