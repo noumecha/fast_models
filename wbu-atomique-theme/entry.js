@@ -39,6 +39,8 @@ module.exports = {
     "./src/js/sections/f_news_title_section.js",
   "f_news_teaser_tech":
     "./src/js/teasers/f_news_teaser_tech.js",
+  "f_news_teaser_video":
+    "./src/js/teasers/f_news_teaser_video.js",
 };
 
 // export default {

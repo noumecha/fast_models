@@ -1,0 +1,34 @@
+{% if content %}
+<section class="video-headlines-section-handler">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-lg-4 col-md-4 col-sm-9 element ">
+                <div class="video-single-card">
+                    <div class="video-handler">
+                        {% if content %}
+                        <a href="https://www.youtube.com/watch?v=ViuDsy7yb8M" {{ region_attributes.teaser_video_image.addClass('video-sup')}}>
+                            {{ content.teaser_video_image }}
+                        </a>
+                        {% endif %}
+                    </div>
+                    {% if content %}
+                    <div {{ region_attributes.teaser_video_date.addClass('pub-info')}} >
+                        {{ content.teaser_video_date }}                       
+                    </div>
+                    {% endif %}
+                    <div class="card-text-descriptor">
+                        {% if content %}
+                            {{ content.teaser_video_link }}
+                        {% endif %}
+                    </div>
+                    {% if content %}
+                    <div {{ region_attributes.teaser_video_role.addClass('role')}} >
+                        {{ content.teaser_video_role }}                        
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

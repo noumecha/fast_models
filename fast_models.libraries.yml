@@ -163,3 +163,9 @@ f_news_teaser_tech:
   css:
     theme:
       layouts/css/f_news_teaser_tech.css: {}
+f_news_teaser_video:
+  js:
+    layouts/js/f_news_teaser_video.js: {}
+  css:
+    theme:
+      layouts/css/f_news_teaser_video.css: {}
