@@ -1,17 +1,17 @@
 {% if content %}
-<div {{ attributes.addClass('home-bottom-text')}}>
+<div {{ attributes.addClass('home-bottom-text') }}>
     {% if content %}
-    <div {{region_attributes.bottom_title.addClass('teaser-title','text-center')}}>
+    <div {{ region_attributes.bottom_title.addClass('teaser-title','text-center') }}>
         {{ content.bottom_title }}
     </div>
     {% endif %}
     {% if content %}
-    <div {{region_attributes.bottom_subtitle.addClass('teaser-desc','text-center')}}>
+    <div {{region_attributes.bottom_subtitle.addClass('teaser-desc','text-center') }}>
         {{ content.bottom_subtitle }}
     </div>
     {% endif %}
     {% if content %}
-    <div {{region_attributes.bottom_text.addClass('teaser-note','text-center')}}>
+    <div {{ region_attributes.bottom_text.addClass('teaser-note','text-center') }}>
         {{ content.bottom_text }}        
     </div>
     {% endif %}
