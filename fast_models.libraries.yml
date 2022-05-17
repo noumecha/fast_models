@@ -151,3 +151,15 @@ f_news_home_bottom_text:
   css:
     theme:
       layouts/css/f_news_home_bottom_text.css: {}
+f_news_title_section:
+  js:
+    layouts/js/f_news_title_section.js: {}
+  css:
+    theme:
+      layouts/css/f_news_title_section.css: {}
+f_news_teaser_tech:
+  js:
+    layouts/js/f_news_teaser_tech.js: {}
+  css:
+    theme:
+      layouts/css/f_news_teaser_tech.css: {}

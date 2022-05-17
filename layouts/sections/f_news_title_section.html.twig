@@ -1,0 +1,9 @@
+{% if content %}
+<section {{ attributes.addClass('tech-stories-section-handler')}} >
+    {% if content %}
+    <h3 {{ region_attributes.fnews_title.addClass('section-title','text-center') }} >
+        {{ content.fnews_title }}
+    </h3>
+    {% endif %}
+</section>
+{% endif %}
