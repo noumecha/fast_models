@@ -27,35 +27,11 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "top_title_two" = {
  *          "label" = @Translation("top_title_two"),
  *      },
- *      "top_date" = {
- *          "label" = @Translation("top_date"),     
- *      },
- *      "top_date_one" = {
- *          "label" = @Translation("top_date_one"),     
- *      },
- *      "top_date_two" = {
- *          "label" = @Translation("top_date_two"),     
- *      },
  *      "top_text_left" = {
  *          "label" = @Translation("top_text_left"),     
  *      },
- *      "text_right" = {
- *          "label" = @Translation("text_right"),     
- *      },
- *      "text_right_one" = {
- *          "label" = @Translation("text_right_one"),     
- *      },
- *      "text_right_two" = {
- *          "label" = @Translation("text_right_two"),     
- *      },
- *      "top_right_image" = {
- *          "label" = @Translation("top_right_image"),     
- *      },
- *      "top_right_image_one" = {
- *          "label" = @Translation("top_right_image_one"),     
- *      },
- *      "top_right_image_two" = {
- *          "label" = @Translation("top_right_image_two"),
+ *      "footer_teaser" = {
+ *          "footer_teaser" = @Translation("footer_teaser"),     
  *      },
  *      "top_icon" = {
  *          "label" = @Translation("top_icon"),     
@@ -316,64 +292,10 @@ class FnewsFooterSection extends FormatageModelsSection
                     'loader' => 'static'
                 ],
                 'fields' => [
-                    'top_right_image' => [
+                    'footer_teaser' => [
                         'text_html' => [
-                            'label' => 'Titre 3',
-                            'value' => "<a href='#' class='fn-article__img'>
-                                            <img src='https://img.bfmtv.com/c/630/420/871/7b9f41477da5f240b24bd67216dd7.jpg' alt=''>
-                                        </a>"
-                        ]
-                    ],
-                    'text_right' => [
-                        'text_html' => [
-                            'label' => 'lien 1',
-                            'value' => "Here’s what happened to the stock market"
-                        ]
-                    ],
-                    'top_date' => [
-                        'text_html' => [
-                            'label' => 'lien 2',
-                            'value' => "04 may, 2020"
-                        ]
-                    ],
-                    'top_right_image_one' => [
-                        'text_html' => [
-                            'label' => 'lien 3',
-                            'value' => "<a href='#' class='fn-article__img'>
-                                            <img src='https://img.bfmtv.com/c/630/420/871/7b9f41477da5f240b24bd67216dd7.jpg' alt=''>
-                                        </a>"
-                        ]
-                    ],
-                    'text_right_one' => [
-                        'text_html' => [
-                            'label' => 'lien 4',
-                            'value' => "Here’s what happened to the stock market"
-                        ]
-                    ],
-                    'top_date_one' => [
-                        'text_html' => [
-                            'label' => 'lien 5',
-                            'value' => "04 may, 2020"
-                        ]
-                    ],
-                    'top_right_image_two' => [
-                        'text_html' => [
-                            'label' => 'lien 5',
-                            'value' => "<a href='#' class='fn-article__img'>
-                                            <img src='https://img.bfmtv.com/c/630/420/871/7b9f41477da5f240b24bd67216dd7.jpg' alt=''>
-                                        </a>"
-                        ]
-                    ],
-                    'text_right_two' => [
-                        'text_html' => [
-                            'label' => 'lien 5',
-                            'value' => "Here’s what happened to the stock market"
-                        ]
-                    ],
-                    'top_date_two' => [
-                        'text_html' => [
-                            'label' => 'lien 5',
-                            'value' => "04 may, 2020"
+                            'label' => 'Region vide',
+                            'value' => ""
                         ]
                     ]
                 ]

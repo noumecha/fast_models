@@ -109,64 +109,11 @@
             </div>
             <div class="fn-bloc">
                 <ul class="fn-article">
+                    {% if content %}
                     <li>
-                        {% if content %}
-                            {{ content.top_right_image }}
-                        {% endif %}
-                        <div>
-                            <a href="#">
-                                {% if content %}
-                                <h5 {{ region_attributes.text_right.addClass('fna-title')}}>
-                                    {{ content.text_right }}
-                                </h5>
-                                {% endif %}
-                            </a>
-                            {% if content %}
-                            <div {{region_attributes.top_date.addClass('fna-date')}}>
-                                {{ content.top_date }}
-                            </div>
-                            {% endif %}
-                        </div>
+                        {{ content.footer_teaser }}
                     </li>
-                    <li>
-                        {% if content %}
-                            {{ content.top_right_image_one }}
-                        {% endif %}
-                        <div>
-                            <a href="#">
-                                {% if content %}
-                                <h5 {{ region_attributes.text_right_one.addClass('fna-title')}}>
-                                    {{ content.text_right_one }}
-                                </h5>
-                                {% endif %}
-                            </a>
-                            {% if content %}
-                            <div {{region_attributes.top_date_one.addClass('fna-date')}}>
-                                {{ content.top_date_one }}
-                            </div>
-                            {% endif %}
-                        </div>
-                    </li>
-                    <li>
-                        {% if content %}
-                            {{ content.top_right_image_two }}
-                        {% endif %}                        
-                        <div>
-                            <a href="#">
-                                {% if content %}
-                                <h5 {{ region_attributes.text_right_two.addClass('fna-title')}}>
-                                    {{ content.text_right_two }}
-                                </h5>
-                                {% endif %}
-                            </a>
-                            {% if content %}
-                            <div {{region_attributes.top_date_two.addClass('fna-date')}}>
-                                {{ content.top_date_two }}
-                            </div>
-                            {% endif %}
-                        </div>
-                    </li>
-
+                    {% endif %}
                 </ul>
             </div>
 
