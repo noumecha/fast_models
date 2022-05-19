@@ -1,21 +1,19 @@
 {% if content %}
-                    <li>
-                        {% if content %}
-                            {{ content.teaser_fimage }}
-                        {% endif %}
-                        <div>
-                            <a href="#">
-                                {% if content %}
-                                <h5 {{ region_attributes.teaser_ftext.addClass('fna-title')}}>
-                                    {{ content.teaser_ftext }}
-                                </h5>
-                                {% endif %}
-                            </a>
-                            {% if content %}
-                            <div {{region_attributes.teaser_fdate.addClass('fna-date')}}>
-                                {{ content.teaser_fdate }}
-                            </div>
-                            {% endif %}
-                        </div>
-                    </li>
+    {% if content %}
+        {{ content.teaser_fimage }}
+    {% endif %}
+    <div>
+        <a href="#">
+            {% if content %}
+                <h5 {{ region_attributes.teaser_ftext.addClass('fna-title')}}>
+                    {{ content.teaser_ftext }}
+                </h5>
+            {% endif %}
+        </a>
+        {% if content %}
+            <div {{region_attributes.teaser_fdate.addClass('fna-date')}}>
+                {{ content.teaser_fdate }}
+            </div>
+        {% endif %}
+    </div>
 {% endif %}

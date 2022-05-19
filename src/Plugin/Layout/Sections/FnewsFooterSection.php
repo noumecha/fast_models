@@ -42,38 +42,11 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "top_icon_two" = {
  *          "label" = @Translation("top_icon_two"),
  *      },
- *      "top_link" = {
- *          "label" = @Translation("top_link"),     
+ *      "footer_top_menu" = {
+ *          "label" = @Translation("footer_top_menu"),     
  *      },
- *      "top_link_one" = {
- *          "label" = @Translation("top_link_one"),     
- *      },
- *      "top_link_two" = {
- *          "label" = @Translation("top_link_two"),     
- *      },
- *      "top_link_three" = {
- *          "label" = @Translation("top_link_three"),     
- *      },
- *      "top_link_four" = {
- *          "label" = @Translation("top_link_four"),     
- *      },
- *      "top_link_five" = {
- *          "label" = @Translation("top_link_five"),     
- *      },
- *      "top_link_six" = {
- *          "label" = @Translation("top_link_six"),     
- *      },
- *      "top_link_seven" = {
- *          "label" = @Translation("top_link_seven"),     
- *      },
- *      "top_link_eight" = {
- *          "label" = @Translation("top_link_eight"),     
- *      },
- *      "top_link_nine" = {
- *          "label" = @Translation("top_link_nine"),     
- *      },
- *      "top_link_ten" = {
- *          "label" = @Translation("top_link_ten"),     
+ *      "footer_top_menu_one" = {
+ *          "label" = @Translation("footer_top_menu_one"),     
  *      },
  *      "bottom_link" = {
  *          "label" = @Translation("bottom_link"),     
@@ -202,42 +175,12 @@ class FnewsFooterSection extends FormatageModelsSection
                             'value' => "explore"
                         ]
                     ],
-                    'top_link' => [
+                    'footer_top_menu' => [
                         'text_html' => [
-                            'label' => 'lien 1',
-                            'value' => "<a href='#'>finance</a>"
+                            'label' => 'liste lien 1',
+                            'value' => ""
                         ]
                     ],
-                    'top_link_one' => [
-                        'text_html' => [
-                            'label' => 'lien 2',
-                            'value' => "<a href='#'>health</a>"
-                        ]
-                    ],
-                    'top_link_two' => [
-                        'text_html' => [
-                            'label' => 'lien 3',
-                            'value' => "<a href='#'>lifestyle</a>"
-                        ]
-                    ],
-                    'top_link_three' => [
-                        'text_html' => [
-                            'label' => 'lien 4',
-                            'value' => "<a href='#'>sport</a>"
-                        ]
-                    ],
-                    'top_link_four' => [
-                        'text_html' => [
-                            'label' => 'lien 5',
-                            'value' => "<a href='#'>tech</a>"
-                        ]
-                    ],
-                    'top_link_five' => [
-                        'text_html' => [
-                            'label' => 'lien 6',
-                            'value' => "<a href='#'>world</a>"
-                        ]
-                    ]
                 ]
             ],
             'part_three' => [
@@ -253,34 +196,10 @@ class FnewsFooterSection extends FormatageModelsSection
                             'value' => "company"
                         ]
                     ],
-                    'top_link_six' => [
+                    'footer_top_menu_one' => [
                         'text_html' => [
-                            'label' => 'lien 1',
-                            'value' => "<a href='#'>archive</a>"
-                        ]
-                    ],
-                    'top_link_seven' => [
-                        'text_html' => [
-                            'label' => 'lien 2',
-                            'value' => "<a href='#'>services</a>"
-                        ]
-                    ],
-                    'top_link_eight' => [
-                        'text_html' => [
-                            'label' => 'lien 3',
-                            'value' => "<a href='#'>contact us</a>"
-                        ]
-                    ],
-                    'top_link_nine' => [
-                        'text_html' => [
-                            'label' => 'lien 4',
-                            'value' => "<a href='#'>journalists</a>"
-                        ]
-                    ],
-                    'top_link_ten' => [
-                        'text_html' => [
-                            'label' => 'lien 5',
-                            'value' => "<a href='#'>opinions</a>"
+                            'label' => 'liste lien 2',
+                            'value' => ""
                         ]
                     ]
                 ]
