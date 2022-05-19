@@ -45,6 +45,8 @@ module.exports = {
     "./src/js/teasers/f_news_teaser_feature.js",
   "f_news_teaser_footer":
     "./src/js/teasers/f_news_teaser_footer.js",
+  "f_news_teaser_in_case":
+    "./src/js/teasers/f_news_teaser_in_case.js",
 };
 
 // export default {
