@@ -108,13 +108,11 @@
                 </ul>
             </div>
             <div class="fn-bloc">
+                {% if content %}
                 <ul class="fn-article">
-                    {% if content %}
-                    <li>
-                        {{ content.footer_teaser }}
-                    </li>
-                    {% endif %}
+                    {{ content.footer_teaser }}
                 </ul>
+                {% endif %}
             </div>
 
         </div>

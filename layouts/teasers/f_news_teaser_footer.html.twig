@@ -1,9 +1,4 @@
 {% if content %}
-<footer {{ attributes.addClass('footer-fnews') }}>
-    <div class="container">
-        <div class="fn-content">
-            <div class="fn-bloc">
-                <ul class="fn-article">
                     <li>
                         {% if content %}
                             {{ content.teaser_fimage }}
@@ -23,9 +18,4 @@
                             {% endif %}
                         </div>
                     </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
 {% endif %}
