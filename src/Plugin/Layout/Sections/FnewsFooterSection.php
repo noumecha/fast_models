@@ -31,7 +31,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *          "label" = @Translation("top_text_left"),     
  *      },
  *      "footer_teaser" = {
- *          "footer_teaser" = @Translation("footer_teaser"),     
+ *          "label" = @Translation("footer_teaser"),     
  *      },
  *      "top_icon" = {
  *          "label" = @Translation("top_icon"),     

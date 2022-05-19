@@ -19,14 +19,14 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *  library = "fast_models/f_news_teaser_footer",
  *  default_region = "content",
  *  regions = {
- *      "teaser_foooter_image" = {
- *          "label" = @Translation("teaser_foooter_image"),     
+ *      "teaser_fimage" = {
+ *          "label" = @Translation("teaser_fimage"),     
  *      },
- *      "teaser_footer_date" = {
- *          "label" = @Translation("teaser_footer_date"),     
+ *      "teaser_fdate" = {
+ *          "label" = @Translation("teaser_fdate"),     
  *      },
- *      "teaser_footer_text" = {
- *          "label" = @Translation("teaser_footer_text"),     
+ *      "teaser_ftext" = {
+ *          "label" = @Translation("teaser_ftext"),     
  *      }
  *  }
  * )
@@ -80,23 +80,23 @@ class FnewsTeaserFooter extends FormatageModelsTeasers
                     'loader' => 'static'
                 ],
                 'fields' => [
-                    'teaser_footer_image' => [
+                    'teaser_fimage' => [
                         'text_html' => [
-                            'label' => 'Titre 3',
+                            'label' => 'Image',
                             'value' => "<a href='#' class='fn-article__img'>
                                             <img src='https://img.bfmtv.com/c/630/420/871/7b9f41477da5f240b24bd67216dd7.jpg' alt=''>
                                         </a>"
                         ]
                     ],
-                    'teaser_footer_text' => [
+                    'teaser_ftext' => [
                         'text_html' => [
-                            'label' => 'lien 1',
+                            'label' => 'Titre',
                             'value' => "Here’s what happened to the stock market"
                         ]
                     ],
-                    'teaser_footer_date' => [
+                    'teaser_fdate' => [
                         'text_html' => [
-                            'label' => 'lien 2',
+                            'label' => 'Date',
                             'value' => "04 may, 2020"
                         ]
                     ]
