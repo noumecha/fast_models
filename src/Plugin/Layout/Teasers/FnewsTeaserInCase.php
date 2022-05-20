@@ -89,9 +89,13 @@ class FnewsTeaserInCase extends FormatageModelsTeasers
                         ]
                     ],
                     'teaser_in_case_text' => [
-                        'text_html' => [
+                        'url' => [
                             'label' => 'Titre',
-                            'value' => ""
+                            'value' => [
+                                'link' => "#",
+                                'text' => "",
+                                'class' => "bib-title"
+                            ]
                         ]
                     ],
                     'teaser_in_case_date' => [

@@ -82,9 +82,13 @@ class FnewsPropositionSection extends FormatageModelsSection
                 'title_left' => [
                     'text_html' => [
                         'label' => 'Titre Gauche',
-                        'value' => "<p>
-                                        Latest Posts
-                                    </p>"
+                        'value' => "<p> Latest Posts </p>"
+                    ]
+                ],
+                'title_r' => [
+                    'text_html' => [
+                        'label' => 'Titre Droit',
+                        'value' => "<p> Most Read </p>"
                     ]
                 ],
                 'left_proposition' => [

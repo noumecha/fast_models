@@ -4,18 +4,18 @@
             {{ content.teaser_in_case_image }}
         {% endif %}
         <div class="bloc-img__body d-flex flex-column">
-            {% if content %}
-            <a {{ region_attributes.teaser_in_case_text.addClass('bib-title') }}>
+            <h3>
+            {% if content.teaser_in_case_text %}
                 {{ content.teaser_in_case_text }}
-            </a>
             {% endif %}
-            {% if content %}
+            </h3>
+            {% if content.teaser_in_case_date %}
             <span {{ region_attributes.teaser_in_case_date.addClass('bib-date') }}>
                 {{ content.teaser_in_case_date }}
             </span>
             {% endif %}
         </div>
-        {% if content %}
+        {% if content.teaser_in_case_author %}
         <div {{ region_attributes.teaser_in_case_author.addClass('bib-creator') }}>
             {{ content.teaser_in_case_author }}
         </div>
