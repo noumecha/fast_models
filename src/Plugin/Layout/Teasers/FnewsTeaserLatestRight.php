@@ -24,7 +24,7 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      },
  *      "teaser_latest_right_date" = {
  *          "label" = @Translation("teaser_latest_right_date"),     
- *      }
+ *      },
  *      "teaser_latest_right_text" = {
  *          "label" = @Translation("teaser_latest_right_text"),     
  *      },
