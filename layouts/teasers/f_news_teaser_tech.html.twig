@@ -1,31 +1,30 @@
 {% if content %}
-            <div class="single-story col-lg-4">
-                {% if content %}
-                <div {{ region_attributes.teaser_tech_date.addClass('created-date')}} >
-                    {{ content.teaser_tech_date }}                    
-                </div>
-                {% endif %}
-                <div class="story-title">
-                {% if content %}
-                    {{ content.teaser_tech_title }}
-                {% endif %}
-                </div>
-                <div class="story">
-                    {% if content %}
-                        {{ content.teaser_tech_text }}
-                    {% endif %}
-                    <div class="pub-info d-flex">
-                        {% if content %}
-                        <div {{ region_attributes.teaser_tech_image.addClass('img-profile')}} >
-                            {{ content.teaser_tech_image }}                            
-                        </div>
-                        {% endif %}
-                        {% if content %}
-                        <div {{ region_attributes.teaser_tech_role.addClass('role')}} >
-                            {{ content.teaser_tech_role }}                            
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
+    <div class="single-story col-lg-4">
+        {% if content %}
+        <div {{ region_attributes.teaser_tech_date.addClass('created-date')}} >
+            {{ content.teaser_tech_date }}                    
+        </div>
+        {% endif %}
+        <div class="story-title">
+        {% if content %}
+                {{ content.teaser_tech_title }}
+        {% endif %}
+        </div>
+        <div class="story">
+            {% if content %}
+                {{ content.teaser_tech_text }}
+            {% endif %}
+            <div class="pub-info d-flex">
+            {% if content %}
+            <div {{ region_attributes.teaser_tech_image.addClass('img-profile')}} >
+                {{ content.teaser_tech_image }}                            
             </div>
+            {% endif %}
+            {% if content %}
+            <div {{ region_attributes.teaser_tech_role.addClass('role')}} >
+                {{ content.teaser_tech_role }}                            
+            </div>
+            {% endif %}
+        </div>
+    </div>
 {% endif %}

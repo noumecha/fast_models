@@ -1,11 +1,11 @@
 {% if content %}
 <section {{ attributes.addClass('tech-stories-section-handler') }} >
+    {% if content %}
+    <h3 {{ region_attributes.fnews_title.addClass('section-title','text-center') }} >
+        {{ content.fnews_title }}
+    </h3>
+    {% endif %}
     <div class="container">
-        {% if content %}
-        <h3 {{ region_attributes.fnews_title.addClass('section-title','text-center') }} >
-            {{ content.fnews_title }}
-        </h3>
-        {% endif %}
         {% if content %}
         <div {{ region_attributes.tech_content.addClass('stories-handler','row','gap-4')}} >
             {{ content.tech_content }}
