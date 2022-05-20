@@ -181,3 +181,15 @@ f_news_teaser_in_case:
   css:
     theme:
       layouts/css/f_news_teaser_in_case.css: {}
+f_news_teaser_latest_left:
+  js:
+    layouts/js/f_news_teaser_latest_left.js: {}
+  css:
+    theme:
+      layouts/css/f_news_teaser_latest_left.css: {}
+f_news_teaser_latest_right:
+  js:
+    layouts/js/f_news_teaser_latest_right.js: {}
+  css:
+    theme:
+      layouts/js/f_news_teaser_latest_right.js: {}
