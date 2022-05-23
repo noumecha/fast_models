@@ -22,6 +22,9 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "fnews_title" = {
  *          "label" = @Translation("fnews_title"),     
  *      },
+ *      "fnews_subtitle" = {
+ *          "label" = @Translation("fnews_subtitle"),     
+ *      },
  *      "tech_content" = {
  *          "label" = @Translation("tech_content"),     
  *      }
@@ -80,6 +83,12 @@ class FnewsTitleSection extends FormatageModelsSection
                         'text_html' => [
                             'label' => 'Titre',
                             'value' => "Tech Stories"
+                        ]
+                    ],
+                    'fnews_subtitle' => [
+                        'text_html' => [
+                            'label' => 'Sous titre',
+                            'value' => "Read our latest news and announcements"
                         ]
                     ],
                     'tech_content' => [
