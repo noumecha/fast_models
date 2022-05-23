@@ -17,32 +17,6 @@ module.exports = {
   f_news_teaser_member: "./src/js/teasers/f_news_teaser_member.js",
   f_news_teaser_testimony_two:
     "./src/js/teasers/f_news_teaser_testimony_two.js",
-<<<<<<< HEAD
-  "f_news_mansory_teaser":
-    "./src/js/teasers/f_news_mansory_teaser.js",
-  "f_news_home_bottom_text":
-    "./src/js/sections/f_news_home_bottom_text.js",
-  "f_news_title_section":
-    "./src/js/sections/f_news_title_section.js",
-  "f_news_teaser_tech":
-    "./src/js/teasers/f_news_teaser_tech.js",
-  "f_news_teaser_video":
-    "./src/js/teasers/f_news_teaser_video.js",
-  "f_news_teaser_feature":
-    "./src/js/teasers/f_news_teaser_feature.js",
-  "f_news_teaser_footer":
-    "./src/js/teasers/f_news_teaser_footer.js",
-  "f_news_teaser_in_case":
-    "./src/js/teasers/f_news_teaser_in_case.js",
-  "f_news_teaser_latest_left":
-    "./src/js/teasers/f_news_teaser_latest_left.js",
-  "f_news_teaser_latest_right":
-    "./src/js/teasers/f_news_teaser_latest_right.js",
-  "fm_featured_section":
-    "./src/js/sections/fm_featured_section.js",
-  "fast_models_archive_teaser":
-    "./src/js/teasers/fast_models_archive_teaser.js"
-=======
   f_news_mansory_teaser: "./src/js/teasers/f_news_mansory_teaser.js",
   f_news_home_bottom_text: "./src/js/sections/f_news_home_bottom_text.js",
   f_news_title_section: "./src/js/sections/f_news_title_section.js",
@@ -54,8 +28,8 @@ module.exports = {
   f_news_teaser_latest_left: "./src/js/teasers/f_news_teaser_latest_left.js",
   f_news_teaser_latest_right: "./src/js/teasers/f_news_teaser_latest_right.js",
   fm_featured_section: "./src/js/sections/fm_featured_section.js",
+  fast_models_archive_teaser: "./src/js/teasers/fast_models_archive_teaser.js",
   f_news_bac_to_top: "./src/js/sections/f_news_bac_to_top"
->>>>>>> ff436c507ec89442874e879de3a813ef09051768
 };
 
 // export default {

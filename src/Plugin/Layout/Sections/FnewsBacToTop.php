@@ -77,7 +77,7 @@ class FnewsFirstServiceSection extends FormatageModelsSection
                     'icon' => [
                         'text_html' => [
                             'label' => 'Icon',
-                            'value' => "<i class="wbu-angles-up"></i>"
+                            'value' => '<i class="wbu-angles-up"></i>'
                         ]
                     ]
                     
