@@ -34,15 +34,16 @@ vuejs:
     url: https://github.com/vuejs/vue/blob/dev/LICENSE
     gpl-compatible: true
   js:
-    https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js: {type: external, minified: true}
+    https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js:
+      { type: external, minified: true }
 
-# mahogany library 
+# mahogany library
 
 mahogany_hero:
-  js: 
+  js:
     layouts/js/mahognay_hero.js: {}
   css:
-    theme: 
+    theme:
       layouts/css/mahogany_hero.css: {}
 
 # f_news sections libraries
@@ -197,4 +198,10 @@ f_news_teaser_latest_right:
     layouts/js/f_news_teaser_latest_right.js: {}
   css:
     theme:
-      layouts/js/f_news_teaser_latest_right.js: {}
+      layouts/css/f_news_teaser_latest_right.css: {}
+f_news_bac_to_top:
+  js:
+    layouts/js/f_news_bac_to_top.js: {}
+  css:
+    theme:
+      layouts/js/f_news_bac_to_top.css: {}
