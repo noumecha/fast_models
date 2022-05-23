@@ -17,6 +17,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  path = "layouts/sections",
  *  template = "f_news_bac_to_top",
  *  library = "fast_models/f_news_bac_to_top",
+ *  default_region = "content",
  *  regions = {
  *      "icon" = {
  *          "label" = @Translation("icon"),
