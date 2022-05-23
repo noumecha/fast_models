@@ -16,7 +16,12 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  category = @Translation("fast_models"),
  *  path = "layouts/sections",
  *  template = "f_news_bac_to_top",
- *  library = "fast_models/f_news_bac_to_top,
+ *  library = "fast_models/f_news_bac_to_top",
+ *  regions = {
+ *      "icon" = {
+ *          "label" = @Translation("icon"),
+ *      }
+ *  }
  * )
  * 
  */
