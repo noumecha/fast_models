@@ -50,7 +50,9 @@ module.exports = {
   "f_news_teaser_latest_left":
     "./src/js/teasers/f_news_teaser_latest_left.js",
   "f_news_teaser_latest_right":
-    "./src/js/teasers/f_news_teaser_latest_right.js"
+    "./src/js/teasers/f_news_teaser_latest_right.js",
+  "fm_featured_section":
+    "./src/js/sections/fm_featured_section.js",
 };
 
 // export default {

@@ -46,7 +46,12 @@ mahogany_hero:
       layouts/css/mahogany_hero.css: {}
 
 # f_news sections libraries
-
+fm_featured_section:
+  js:
+    layouts/js/fm_featured_section.js: {}
+  css:
+    theme:
+      layouts/css/fm_featured_section.css: {}
 f_news_proposition:
   js:
     layouts/js/f_news_proposition.js: {}

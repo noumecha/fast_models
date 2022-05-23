@@ -1,0 +1,29 @@
+{% if content %}
+<section {{ attributes.addClass('featured-section-handler') }}>
+    {% if content.featured_title %}
+        <h2 {{ region_attributes.featured_title.addClass('section-title')}}>
+            {{ content.featured_title }} 
+        </h2>
+    {% endif %}
+    {% if content.featured_subtitle %}
+        <h4 {{ region_attributes.featured_subtitle.addClass('section-sub-title')}}>
+            {{ content.featured_subtitle }}            
+        </h4>
+    {% endif %}
+
+    <div class="container">
+        {% if content.featured_content %}
+        <div {{region_attributes.featured_content.addClass('featured-cards-handler','row')}}>
+            {{ content.featured_content }}
+        </div>
+        {% endif %}
+    </div>
+
+    <div class=" more-link ">
+        {% if content.featured_link %}
+            {{ content.featured_link }}
+        {% endif %}
+    </div>
+
+</section>
+{% endif %}
