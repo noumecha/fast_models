@@ -22,7 +22,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "icon" = {
  *          "label" = @Translation("icon"),
  *      }
- * }
+ *  }
  * )
  * 
  */
@@ -79,7 +79,7 @@ class FnewsFirstServiceSection extends FormatageModelsSection
                             'label' => 'Icon',
                             'value' => "<i class="wbu-angles-up"></i>"
                         ]
-                    ],
+                    ]
                     
                 ]
             ]
