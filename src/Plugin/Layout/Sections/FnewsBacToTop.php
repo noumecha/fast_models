@@ -17,7 +17,6 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  path = "layouts/sections",
  *  template = "f_news_bac_to_top",
  *  library = "fast_models/f_news_bac_to_top,
- *  default_region = "content",
  *  regions = {
  *      "icon" = {
  *          "label" = @Translation("icon"),
@@ -66,23 +65,7 @@ class FnewsFirstServiceSection extends FormatageModelsSection
     public function defaultConfiguration() 
     {
         return parent::defaultConfiguration() + [
-            'css' => '',
-            'bac_to_top' => [
-                'builder-form' => true,
-                'info' => [
-                    'title' => 'Contenu',
-                    'loader' => 'static'
-                ],
-                'fields' => [
-                    'icon' => [
-                        'text_html' => [
-                            'label' => 'Icon',
-                            'value' => '<i class="wbu-angles-up"></i>'
-                        ]
-                    ]
-                    
-                ]
-            ]
+            'css' => ''
         ];
     }
 
