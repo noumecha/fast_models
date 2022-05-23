@@ -17,19 +17,10 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  path = "layouts/sections",
  *  template = "f_news_bac_to_top",
  *  library = "fast_models/f_news_bac_to_top",
- *  default_region = "icon",
+ *  default_region = "content",
  *  regions = {
  *      "icon" = {
  *          "label" = @Translation("icon"),
- *      },
-  *     "service_text" = {
- *          "label" = @Translation("service_text"),
- *      },
- *      "service_link" = {
- *          "label" = @Translation("service_link"),
- *      },
- *      "service_link_one" = {
- *          "label" = @Translation("service_link_one"),     
  *      }
  *  }
  * )
