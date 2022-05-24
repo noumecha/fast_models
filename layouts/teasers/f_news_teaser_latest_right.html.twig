@@ -1,12 +1,11 @@
 {% if content %}
-	<div {{region_attributes.teaser_latest_right_image.addClass('featured-single-card')}}>
+	<div class='featured-single-card'>
 		{% if content.teaser_latest_right_image  %}
 			<div {{region_attributes.teaser_latest_right_image.addClass('img-handler')}}>
 				{{ content.teaser_latest_right_image }}
 			</div>
 		{% endif %}
 		{% if content.teaser_latest_right_date %}
-
 			<div {{region_attributes.teaser_latest_right_date.addClass('pub-info')}}>
 				{{ content.teaser_latest_right_date }}
 			</div>
