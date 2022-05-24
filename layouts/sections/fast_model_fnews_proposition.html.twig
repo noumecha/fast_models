@@ -1,0 +1,46 @@
+{% if content %}
+	<section class="post-proposition-section-handler">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 ">
+					<div class="latest-post-title">
+						{% if content.latest_title %}
+							{{content.latest_title}}
+						{% endif %}
+					</div>
+					<div class="all-single-latest-post">
+						{% if content.latest_list %}
+							{{content.latest_list}}
+						{% endif %}
+					</div>
+				</div>
+
+				<div class="col-lg-6 most-read-section ">
+					<div class="most-read-title">
+						{% if content.read_title %}
+							{{content.read_title}}
+						{% endif %}
+
+					</div>
+					<div class="row">
+						{% if content.read_list %}
+							{{content.read_list }}
+						{% endif %}
+
+					</div>
+					<div class="more-link">
+						<div class="link">
+							{% if content.more_btn_text %}
+								{{ content.more_btn_text }}
+							{% endif %}
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endif %}
