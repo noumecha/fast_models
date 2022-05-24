@@ -106,7 +106,7 @@ class FastModelFnewsProposition extends FormatageModelsSection
                     ]
                     'read_list' => [
                         'text_html' => [
-                            'label' => 'read_title',
+                            'label' => 'read_list',
                             'value' => '<div class="row">
 
                     <div class=" col-lg-6 col-md-6 featured-single-card">
