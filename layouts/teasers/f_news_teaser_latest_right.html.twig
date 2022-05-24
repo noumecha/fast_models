@@ -11,8 +11,9 @@
 			<div {{region_attributes.teaser_latest_right_date.addClass('pub-info')}}>
 				{{ content.teaser_latest_right_date }}
 				{% if content.categorie %}
-					/
-					<div class="pl-2 pub-info-cat">
+					<span class="px-3">/</span>
+
+					<div class=" pub-info-cat">
 						{{content.categorie}}
 					</div>
 				{% endif %}
