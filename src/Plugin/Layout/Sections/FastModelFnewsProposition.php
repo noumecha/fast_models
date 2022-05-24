@@ -109,7 +109,7 @@ class FastModelFnewsProposition extends FormatageModelsSection
                             'label' => 'read_list',
                             'value' => '<p class="posted-date"> 04 May, 2020 </p>'
                         ]
-                    ]
+                    ],
                     'latest_list' => [
                         'text_html' => [
                             'label' => 'read_title',
