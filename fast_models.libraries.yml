@@ -53,12 +53,6 @@ fm_featured_section:
   css:
     theme:
       layouts/css/fm_featured_section.css: {}
-f_news_proposition:
-  js:
-    layouts/js/f_news_proposition.js: {}
-  css:
-    theme:
-      layouts/css/f_news_proposition.css: {}
 f_news_in_case:
   js:
     layouts/js/f_news_in_case.js: {}
