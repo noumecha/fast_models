@@ -12,7 +12,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * 
  * @Layout (
  *  id = "fast_model_f_news_bac_to_top",
- *  label = @Translation("f_news_first_service"),
+ *  label = @Translation("f_news bac to top"),
  *  category = @Translation("fast_models"),
  *  path = "layouts/sections",
  *  template = "fast_model_f_news_bac_to_top",
