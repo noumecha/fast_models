@@ -12,8 +12,12 @@
 			{% endif %}
 		</div>
 		<div class="story">
-			{% if content %}
-				{{ content.teaser_tech_text }}
+			{% if content.teaser_tech_text %}
+
+				<div class="story-text">
+					{{ content.teaser_tech_text }}
+				</div>
+
 			{% endif %}
 			{% if content.teaser_tech_role %}
 				<div class="pub-info d-flex">
