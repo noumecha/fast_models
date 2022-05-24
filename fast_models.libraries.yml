@@ -208,7 +208,7 @@ fast_models_archive_teaser:
       layouts/css/f_news_teaser_latest_right.css: {}
 f_news_bac_to_top:
   js:
-    layouts/js/f_news_teaser_latest_right.js: {}
+    layouts/js/f_news_bac_to_top.js: {}
   css:
     theme:
-      layouts/js/f_news_teaser_latest_right.js: {}
+      layouts/js/f_news_bac_to_top.css: {}
