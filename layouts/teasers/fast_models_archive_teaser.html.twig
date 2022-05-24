@@ -1,0 +1,7 @@
+{% if content %}
+    {% if content.archiver|has_value %}
+    <div {{ region_attributes.archiver.addClass('afc-month')}} >
+        {{ content.archiver }}        
+    </div>
+    {% endif %}
+{% endif %}

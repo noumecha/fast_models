@@ -198,3 +198,9 @@ f_news_teaser_latest_right:
   css:
     theme:
       layouts/js/f_news_teaser_latest_right.js: {}
+fast_models_archive_teaser:
+  js:
+    layoutts/js/fast_models_archive_teaser.js: {}
+  css:
+    theme:
+      layouts/css/fast_models_archive_teaser.css: {}
