@@ -8,7 +8,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
 
 /**
  * 
- * f_news first service section
+ * f_news bac to top
  * 
  * @Layout (
  *  id = "fast_model_f_news_bac_to_top",
@@ -18,7 +18,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  template = "fast_model_f_news_bac_to_top",
  *  library = "fast_models/f_news_bac_to_top",
  *  default_region = "content",
- *  regions = {
+ *  regions = { 
  *      "icon" = {
  *          "label" = @Translation("icon"),
  *      }
@@ -27,7 +27,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * 
  */
 
-class FnewsFirstServiceSection extends FormatageModelsSection
+class FastModelFNewsBacToTop extends FormatageModelsSection
 {
 
     /**
