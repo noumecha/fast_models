@@ -10,6 +10,13 @@
 		{% if content.teaser_latest_right_date %}
 			<div {{region_attributes.teaser_latest_right_date.addClass('pub-info')}}>
 				{{ content.teaser_latest_right_date }}
+				{% if content.categorie %}
+					/
+					<div class="pl-2 pub-info-cat">
+						{{content.categorie}}
+					</div>
+				{% endif %}
+
 			</div>
 		{% endif %}
 		{% if content.teaser_latest_right_text %}

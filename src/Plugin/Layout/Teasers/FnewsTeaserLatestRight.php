@@ -30,6 +30,9 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      },
  *      "teaser_latest_right_author" = {
  *          "label" = @Translation("teaser_latest_right_author"),     
+ *      },
+ *      "categorie" = {
+ *          "label" = @Translation("categorie"),     
  *      }
  *  }
  * )
@@ -100,6 +103,12 @@ class FnewsTeaserLatestRight extends FormatageModelsTeasers
                         'text_html' => [
                             'label' => 'Titre',
                             'value' => "<a href=''>Things that can help to boost your immune system</a>"
+                        ]
+                    ],
+                    'categorie' => [
+                        'text_html' => [
+                            'label' => 'Auteur',
+                            'value' => "<p>Finance</p>"
                         ]
                     ],
                     'teaser_latest_right_author' => [
