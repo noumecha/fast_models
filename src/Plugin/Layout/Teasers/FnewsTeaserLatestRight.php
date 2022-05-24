@@ -12,7 +12,7 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  * 
  * @Layout (
  *  id = "f_news_teaser_latest_right",
- *  label = @Translation("f_news_teaser_latest_right"),
+ *  label = @Translation("f_news feature single card"),
  *  category = @Translation("fast_models"),
  *  path = "layouts/teasers",
  *  template = "f_news_teaser_latest_right",
