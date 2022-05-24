@@ -33,7 +33,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      },
  *      "more_btn_text" = {
  *          "label" = @Translation("more_btn_text"),
- *      },
+ *      }
  * }
  * )
  * 
@@ -103,7 +103,7 @@ class FastModelFnewsProposition extends FormatageModelsSection
                             'label' => 'read_title',
                             'value' => '<a href="#">More</a>'
                         ]
-                    ]
+                    ],
                     'read_list' => [
                         'text_html' => [
                             'label' => 'read_list',
