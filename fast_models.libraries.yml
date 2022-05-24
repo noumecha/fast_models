@@ -212,3 +212,9 @@ f_news_bac_to_top:
   css:
     theme:
       layouts/js/f_news_bac_to_top.css: {}
+fast_model_fnews_proposition:
+  js:
+    layouts/js/fast_model_fnews_proposition.js: {}
+  css:
+    theme:
+      layouts/js/fast_model_fnews_proposition.css: {}

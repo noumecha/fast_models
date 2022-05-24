@@ -29,7 +29,8 @@ module.exports = {
   f_news_teaser_latest_right: "./src/js/teasers/f_news_teaser_latest_right.js",
   fm_featured_section: "./src/js/sections/fm_featured_section.js",
   fast_models_archive_teaser: "./src/js/teasers/fast_models_archive_teaser.js",
-  f_news_bac_to_top: "./src/js/sections/f_news_bac_to_top"
+  f_news_bac_to_top: "./src/js/sections/f_news_bac_to_top",
+  fast_model_fnews_proposition: "./src/js/sections/fast_model_fnews_proposition"
 };
 
 // export default {
