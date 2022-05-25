@@ -88,7 +88,9 @@ class FnewsTeaserInCase extends FormatageModelsTeasers
                     'teaser_in_case_image' => [
                         'text_html' => [
                             'label' => 'Image',
-                            'value' => ""
+                            'value' => '<a href="#"><img class="bloc-img__img "
+                                 src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_metro_tile_square/public/2020-04/mt-post-15.jpg?itok=Gi9N0xkj"
+                                 alt=""></a>'
                         ]
                     ],
                     'teaser_in_case_text' => [
