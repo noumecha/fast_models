@@ -101,7 +101,7 @@ class FnewsTeaserVideo extends FormatageModelsTeasers
                     '' => [
                         'text_html' => [
                             'label' => 'Category',
-                            'value' => "/ Health"
+                            'value' => "Health"
                         ]
                     ],
                     'teaser_video_link' => [
