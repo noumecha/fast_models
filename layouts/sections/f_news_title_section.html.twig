@@ -1,21 +1,29 @@
 {% if content %}
-<section {{ attributes.addClass('tech-stories-section-handler') }} >
-    {% if content.fnews_title %}
-    <h3 {{ region_attributes.fnews_title.addClass('section-title','text-center') }} >
-        {{ content.fnews_title }}
-    </h3>
-    {% if content.fnews_subtitle %}
-        <h4 {{ region_attributes.fnews_subtitle.addClass('section-sub-title')}} >
-            {{ content.fnews_subtitle }}
-        </h4>
-    {% endif %}
-    {% endif %}
-    <div class="container">
-        {% if content.tech_content %}
-        <div {{ region_attributes.tech_content.addClass('stories-handler','row','gap-4')}} >
-            {{ content.tech_content }}
-        </div>
-        {% endif %}
-    </div>
-</section>
+	<section {{ attributes.addClass('tech-stories-section-handler') }}>
+		{% if content.fnews_title %}
+			<h3 {{ region_attributes.fnews_title.addClass('section-title','text-center') }}>
+				{{ content.fnews_title }}
+			</h3>
+			{% if content.fnews_subtitle %}
+				<h4 {{ region_attributes.fnews_subtitle.addClass('section-sub-title')}}>
+					{{ content.fnews_subtitle }}
+				</h4>
+			{% endif %}
+		{% endif %}
+		<div class="container">
+			{% if content.tech_content %}
+				<div {{ region_attributes.tech_content.addClass('stories-handler')}}>
+					{{ content.tech_content }}
+				</div>
+			{% endif %}
+		</div>
+		{% if content.more_btn_text %}
+			<div class="more-link">
+				<div class="link">
+					{{ content.more_btn_text }}
+				</div>
+			</div>
+		{% endif %}
+
+	</section>
 {% endif %}

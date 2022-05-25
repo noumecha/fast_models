@@ -28,14 +28,13 @@
 						{% endif %}
 
 					</div>
-					<div class="more-link">
-						<div class="link">
-							{% if content.more_btn_text %}
+					{% if content.more_btn_text %}
+						<div class="more-link">
+							<div class="link">
 								{{ content.more_btn_text }}
-							{% endif %}
-
+							</div>
 						</div>
-					</div>
+					{% endif %}
 
 
 				</div>
