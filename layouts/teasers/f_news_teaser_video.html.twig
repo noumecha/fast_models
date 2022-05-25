@@ -1,12 +1,11 @@
 {% if content %}
 	<div class="video-single-card">
-		<div class="video-handler">
-			{% if content.teaser_video_image %}
-				<a href="https://www.youtube.com/watch?v=ViuDsy7yb8M" {{ region_attributes.teaser_video_image.addClass('video-sup')}}>
-					{{ content.teaser_video_image }}
-				</a>
-			{% endif %}
-		</div>
+		{% if content.teaser_video_image %}
+			<div class="video-handler">
+				{{ content.teaser_video_image }}
+			</div>
+		{% endif %}
+
 		{% if content.teaser_video_date %}
 			<div {{ region_attributes.teaser_video_date.addClass('pub-info d-flex')}}>
 				{{ content.teaser_video_date }}
@@ -18,7 +17,6 @@
 		{% endif %}
 		{% if content.teaser_video_link %}
 			<div class="card-text-descriptor" title="{{ content.teaser_video_link }}">
-
 				{{ content.teaser_video_link }}
 			</div>
 		{% endif %}
