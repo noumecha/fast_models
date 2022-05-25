@@ -1,24 +1,39 @@
 {% if content %}
-    <div class="bloc-img ">
-        {% if content %}
-            {{ content.teaser_in_case_image }}
-        {% endif %}
-        <div class="bloc-img__body d-flex flex-column">
-            <h3>
-            {% if content.teaser_in_case_text %}
-                {{ content.teaser_in_case_text }}
-            {% endif %}
-            </h3>
-            {% if content.teaser_in_case_date %}
-            <span {{ region_attributes.teaser_in_case_date.addClass('bib-date') }}>
-                {{ content.teaser_in_case_date }}
-            </span>
-            {% endif %}
-        </div>
-        {% if content.teaser_in_case_author %}
-        <div {{ region_attributes.teaser_in_case_author.addClass('bib-creator') }}>
-            {{ content.teaser_in_case_author }}
-        </div>
-        {% endif %}
-    </div>
+
+	<div class="bloc-img  ">
+		<div class="bloc-img-content">
+			<div class="bloc-img__img ">
+				{% if content.teaser_in_case_image %}
+					{{ content.teaser_in_case_image }}
+				{% endif %}
+			</div>
+
+			<div class="bloc-img__body d-flex flex-column">
+				{% if content.teaser_in_case_text %}
+					<h4 class="bib-title">
+						{{ content.teaser_in_case_text }}
+					</h4>
+				{% endif %}
+				{% if content.teaser_in_case_date %}
+					<div {{ region_attributes.teaser_in_case_date.addClass('bib-date') }}>
+						{{ content.teaser_in_case_date }}
+						{% if content.categorie %}
+							<div class="px-2">/</div>
+							<div class="bib-date-cat">
+								{{content.categorie}}
+							</div>
+						{% endif %}
+					</div>
+				{% endif %}
+
+			</div>
+			{% if content.teaser_in_case_author %}
+				<div {{ region_attributes.teaser_in_case_author.addClass('bib-creator') }}>
+					{{ content.teaser_in_case_author }}
+				</div>
+			{% endif %}
+
+		</div>
+	</div>
+
 {% endif %}

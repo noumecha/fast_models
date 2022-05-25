@@ -30,6 +30,9 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      },
  *      "teaser_in_case_author" = {
  *          "label" = @Translation("teaser_in_case_author"),
+ *      },
+ *      "categorie" = {
+ *          "label" = @Translation("categorie"),     
  *      }
  *  }
  * )
@@ -85,7 +88,9 @@ class FnewsTeaserInCase extends FormatageModelsTeasers
                     'teaser_in_case_image' => [
                         'text_html' => [
                             'label' => 'Image',
-                            'value' => ""
+                            'value' => '<a href="#"><img class="bloc-img__img "
+                                 src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_metro_tile_square/public/2020-04/mt-post-15.jpg?itok=Gi9N0xkj"
+                                 alt=""></a>'
                         ]
                     ],
                     'teaser_in_case_text' => [
@@ -102,6 +107,12 @@ class FnewsTeaserInCase extends FormatageModelsTeasers
                         'text_html' => [
                             'label' => 'Date',
                             'value' => ""
+                        ]
+                    ],
+                    'categorie' => [
+                        'text_html' => [
+                            'label' => 'Auteur',
+                            'value' => "<p>Finance</p>"
                         ]
                     ],
                     'teaser_in_case_author' => [
