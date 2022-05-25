@@ -1,21 +1,25 @@
 {% if content %}
-<div {{ attributes.addClass('in-case-fnews ')}}>
-    <div class="container">
-        {% if content %}
-        <h3 {{ region_attributes.title_center.addClass('icf-title') }}>
-            {{ content.title_center }}
-        </h3>
-        {% endif %}
-        <div class="row  icf-content">
-            {% if content %}
-                {{ content.teasers_in_case}}
-            {% endif %} 
-        </div>
-        {% if content %}
-        <div class=" icf-more">
-            {{ content.link }}
-        </div>
-        {% endif %}
-    </div>
-</div>
+	<div {{ attributes.addClass('in-case-fnews ')}}>
+		<div class="container">
+			{% if content %}
+				<h3 {{ region_attributes.title_center.addClass('icf-title') }}>
+					{{ content.title_center }}
+				</h3>
+			{% endif %}
+			<div>
+				{% if content.teasers_in_case %}
+					{{ content.teasers_in_case}}
+				{% endif %}
+			</div>
+
+			{% if content.link %}
+				<div class="more-link">
+					<div class="link">
+						{{ content.link }}
+					</div>
+				</div>
+			{% endif %}
+
+		</div>
+	</div>
 {% endif %}
