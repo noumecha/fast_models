@@ -2,7 +2,9 @@
 	<div class='featured-single-card'>
 		{% if content.teaser_latest_right_image  %}
 			<div {{region_attributes.teaser_latest_right_image.addClass('img-handler')}}>
-				{{ content.teaser_latest_right_image }}
+				<div class="img-sup">
+					{{ content.teaser_latest_right_image }}
+				</div>
 			</div>
 		{% endif %}
 		{% if content.teaser_latest_right_date %}
