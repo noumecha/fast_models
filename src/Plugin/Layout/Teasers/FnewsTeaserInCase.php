@@ -30,6 +30,9 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      },
  *      "teaser_in_case_author" = {
  *          "label" = @Translation("teaser_in_case_author"),
+ *      },
+ *      "categorie" = {
+ *          "label" = @Translation("categorie"),     
  *      }
  *  }
  * )
@@ -102,6 +105,12 @@ class FnewsTeaserInCase extends FormatageModelsTeasers
                         'text_html' => [
                             'label' => 'Date',
                             'value' => ""
+                        ]
+                    ],
+                    'categorie' => [
+                        'text_html' => [
+                            'label' => 'Auteur',
+                            'value' => "<p>Finance</p>"
                         ]
                     ],
                     'teaser_in_case_author' => [
