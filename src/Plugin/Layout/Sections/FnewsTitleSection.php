@@ -27,6 +27,9 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      },
  *      "tech_content" = {
  *          "label" = @Translation("tech_content"),     
+ *      },
+ *      "more_btn_text" = {
+ *          "label" = @Translation("more_btn_text"),
  *      }
  *  }
  * )
@@ -83,6 +86,12 @@ class FnewsTitleSection extends FormatageModelsSection
                         'text_html' => [
                             'label' => 'Titre',
                             'value' => "Tech Stories"
+                        ]
+                    ],
+                    'more_btn_text' => [
+                        'text_html' => [
+                            'label' => 'read_title',
+                            'value' => '<a href="#">More</a>'
                         ]
                     ],
                     'fnews_subtitle' => [
