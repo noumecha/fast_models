@@ -2,23 +2,26 @@
 <div class="col-lg-4 col-md-4 col-sm-9 element ">
     <div class="video-single-card">
         <div class="video-handler">
-        {% if content %}
+        {% if content.teaser_video_image %}
         <a href="https://www.youtube.com/watch?v=ViuDsy7yb8M" {{ region_attributes.teaser_video_image.addClass('video-sup')}}>
             {{ content.teaser_video_image }}
         </a>
         {% endif %}
         </div>
-        {% if content %}
+        {% if content.teaser_video_date %}
         <div {{ region_attributes.teaser_video_date.addClass('pub-info')}} >
-            {{ content.teaser_video_date }}                       
+            {{ content.teaser_video_date }} 
+            {% if content.teaser_video_cat %}
+                {{ content.teaser_video_cat }}
+            {% endif %}                      
         </div>
         {% endif %}
         <div class="card-text-descriptor">
-            {% if content %}
+            {% if content.teaser_video_link %}
             {{ content.teaser_video_link }}
             {% endif %}
         </div>
-        {% if content %}
+        {% if content.teaser_video_role %}
         <div {{ region_attributes.teaser_video_role.addClass('role')}} >
             {{ content.teaser_video_role }}                        
         </div>

@@ -24,6 +24,9 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      "teaser_video_date" = {
  *          "label" = @Translation("teaser_video_date"),     
  *      },
+ *      "teaser_video_cat" = {
+ *          "label" = @Translation("teaser_video_cat"),     
+ *      },
  *      "teaser_video_link" = {
  *          "label" = @Translation("teaser_video_link"),
  *      },
@@ -92,7 +95,13 @@ class FnewsTeaserVideo extends FormatageModelsTeasers
                     'teaser_video_date' => [
                         'text_html' => [
                             'label' => 'Date',
-                            'value' => " <p> Apr 30, 2020 / Health </p>"
+                            'value' => " <p> Apr 30, 2020 </p>"
+                        ]
+                    ],
+                    '' => [
+                        'text_html' => [
+                            'label' => 'Category',
+                            'value' => "/ Health"
                         ]
                     ],
                     'teaser_video_link' => [
