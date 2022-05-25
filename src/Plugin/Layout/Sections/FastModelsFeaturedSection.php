@@ -106,7 +106,7 @@ class FastModelsFeaturedSection extends FormatageModelsSection
                             'label' => 'Bouton',
                             'value' => [
                                 'link' => "#",
-                                'text' => "More",
+                                'text' => "",
                                 'class' => "link"
                             ]
                         ]
