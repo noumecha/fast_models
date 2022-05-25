@@ -1,26 +1,5 @@
 {% if content %}
-	<div class="bloc-img ">
-		{% if content %}
-			{{ content.teaser_in_case_image }}
-		{% endif %}
-		<div class="bloc-img__body d-flex flex-column">
-			<h3>
-				{% if content.teaser_in_case_text %}
-					{{ content.teaser_in_case_text }}
-				{% endif %}
-			</h3>
-			{% if content.teaser_in_case_date %}
-				<span {{ region_attributes.teaser_in_case_date.addClass('bib-date') }}>
-					{{ content.teaser_in_case_date }}
-				</span>
-			{% endif %}
-		</div>
-		{% if content.teaser_in_case_author %}
-			<div {{ region_attributes.teaser_in_case_author.addClass('bib-creator') }}>
-				{{ content.teaser_in_case_author }}
-			</div>
-		{% endif %}
-	</div>
+
 	<div class="bloc-img  ">
 		<div class="bloc-img-content">
 			<div class="bloc-img__img ">
@@ -48,7 +27,12 @@
 				{% endif %}
 
 			</div>
-			<div class="bib-creator">admin</div>
+			{% if content.teaser_in_case_author %}
+				<div {{ region_attributes.teaser_in_case_author.addClass('bib-creator') }}>
+					{{ content.teaser_in_case_author }}
+				</div>
+			{% endif %}
+
 		</div>
 	</div>
 
