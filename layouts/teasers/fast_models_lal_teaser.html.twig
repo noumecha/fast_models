@@ -1,10 +1,14 @@
 {% if content %}
-<div class="lal-item">
-    <div class="lal-item__date">1 years ago</div>
-    <h5 class="lal-item__title">
-        <a href="#">
-            Simple steps to spring clean your finances
-        </a>
+<div {{ attributes.addClass('lal-item') }} >
+    {% if content.lal_date %}
+    <div {{ region_attributes.lal_date.addClass('lal-item__date')}} >
+        {{ content.lal_date }}
+    </div>
+    {% endif %}
+    {% if content.lal_title %}
+    <h5 {{ region_attributes.lal_title.addClass('lal-item__title')}} >
+        {{ content.lal_title }}
     </h5>
+    {% endif %}
 </div>
 {% endif %}

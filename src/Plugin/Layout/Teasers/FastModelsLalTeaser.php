@@ -18,12 +18,75 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *  template = "fast_models_lal_teaser",
  *  library = "fast_models/fast_models_lal_teaser",
  *  default_region = "content",
+ *  regions = {
+ *      "lal_date" = {
+ *          "label" = @Translation("lal_date"),     
+ *      }
+ *  }
  * )
  * 
  */
 class FastModelsLalTeaser extends FormatageModelsTeasers
 {
 
-    
+    /**
+     *
+     * {@inheritdoc}
+     * @see \Drupal\formatage_models\Plugin\Layout\FormatageModels::__construct()
+     */
+    public function __construct(array $configuration, $plugin_id, $plugin_definition, StylesGroupManager $styles_group_manager)
+    {
+        // TODO Auto-generated method stub
+        parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/teasers/fast_models_lal_teaser_map.png");
+    }
+
+    /**
+     * 
+     * {@inheritdoc}
+     * @see \Drupal\formatage_models\Plugin\Layout\FormatageModels:build()
+     * 
+     */
+    public function build(array $regions) 
+    {
+        
+        // TODO Auto-generated method stub
+        $build = parent::build($regions);
+        FormatageModelsThemes::formatSettingValues($build);
+        
+        return $build;
+    }
+
+    /**
+     * 
+     * {@inheritdoc}
+     */
+    public function defaultConfiguration()
+    {
+        return parent::defaultConfiguration() + [
+            'css' => '',
+            'fmlt' => [
+                'builder-form' => true,
+                'info' => [
+                    'title' => 'Contenu',
+                    'loader' => 'static'
+                ],
+                'fields' => [
+                    'lal_date' => [
+                        'text_html' => [
+                            'label' => 'Date',
+                            'value' => "1 years ago"
+                        ]
+                    ],
+                    'lal_title' => [
+                        'text_html' => [
+                            'label' => 'Titre',
+                            'value' => "<a href='#'> Simple steps to spring clean your finances </a>"
+                        ]
+                    ]
+                ]
+            ]
+        ];
+    }
 
 }
