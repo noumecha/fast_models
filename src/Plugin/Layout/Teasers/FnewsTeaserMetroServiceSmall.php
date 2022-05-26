@@ -88,24 +88,19 @@ class FnewsTeaserMetroServiceSmall extends FormatageModelsTeasers
                         ]
                     ],
                     'metro_teaser_small_title' => [
-                        'url' => [
+                        'text_html' => [
                             'label' => 'Titre',
-                            'value' => [
-                                'link' => "#",
-                                'value' => "First Service",
-                            ]
+                            'value' => "First Service"
+                            
                         ]
                     ],
                     'head_nav' => [
-                        'url' => [
-                            'label' => ' head_nav',
-                            'value' => [
-                                'link' => "#",
-                                'value' => '<div class="link-label"> <a href="#">tristique</a></div>
+                        'text_html' => [
+                            'label' => 'head_nav',
+                            'value' =>'<div class="link-label"> <a href="#">tristique</a></div>
                             <div class="link-label"> <a href="#">vitae</a></div>'
-                            ]
                         ]
-                    ],
+                    ]
                     'metro_teaser_small_link_date' => [
                         'text_html' => [
                             'label' => 'Date',
