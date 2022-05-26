@@ -107,7 +107,7 @@ class FnewsTeaserService extends FormatageModelsTeasers
                     'date_show_date' => [
                         'text_html' => [
                             'label' => 'date',
-                            'value' => "9"
+                            'value' => "july,2022"
                         ]
                     ],
                     'tag_show' => [
