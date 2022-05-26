@@ -98,8 +98,8 @@ class FnewsTeaserMetroServiceSmall extends FormatageModelsTeasers
                     ],
                     'head_nav' => [
                         'url' => [
-                            'label' => ' Lien 1',
-                            'head_nav' => [
+                            'label' => ' head_nav',
+                            'value' => [
                                 'link' => "#",
                                 'value' => '<div class="link-label"> <a href="#">tristique</a></div>
                             <div class="link-label"> <a href="#">vitae</a></div>'
