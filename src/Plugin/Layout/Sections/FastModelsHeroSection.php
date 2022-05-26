@@ -99,6 +99,12 @@ class FastModelsHeroSection extends FormatageModelsSection
                             'label' => 'Articles',
                             'value' => ""
                         ]
+                    ],
+                    'hero_section_teaser_title' => [
+                        'text_html' => [
+                            'label' => 'Titre',
+                            'value' => ""
+                        ]
                     ]
                 ]
             ]
