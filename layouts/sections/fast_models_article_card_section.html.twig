@@ -1,26 +1,28 @@
 {% if content %}
-<div {{ attributes.addClass('card', 'last-article')}} >
-    <div class="last-article__img">
-        {% if content.card_article_image %}
-            {{ content.card_article_image }}
-        {% endif %}
-        {% if content.card_article_caption %}
-        <p {{ region_attributes.card_article_caption.addClass('lai-desc') }}>
-            {{ content.card_article_caption }}
-        </p>
-        {% endif %}
-    </div>
-    <div class="card-body">
-        {% if content.card_article_title %}
-        <h2 {{ region_attributes.card_article_title.addClass('card-title')}} >
-            {{ content.card_article_title }}            
-        </h2>
-        {% endif %}
-        {% if content.card_article_text %}
-        <p {{ region_attributes.card_article_text.addClass('card-text')}} >
-            {{ content.card_article_text }}
-        </p>
-        {% endif %}
-    </div>
-</div>
+	<div {{ attributes.addClass('card', 'last-article')}}>
+		<div class="last-article__img">
+			{% if content.card_article_image %}
+				{{ content.card_article_image }}
+			{% endif %}
+			{% if content.card_article_caption %}
+				<div class="parent-desc">
+					<p {{ region_attributes.card_article_caption.addClass('lai-desc') }}>
+						{{ content.card_article_caption }}
+					</p>
+				</div>
+			{% endif %}
+		</div>
+		<div class="card-body">
+			{% if content.card_article_title %}
+				<h2 {{ region_attributes.card_article_title.addClass('card-title')}}>
+					{{ content.card_article_title }}
+				</h2>
+			{% endif %}
+			{% if content.card_article_text %}
+				<p {{ region_attributes.card_article_text.addClass('card-text')}}>
+					{{ content.card_article_text }}
+				</p>
+			{% endif %}
+		</div>
+	</div>
 {% endif %}
