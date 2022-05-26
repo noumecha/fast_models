@@ -17,7 +17,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  path = "layouts/sections",
  *  template = "fast_models_list_articles",
  *  library = "fast_models/fast_models_list_articles",
- *  default_region = "hero_section_controls",
+ *  default_region = "articles_title",
  *  regions = {
  *      "articles_title" = {
  *          "label" = @Translation("articles_title"),     
