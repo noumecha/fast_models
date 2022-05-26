@@ -26,13 +26,14 @@
 		</div>
 		<div class="teaser-service__body ">
 			{% if content.head_nav  %}
-				<div class="tag-show">
-					{{content.tag_show}}
+				<div {{ region_attributes.head_nav.addClass('head-nav')}}>
+
+					{{content.head_nav}}
 				</div>
 			{% endif %}
 
 			{% if content.teaser_title %}
-				<div {{ region_attributes.teaser_price.addClass('node-title')}}>
+				<div {{ region_attributes.teaser_title.addClass('node-title')}}>
 					{{ content.teaser_title }}
 				</div>
 			{% endif %}
