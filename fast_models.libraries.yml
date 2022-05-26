@@ -126,7 +126,7 @@ fast_models_lal_teaser:
     layouts/js/fast_models_lal_teaser.js: {}
   css:
     theme:
-      layouts/js/fast_models_lal_teaser.css: {}
+      layouts/css/fast_models_lal_teaser.css: {}
 f_news_blog_teaser:
   js:
     layouts/js/f_news_blog_teaser.js: {}
@@ -204,7 +204,7 @@ f_news_teaser_latest_right:
     layouts/js/f_news_teaser_latest_right.js: {}
   css:
     theme:
-      layouts/js/f_news_teaser_latest_right.js: {}
+      layouts/css/f_news_teaser_latest_right.js: {}
 fast_models_archive_teaser:
   js:
     layoutts/js/fast_models_archive_teaser.js: {}
@@ -217,10 +217,16 @@ f_news_bac_to_top:
     layouts/js/f_news_bac_to_top.js: {}
   css:
     theme:
-      layouts/js/f_news_bac_to_top.css: {}
+      layouts/css/f_news_bac_to_top.css: {}
 fast_model_fnews_proposition:
   js:
     layouts/js/fast_model_fnews_proposition.js: {}
   css:
     theme:
-      layouts/js/fast_model_fnews_proposition.css: {}
+      layouts/css/fast_model_fnews_proposition.css: {}
+fast_models_controls_teaser:
+  js:
+    layouts/js/fast_models_controls_teaser.js: {}
+  css:
+    theme:
+      layouts/css/fast_models_controls_teaser.css: {}

@@ -8,28 +8,28 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
 
 /**
  * 
- * Fast Models fn lal Teaser 
+ * Fast models fn controls teaser 
  * 
  * @Layout (
- *  id = "fast_models_lal_teaser",
- *  label = @Translation("fast_models_lal_teaserr"),
+ *  id = "fast_models_controls_teaser",
+ *  label = @Translation("fast_models_controls_teaser"),
  *  category = @Translation("fast_models"),
  *  path = "layouts/teasers",
- *  template = "fast_models_lal_teaser",
- *  library = "fast_models/fast_models_lal_teaser",
- *  default_region = "lal_date",
+ *  template = "fast_models_controls_teaser",
+ *  library = "fast_models/fast_models_controls_teaser",
+ *  default_region = "controls_title",
  *  regions = {
- *      "lal_date" = {
- *          "label" = @Translation("lal_date"),     
+ *      "controls_buttons" = {
+ *          "label" = @Translation("controls_buttons"),     
  *      },
- *      "lal_title" = {
- *          "label" = @Translation("lal_title"),     
+ *      "controls_title" = {
+ *          "label" = @Translation("controls_title"),     
  *      }
  *  }
  * )
  * 
  */
-class FastModelsLalTeaser extends FormatageModelsTeasers
+class FastModelsControlsTeaser extends FormatageModelsTeasers
 {
 
     /**
@@ -41,7 +41,7 @@ class FastModelsLalTeaser extends FormatageModelsTeasers
     {
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
-        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/teasers/fast_models_lal_teaser_map.png");
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/teasers/fast_models_controls_teaser_map.png");
     }
 
     /**
@@ -68,23 +68,30 @@ class FastModelsLalTeaser extends FormatageModelsTeasers
     {
         return parent::defaultConfiguration() + [
             'css' => '',
-            'fmlt' => [
+            'fmct' => [
                 'builder-form' => true,
                 'info' => [
                     'title' => 'Contenu',
                     'loader' => 'static'
                 ],
                 'fields' => [
-                    'lal_date' => [
+                    'controls_buttons' => [
                         'text_html' => [
-                            'label' => 'Date',
-                            'value' => "1 years ago"
+                            'label' => 'Bouttons',
+                            'value' => '
+                                <button class="sc-btn play-pause">
+                                    <i class="wbu-pause"></i>
+                                    <i class="wbu-play"></i>
+                                </button>
+                                <button class="sc-btn"><i class="wbu-angle-left"></i></button>
+                                <button class="sc-btn"><i class="wbu-angle_right"></i></button>
+                            '
                         ]
                     ],
-                    'lal_title' => [
+                    'controls_title' => [
                         'text_html' => [
                             'label' => 'Titre',
-                            'value' => "<a href='#'> Simple steps to spring clean your finances </a>"
+                            'value' => "<a href='#'>Where can you find fresh fruits nowadays</a>"
                         ]
                     ]
                 ]
