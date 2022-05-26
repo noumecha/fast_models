@@ -230,3 +230,9 @@ fast_models_controls_teaser:
   css:
     theme:
       layouts/css/fast_models_controls_teaser.css: {}
+fast_models_article_card_section:
+  js:
+    layouts/js/fast_models_article_card_section.js: {}
+  css:
+    theme:
+      layouts/css/fast_models_article_card_section.css: {}

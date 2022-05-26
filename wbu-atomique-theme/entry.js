@@ -35,6 +35,7 @@ module.exports = {
   fast_models_list_articles: "./src/js/sections/fast_models_list_articles.js",
   fast_models_lal_teaser: "./src/js/teasers/fast_models_lal_teaser.js",
   fast_models_controls_teaser: "./src/js/teasers/fast_models_controls_teaser",
+  fast_models_article_card_section: "./src/js/sections/fast_models_article_card_section",
 };
 
 // export default {
