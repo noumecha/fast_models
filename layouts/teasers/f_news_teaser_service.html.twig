@@ -1,75 +1,47 @@
 {% if content %}
-<section {{ attributes.addClass('teaser-service-fnews') }}>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 ">
-                <div class="teaser-service">
-                    <div class="">
-                        <a href="#" class="teaser-service__img ">
-                            {% if content %}
-                                {{ content.t_image }}
-                            {% endif %}
-                            <div class="date-show">
-                                {% if content %}
-                                <span {{ region_attributes.teaser_day.addClass('date-show__day')}}>
-                                    {{ content.teaser_day }}
-                                </span>
-                                {% endif %}
-                                {% if content %}
-                                <span {{ region_attributes.teaser_date.addClass('date-show__date')}}>
-                                    {{ content.teaser_date }}
-                                </span>
-                                {% endif %}
-                            </div>
-                            <div class="tag-show">
-                                {% if content %}
-                                <span {{ region_attributes.teaser_color.addClass('tag-show__tag')}}>
-                                    {{ content.teaser_color }}
-                                </span>
-                                {% endif %}
-                                {% if content %}
-                                <span {{ region_attributes.teaser_color_one.addClass('tag-show__tag')}}>
-                                    {{ content.teaser_color_one }}
-                                </span>
-                                {% endif %}
-                                {% if content %}
-                                <span {{ region_attributes.teaser_color_two.addClass('tag-show__tag')}}>
-                                    {{ content.teaser_color_two }}
-                                </span>
-                                {% endif %}
-                                {% if content %}
-                                <span {{ region_attributes.teaser_color_three.addClass('tag-show__tag')}}>
-                                    {{ content.teaser_color_three }}
-                                </span>
-                                {% endif %}
-                            </div>
-                        </a>
-                    </div>
-                    <div class="teaser-service__body ">
-                        <ul class="head-nav">
-                            {% if content %}
-                            <li>
-                                {{ content.teaser_link }}
-                            </li>
-                            {% endif %}
-                            {% if content %}
-                            <li>
-                                {{ content.teaser_link_one }}
-                            </li>
-                            {% endif %}
-                        </ul>
-                        {% if content %}
-                            {{ content.teaser_title }}
-                        {% endif %}
-                        {% if content %}
-                        <div {{ region_attributes.teaser_price.addClass('node-price')}}>
-                            {{ content.teaser_price }}
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+	<div {{ attributes.addClass('teaser-service') }}>
+		<div class="">
+			<div href="#" class="teaser-service__img">
+				{% if content.t_image %}
+					{{ content.t_image }}
+				{% endif %}
+				{% if content.date_show_day  %}
+					<div class="date-show">
+						<div {{ region_attributes.date_show_day.addClass('date-show__day')}}>
+							{{ content.date_show_day }}
+						</div>
+						{% if content.date_show_date %}
+							<div {{ region_attributes.date_show_date.addClass('date-show__date')}}>
+								{{ content.date_show_date }}
+							</div>
+						{% endif %}
+					</div>
+				{% endif %}
+				{% if content.tag_show  %}
+					<div class="tag-show">
+						{{content.tag_show}}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+		<div class="teaser-service__body ">
+			{% if content.head_nav  %}
+				<div {{ region_attributes.head_nav.addClass('head-nav')}}>
+
+					{{content.head_nav}}
+				</div>
+			{% endif %}
+
+			{% if content.teaser_title %}
+				<div {{ region_attributes.teaser_title.addClass('node-title')}}>
+					{{ content.teaser_title }}
+				</div>
+			{% endif %}
+			{% if content.teaser_price  %}
+				<div {{ region_attributes.teaser_price.addClass('node-price')}}>
+					{{ content.teaser_price }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
 {% endif %}

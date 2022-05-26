@@ -24,11 +24,8 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      "metro_teaser_small_title" = {
  *          "label" = @Translation("metro_teaser_title"),     
  *      },
- *      "metro_teaser_small_link" = {
- *          "label" = @Translation("metro_teaser_link"),     
- *      },
- *      "metro_teaser_small_link_one" = {
- *          "label" = @Translation("metro_teaser_link_one"),     
+ *      "head_nav" = {
+ *          "label" = @Translation("head_nav"),     
  *      },
  *      "metro_teaser_small_link_date" = {
  *          "label" = @Translation("metro_teaser_link_date"),     
@@ -95,28 +92,17 @@ class FnewsTeaserMetroServiceSmall extends FormatageModelsTeasers
                             'label' => 'Titre',
                             'value' => [
                                 'link' => "#",
-                                'text' => "First Service",
-                                'class' => "node-title"
+                                'value' => "First Service",
                             ]
                         ]
                     ],
-                    'metro_teaser_small_link' => [
+                    'head_nav' => [
                         'url' => [
                             'label' => ' Lien 1',
-                            'value' => [
+                            'head_nav' => [
                                 'link' => "#",
-                                'text' => "tristique ",
-                                'class' => "link-label"
-                            ]
-                        ]
-                    ],
-                    'metro_teaser_small_link_one' => [
-                        'url' => [
-                            'label' => ' Lien 2',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "allo",
-                                'class' => "link-label"
+                                'value' => '<div class="link-label"> <a href="#">tristique</a></div>
+                            <div class="link-label"> <a href="#">vitae</a></div>'
                             ]
                         ]
                     ],

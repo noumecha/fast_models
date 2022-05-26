@@ -21,29 +21,17 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      "t_image" = {
  *          "label" = @Translation("t_image"),
  *      },
- *      "teaser_day" = {
- *          "label" = @Translation("teaser_day"),
+ *      "date_show_day" = {
+ *          "label" = @Translation("date_show_day"),
  *      },
- *      "teaser_date" = {
- *          "label" = @Translation("teaser_date"),     
+ *      "date_show_date" = {
+ *          "label" = @Translation("date_show_date"),
  *      },
- *      "teaser_color" = {
- *          "label" = @Translation("teaser_color"),     
+ *      "tag_show" = {
+ *          "label" = @Translation("tag_show"),     
  *      },
- *      "teaser_color_one" = {
- *          "label" = @Translation("teaser_color_one"),     
- *      },
- *      "teaser_color_two" = {
- *          "label" = @Translation("teaser_color_two"),
- *      },
- *      "teaser_color_three" = {
- *          "label" = @Translation("teaser_color_three"),
- *      },
- *      "teaser_link" = {
- *          "label" = @Translation("teaser_link"),
- *      },
- *      "teaser_link_one" = {
- *          "label" = @Translation("teaser_link_one"),
+ *      "head_nav" = {
+ *          "label" = @Translation("head_nav"),     
  *      },
  *      "teaser_title" = {
  *          "label" = @Translation("teaser_title"),     
@@ -110,60 +98,30 @@ class FnewsTeaserService extends FormatageModelsTeasers
                                  alt=''>"
                         ]
                     ],
-                    'teaser_day' => [
+                    'date_show_day' => [
                         'text_html' => [
                             'label' => 'Jour',
                             'value' => "9"
                         ]
                     ],
-                    'teaser_date' => [
+                    'date_show_date' => [
                         'text_html' => [
-                            'label' => 'Date',
-                            'value' => "july,2019"
+                            'label' => 'date',
+                            'value' => "july,2022"
                         ]
                     ],
-                    'teaser_color' => [
+                    'tag_show' => [
                         'text_html' => [
-                            'label' => 'Coleur un',
-                            'value' => "green",
+                            'label' => 'tag_show',
+                            'value' => '<div class="tag-show__tag">green</div>
+                            <div class="tag-show__tag">purple</div>',
                         ]
                     ],
-                    'teaser_color_one' => [
+                    'head_nav' => [
                         'text_html' => [
-                            'label' => 'Couleur deux',
-                            'value' => "purpple"
-                        ]
-                    ],
-                    'teaser_color_two' => [
-                        'text_html' => [
-                            'label' => 'Couleur trois',
-                            'value' => "green"
-                        ]
-                    ],
-                    'teaser_color_three' => [
-                        'text_html' => [
-                            'label' => 'Couleur quatre',
-                            'value' => "purpple"
-                        ]
-                    ],
-                    'teaser_link' => [
-                        'url' => [
-                            'label' => 'Lien 1',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "tristique",
-                                'class' => "link-label"
-                            ]
-                        ]
-                    ],
-                    'teaser_link_one' => [
-                        'url' => [
-                            'label' => 'Lien 2',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "vitae",
-                                'class' => "link-label"
-                            ]
+                            'label' => 'head_nav',
+                            'value' => '<div class="link-label"> <a href="#">tristique</a></div>
+                            <div class="link-label"> <a href="#">vitae</a></div>',
                         ]
                     ],
                     'teaser_title' => [
