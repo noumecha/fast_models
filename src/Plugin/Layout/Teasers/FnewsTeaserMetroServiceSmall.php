@@ -26,7 +26,7 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      },
  *      "head_nav" = {
  *          "label" = @Translation("head_nav"),     
- *      }
+ *      },
  *      "metro_teaser_small_link_date" = {
  *          "label" = @Translation("metro_teaser_link_date"),     
  *      }
