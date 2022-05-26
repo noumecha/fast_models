@@ -1,0 +1,23 @@
+{% if content %}
+<div {{ attributes.addClass('fn-home-hero')}} >
+    {% if content.hero_section_controls %}
+        {{ content.hero_section_controls }}
+    {% endif %}
+    <div class="fhh-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 slide-latest">
+                    {% if content.hero_section_card %}
+                        {{ content.hero_section_card }}
+                    {% endif %}
+                </div>
+                <div class="col-md-4">
+                    {% if content.hero_section_articles %}
+                        {{ content.hero_section_articles }}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
