@@ -16,7 +16,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  category = @Translation("fast_models"),
  *  path = "layouts/sections",
  *  template = "fast_models_hero_section",
- *  library = "fast_models/fm_hero_section",
+ *  library = "fast_models/fast_models_hero_section",
  *  default_region = "hero_section_controls",
  *  regions = {
  *       "hero_section_controls" = {
@@ -31,6 +31,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *       "hero_section_articles" = {
  *          "label" = @Translation("hero_section_articles"),
  *       }
+ *      }
  * )
  * 
  */
