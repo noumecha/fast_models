@@ -19,7 +19,12 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  library = "fast_models/fast_models_list_articles",
  *  default_region = "hero_section_controls",
  *  regions = {
- *       
+ *      "articles_title" = {
+ *          "label" = @Translation("articles_title"),     
+ *      },
+ *      "articles_links" = {
+ *          "label" = @Translation("articles_links"),     
+ *      }
  *  }
  * )
  * 
@@ -36,7 +41,7 @@ class FastModelsListArticles extends FormatageModelsSection
     {
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition,$styles_group_manager);
-        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/sections/fast_models_featured_section_map.png");
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/sections/fast_models_list_articles_map.png");
     }
 
     /**
@@ -70,7 +75,18 @@ class FastModelsListArticles extends FormatageModelsSection
                     'loader' => 'static'
                 ],
                 'fields' => [
-                    
+                    'articles_title' => [
+                        'text_html' => [
+                            'label' => 'Titre',
+                            'value' => ""
+                        ]
+                    ],
+                    'articles_links' => [
+                        'text_html' => [
+                            'label' => 'Liens',
+                            'value' => ""
+                        ]
+                    ]
                 ]
             ]
         ];
