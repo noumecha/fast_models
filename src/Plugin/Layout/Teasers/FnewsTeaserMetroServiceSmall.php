@@ -92,8 +92,7 @@ class FnewsTeaserMetroServiceSmall extends FormatageModelsTeasers
                             'label' => 'Titre',
                             'value' => [
                                 'link' => "#",
-                                'text' => "First Service",
-                                'class' => "node-title"
+                                'value' => "First Service",
                             ]
                         ]
                     ],
