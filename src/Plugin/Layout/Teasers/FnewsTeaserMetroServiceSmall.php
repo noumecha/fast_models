@@ -100,7 +100,7 @@ class FnewsTeaserMetroServiceSmall extends FormatageModelsTeasers
                             'value' =>'<div class="link-label"> <a href="#">tristique</a></div>
                             <div class="link-label"> <a href="#">vitae</a></div>'
                         ]
-                    ]
+                    ],
                     'metro_teaser_small_link_date' => [
                         'text_html' => [
                             'label' => 'Date',
