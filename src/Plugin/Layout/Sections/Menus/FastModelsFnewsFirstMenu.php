@@ -36,7 +36,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection
     {
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
-        $this->pluginDefinition->set('icon', drupal_get_path('module', 'formatage_models') . "/icones/formatage-models-menu1.png");
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icones/menus/fast_models_fn_first_menu_map.png");
     }
 
     /**
