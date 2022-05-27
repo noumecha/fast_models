@@ -1,16 +1,16 @@
 {% if content %}
-<div {{ attributes.addClass('slide-control')}} >
-    <div class="container-fluid slc-content">
-        {% if content.controls_buttons %}
-        <div>
-            {{ content.controls_buttons }}
-        </div>
-        {% endif %}
-        {% if content.controls_title %}
-        <div {{ region_attributes.controls_title.addClass('sc-title')}} >
-            {{ content.controls_title }}
-        </div>
-        {% endif %}
-    </div>
-</div>
+	<div {{ attributes.addClass('slide-control')}}>
+		<div class="container-fluid slc-content">
+			{% if content.controls_buttons %}
+
+				{{ content.controls_buttons }}
+
+			{% endif %}
+			{% if content.controls_title %}
+				<div {{ region_attributes.controls_title.addClass('sc-title')}}>
+					{{ content.controls_title }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
 {% endif %}
