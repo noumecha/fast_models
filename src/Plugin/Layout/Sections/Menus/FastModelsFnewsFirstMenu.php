@@ -10,7 +10,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * 
  * @Layout (
  *   id = "fast_models_fn_first_menu",
- *   label = @Translation("Fnews first Nav"),
+ *   label = @Translation("fast_models_fn_first_menu"),
  *   category = @Translation("Formatage Models"),
  *   path = "layouts/sections/menus",
  *   template = "fast_models_fn_first_menu",
