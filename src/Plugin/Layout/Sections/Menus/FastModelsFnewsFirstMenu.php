@@ -56,7 +56,6 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
         'first-nav'
       ]
     ];
-
     $build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['#children'] = '<div class="first-nav__brand">
             <a href="#">
                 F+ news
@@ -78,8 +77,16 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     //
     $this->formatListMenus($build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#items']);
     
-    dump($build['fn_first_nav'][reset(array_keys($build['fn_first_nav']))]);
     return $build;
+  }
+
+  private function getMenus(array $fn_first_nav)
+  {
+    foreach ($fn_first_nav as $k => $menu)
+    {
+      $k = dump($menu);
+    }
+    return $k;
   }
   
   private function formatListMenus(array &$items) {
