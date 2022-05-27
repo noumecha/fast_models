@@ -1,6 +1,7 @@
 <?php
-namespace Drupal\formatage_models\Plugin\Layout\Sections\Menus;
+namespace Drupal\fast_models\Plugin\Layout\Sections\Menus;
 
+use Drupal\formatage_models\FormatageModelsThemes;
 use Drupal\bootstrap_styles\StylesGroup\StylesGroupManager;
 use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
 
