@@ -86,7 +86,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   {
     foreach ($menu as $key => $m)
     {
-      echo $m;
+      var_dump($menu);
     }
   }
   
