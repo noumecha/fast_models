@@ -80,7 +80,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     $a  = $this->getMenus($build['fn_first_nav']);
     $a['#atttributes'] = [
       'class' =>[
-        'first_nav'
+        'first_nav_nml'
       ]
     ];
     dump($a);
