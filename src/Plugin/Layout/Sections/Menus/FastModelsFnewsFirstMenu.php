@@ -60,9 +60,6 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
             <a href="#">
                 F+ news
             </a>
-            <!-- <img class="img-fluid"
-                 src="https://upload.wikimedia.org/wikipedia/fr/a/a9/Ripple_logo_entreprise_2015.png"
-                 alt=""> -->
         </div>
         <a href="#" class="menu-icons">
             <span class="burger"> <i class="wbu-bars"></i></span>
@@ -80,7 +77,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     //
     $this->formatListMenus($build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#items']);
     
-    // dump($build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']);
+    // dump($build);
     return $build;
   }
   
