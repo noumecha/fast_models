@@ -77,6 +77,9 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     //
     $this->formatListMenus($build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#items']);
     
+    $a = $this->getMenus($build);
+    dump($a);
+    
     return $build;
   }
 
@@ -84,10 +87,9 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   {
     foreach ($fn_first_nav as $k => $menu)
     {
-      $k = dump($menu);
+        return $k;
     }
-    dump($k);
-    return $k;
+
   }
   
   private function formatListMenus(array &$items) {
