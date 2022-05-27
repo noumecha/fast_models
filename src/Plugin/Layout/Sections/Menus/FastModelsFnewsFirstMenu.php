@@ -90,11 +90,11 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
 
   private function getMenus(array $menu)
   {
-    foreach ($menu as $key => $m)
-    {
-      if(!empty(is_array($m)))
-      return $m;
-    }
+    //foreach ($menu as $key => $m)
+    //{
+      //if(!empty(is_array($m)))
+      return $menu;
+    //}
   }
   
   private function formatListMenus(array &$items) {
