@@ -92,6 +92,8 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   {
     foreach ($menu as $key => $m)
     {
+      $m= reset($m);
+      if(!empty(is_array($m)))
       return $m;
     }
   }
