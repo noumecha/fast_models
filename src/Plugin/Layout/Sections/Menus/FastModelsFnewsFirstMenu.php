@@ -1,4 +1,5 @@
 <?php
+
 namespace Drupal\fast_models\Plugin\Layout\Sections\Menus;
 
 use Drupal\formatage_models\FormatageModelsThemes;
