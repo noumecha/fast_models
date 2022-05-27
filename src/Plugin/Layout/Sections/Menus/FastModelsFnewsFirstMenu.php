@@ -51,47 +51,17 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     $build = parent::build($regions);
     FormatageModelsThemes::formatSettingValues($build);
     
-    $build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['#attributes'] = [
-      'class' => [
-        'first-nav'
-      ]
-    ];
-    /*$build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['#children'] = '<div class="first-nav__brand">
-            <a href="#">
-                F+ news
-            </a>
-        </div>
-        <a href="#" class="menu-icons">
-            <span class="burger"> <i class="wbu-bars"></i></span>
-            <span class="xmark"> <i class="wbu-close"></i></span>
-        </a>
-';
-    
-    $build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#attributes'] = [
-      'class' => [
-        'nav-list'
-      ]
-    ];
-    //
-    $build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';*/
-    //
-    $this->formatListMenus($build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#items']);
-
-    $a  = $this->getMenus($build['fn_first_nav']);
-    dump($a);
+    if (is_array($build['fn_first_nav']))
+      $build['fn_first_nav'] = $this->getMenus($build['fn_first_nav']);
     
     return $build;
   }
-
-  private function getMenus(array $menu)
-  {
-    foreach ($menu as $key => $m)
-    {
-      /*if(!empty($m) && $m['#plugin_id']==='nml--system_menu_block:main')
-      {
-        if(!empty($m['#children']))
-        {
-          $m['#children'] = 'nml--<div class="first-nav__brand">
+  
+  private function getMenus(array $fn_first_nav) {
+    foreach ($fn_first_nav as $k => $m) {
+      if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'system_menu_block') {
+        // header menu
+        $fn_first_nav[$k]['#children'] = '<div class="first-nav__brand">
               <a href="#">
                   F+ news
               </a>
@@ -100,24 +70,26 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
               <span class="burger"> <i class="wbu-bars"></i></span>
               <span class="xmark"> <i class="wbu-close"></i></span>
           </a>';
-        }
-        if(!empty($m['content']['#theme']))
-        {
-          // définition du nom du theme (fichier twig)
-          $m['content']['#theme'] = 'nml--layoutmenu_fast_models_fn_first_menu';
-        }
-        if(!empty(is_array($m['content']['#attributes'])))
-        {
-          $m['content']['#attributes'] = [
-            'class' =>[
-              'nml--nav-list'
-            ]
-          ];
-        }
-
-      }*/
-      return $m;
+        //
+        $fn_first_nav[$k]['#attributes'] = [
+          'class' => [
+            'first-nav'
+          ]
+        ];
+        // set new theme.
+        $fn_first_nav[$k]['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';
+        
+        // add class
+        $fn_first_nav[$k]['content']['#attributes'] = [
+          'class' => [
+            'nav-list'
+          ]
+        ];
+        //
+        $this->formatListMenus($fn_first_nav[$k]['content']['#items']);
+      }
     }
+    return $fn_first_nav;
   }
   
   private function formatListMenus(array &$items) {
