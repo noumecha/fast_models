@@ -85,41 +85,46 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
 
   private function getMenus(array $menu)
   {
+    $menu = reset($menu);
     foreach ($menu as $key => $m)
     {
-      if(!empty($m['#attributes']))
-      { 
-        // pour la classe principale du menu (la première class du menu)
-        $m['#attributes'] = [
-          'class' => [
-            'first-nav'
-          ]
-        ];
-      }
-      if(!empty($m['#children']))
+      if(!empty($m) && !empty($m['#plugin_id'])=='system_menu_block')
       {
-        $m['#children'] = '<div class="first-nav__brand">
-            <a href="#">
-                F+ news
-            </a>
-        </div>
-        <a href="#" class="menu-icons">
-            <span class="burger"> <i class="wbu-bars"></i></span>
-            <span class="xmark"> <i class="wbu-close"></i></span>
-        </a>';
-      }
-      if(!empty($m['content']['#theme']))
-      {
-        // définition du nom du theme (fichier twig)
-        $m['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';
-      }
-      if(!empty(is_array($m['content']['#attributes'])))
-      {
-        $m['content']['#attributes'] = [
-          'class' =>[
-            'nav-list'
-          ]
-        ];
+        if(!empty($m['#attributes']))
+        { 
+          // pour la classe principale du menu (la première class du menu)
+          $m['#attributes'] = [
+            'class' => [
+              'first-nav'
+            ]
+          ];
+        }
+        if(!empty($m['#children']))
+        {
+          $m['#children'] = '<div class="first-nav__brand">
+              <a href="#">
+                  F+ news
+              </a>
+          </div>
+          <a href="#" class="menu-icons">
+              <span class="burger"> <i class="wbu-bars"></i></span>
+              <span class="xmark"> <i class="wbu-close"></i></span>
+          </a>';
+        }
+        if(!empty($m['content']['#theme']))
+        {
+          // définition du nom du theme (fichier twig)
+          $m['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';
+        }
+        if(!empty(is_array($m['content']['#attributes'])))
+        {
+          $m['content']['#attributes'] = [
+            'class' =>[
+              'nav-list'
+            ]
+          ];
+        }
+
       }
       return $m;
     }
