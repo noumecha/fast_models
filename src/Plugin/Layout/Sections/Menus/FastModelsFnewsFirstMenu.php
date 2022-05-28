@@ -87,9 +87,8 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   {
     foreach ($menu as $key => $m)
     {
-      if(!empty($m) && !empty($m['#plugin_id'])==='nml--system_menu_block:main')
-      { 
-        dump($m['#plugin_id']);
+      if(!empty($m) && $m['#plugin_id']==='nml--system_menu_block:main')
+      {
         if(!empty($m['#children']))
         {
           $m['#children'] = '<div class="first-nav__brand">
