@@ -85,7 +85,6 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
 
   private function getMenus(array $menu)
   {
-    $menu = reset($menu);
     foreach ($menu as $key => $m)
     {
       if(!empty($m) && !empty($m['#plugin_id'])=='system_menu_block')
