@@ -87,6 +87,15 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   {
     foreach ($menu as $key => $m)
     {
+      if(!empty($m['#attributes']))
+      { 
+        // pour la classe principale du menu (la première class du menu)
+        $m['#attributes'] = [
+          'class' => [
+            'tmc--first-nav'
+          ]
+        ]
+      }
       if(!empty($m['#children']))
       {
         $m['#children'] = '<div class="first-nav__brand">
@@ -101,6 +110,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
       }
       if(!empty($m['content']['#theme']))
       {
+        // définition du nom du theme (fichier twig)
         $m['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';
       }
       if(!empty(is_array($m['content']['#attributes'])))
