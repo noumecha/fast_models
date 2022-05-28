@@ -78,11 +78,6 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     $this->formatListMenus($build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#items']);
 
     $a  = $this->getMenus($build['fn_first_nav']);
-    /*$a['#atttributes'] = [
-      'class' =>[
-        'first_nav_nml'
-      ]
-    ];*/
     dump($a);
     
     return $build;
@@ -90,11 +85,31 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
 
   private function getMenus(array $menu)
   {
-    //foreach ($menu as $key => $m)
-    //{
-      //if(!empty(is_array($m)))
-      return $menu;
-    //}
+    foreach ($menu as $key => $m)
+    {
+      if(!empty(is_array($m['#children'])))
+      {
+        $m['#children'] = 'nml -- <div class="first-nav__brand">
+            <a href="#">
+                F+ news
+            </a>
+        </div>
+        <a href="#" class="menu-icons">
+            <span class="burger"> <i class="wbu-bars"></i></span>
+            <span class="xmark"> <i class="wbu-close"></i></span>
+        </a>';
+      }
+      if(!empty(is_array($m['content']['#theme'])))
+      {
+        $m['content']['#theme'] = 'nml -- layoutmenu_fast_models_fn_first_menu';
+      }
+      if(!empty(is_array($m['content']['#attributes'])))
+      {
+        $attributes = $m['content']['#attributes'];
+        $attributes->addClass('nml -- nav-list');
+      }
+      return $m;
+    }
   }
   
   private function formatListMenus(array &$items) {
