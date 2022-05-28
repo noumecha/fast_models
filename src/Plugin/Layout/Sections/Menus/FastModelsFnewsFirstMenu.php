@@ -87,7 +87,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   {
     foreach ($menu as $key => $m)
     {
-      if(!empty(is_array($m['#children'])))
+      if(!empty($m['#children']))
       {
         $m['#children'] = 'nml -- <div class="first-nav__brand">
             <a href="#">
@@ -99,7 +99,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
             <span class="xmark"> <i class="wbu-close"></i></span>
         </a>';
       }
-      if(!empty(is_array($m['content']['#theme'])))
+      if(!empty($m['content']['#theme']))
       {
         $m['content']['#theme'] = 'nml -- layoutmenu_fast_models_fn_first_menu';
       }
