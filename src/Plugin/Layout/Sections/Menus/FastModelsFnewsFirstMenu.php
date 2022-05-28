@@ -87,7 +87,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   {
     foreach ($menu as $key => $m)
     {
-      if(!empty($m) && $m['#plugin_id']==='nml--system_menu_block:main')
+      /*if(!empty($m) && $m['#plugin_id']==='nml--system_menu_block:main')
       {
         if(!empty($m['#children']))
         {
@@ -115,9 +115,9 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
           ];
         }
 
-      }
+      }*/
+      return $m;
     }
-    return $m;
   }
   
   private function formatListMenus(array &$items) {
