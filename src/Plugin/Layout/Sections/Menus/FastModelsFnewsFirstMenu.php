@@ -116,8 +116,8 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
         }
 
       }
-      return $m;
     }
+    return $m;
   }
   
   private function formatListMenus(array &$items) {
