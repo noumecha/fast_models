@@ -89,15 +89,6 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     {
       if(!empty($m) && !empty($m['#plugin_id'])=='system_menu_block')
       {
-        if(!empty($m['#attributes']))
-        { 
-          // pour la classe principale du menu (la première class du menu)
-          $m['#attributes'] = [
-            'class' => [
-              'first-nav'
-            ]
-          ];
-        }
         if(!empty($m['#children']))
         {
           $m['#children'] = '<div class="first-nav__brand">
