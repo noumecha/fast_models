@@ -87,12 +87,11 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   {
     foreach ($menu as $key => $m)
     {
-      $m = reset($m);
       if(!empty($m) && $m['#plugin_id']==='nml--system_menu_block:main')
       {
         if(!empty($m['#children']))
         {
-          $m['#children'] = '<div class="first-nav__brand">
+          $m['#children'] = 'nml--<div class="first-nav__brand">
               <a href="#">
                   F+ news
               </a>
@@ -105,13 +104,13 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
         if(!empty($m['content']['#theme']))
         {
           // définition du nom du theme (fichier twig)
-          $m['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';
+          $m['content']['#theme'] = 'nml--layoutmenu_fast_models_fn_first_menu';
         }
         if(!empty(is_array($m['content']['#attributes'])))
         {
           $m['content']['#attributes'] = [
             'class' =>[
-              'nav-list'
+              'nml--nav-list'
             ]
           ];
         }
