@@ -243,3 +243,9 @@ fast_models_fn_first_menu:
   css:
     theme:
       layouts/css/fast_models_fn_first_menu.css: {}
+fast_models_fn_second_menu:
+  js:
+    layouts/js/fast_models_fn_second_menu.js: {}
+  css:
+    theme:
+      layouts/css/fast_models_fn_second_menu.css: {}

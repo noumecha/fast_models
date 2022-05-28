@@ -37,6 +37,7 @@ module.exports = {
   fast_models_controls_teaser: "./src/js/teasers/fast_models_controls_teaser",
   fast_models_article_card_section: "./src/js/sections/fast_models_article_card_section",
   fast_models_fn_first_menu: "./src/js/sections/menus/fast_models_fn_first_menu",
+  fast_models_fn_second_menu: "./src/js/sectionS/menus/fast_models_fn_second_menu"
 };
 
 // export default {

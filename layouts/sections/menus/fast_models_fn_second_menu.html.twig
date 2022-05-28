@@ -1,0 +1,7 @@
+{% if content %}
+<header {{ attributes.addClass('fnews-header')}} >
+    {% if content.fn_second_nav %}
+        {{ content.fn_second_nav }}
+    {% endif %}
+</header>
+{% endif %}
