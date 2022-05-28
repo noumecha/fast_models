@@ -94,7 +94,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
           'class' => [
             'tmc--first-nav'
           ]
-        ]
+        ];
       }
       if(!empty($m['#children']))
       {
