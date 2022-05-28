@@ -75,7 +75,9 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     //
     $build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';*/
     //
-    $this->formatListMenus($build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#items']);
+    //$this->formatListMenus($build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#items']);
+
+    $this->formatListMenus($this->getMenus($build['fn_first_nav']['content']['#items']));
 
     $a  = $this->getMenus($build['fn_first_nav']);
     dump($a);
