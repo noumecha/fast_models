@@ -51,7 +51,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     $build = parent::build($regions);
     FormatageModelsThemes::formatSettingValues($build);
     
-    $build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['#attributes'] = [
+    /*$build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['#attributes'] = [
       'class' => [
         'first-nav'
       ]
@@ -73,7 +73,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
       ]
     ];
     //
-    $build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';
+    $build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';*/
     //
     $this->formatListMenus($build['fn_first_nav']['3ca6f07a-95f8-40e2-86e0-0fe4f860d323']['content']['#items']);
 
@@ -89,7 +89,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     {
       if(!empty($m['#children']))
       {
-        $m['#children'] = 'nml -- <div class="first-nav__brand">
+        $m['#children'] = '<div class="first-nav__brand">
             <a href="#">
                 F+ news
             </a>
@@ -101,13 +101,13 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
       }
       if(!empty($m['content']['#theme']))
       {
-        $m['content']['#theme'] = 'nml -- layoutmenu_fast_models_fn_first_menu';
+        $m['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';
       }
       if(!empty(is_array($m['content']['#attributes'])))
       {
         $m['content']['#attributes'] = [
           'class' =>[
-            'nml -- nav-list'
+            'nav-list'
           ]
         ];
       }
