@@ -87,7 +87,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   {
     foreach ($menu as $key => $m)
     {
-      if(!empty($m) && !empty($m['#plugin_id'])=='system_menu_block')
+      if(!empty($m) && !empty($m['#plugin_id'])=='nml--system_menu_block')
       {
         if(!empty($m['#children']))
         {
