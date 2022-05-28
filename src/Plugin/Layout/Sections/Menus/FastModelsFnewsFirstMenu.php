@@ -105,8 +105,11 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
       }
       if(!empty(is_array($m['content']['#attributes'])))
       {
-        $attributes = $m['content']['#attributes'];
-        $attributes->addClass('nml -- nav-list');
+        $m['content']['#attributes'] = [
+          'class' =>[
+            'nml -- nav-list'
+          ]
+        ];
       }
       return $m;
     }
