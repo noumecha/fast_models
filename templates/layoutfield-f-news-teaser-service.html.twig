@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for a field.
+ * Default theme implementation for a field.
  *
  * To override output, copy the "field.html.twig" from the templates directory
  * to your theme's directory and customize it, just like customizing other
@@ -33,57 +33,40 @@
  * - field_type: The type of the field.
  * - label_display: The display settings for the label.
  *
- *
  * @see template_preprocess_field()
+ *
+ * @ingroup themeable
  */
 #}
 {%
-  set classes = [
-    'field',
-    'field--name-' ~ field_name|clean_class,
-    'field--type-' ~ field_type|clean_class,
-    'field--label-' ~ label_display,
-  ]
-%}
-{%
   set title_classes = [
-    'field__label',
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
 %}
 
 {% if label_hidden %}
 	{% if multiple %}
-		<div{{attributes.addClass(classes,'field__items')}}>
+		<div{{attributes}}>
 			{% for item in items %}
-				<div{{item.attributes.addClass('field__item')}}>{{ item.content }}</div>
+				<div{{item.attributes}}>{{ item.content }}</div>
 			{% endfor %}
 		</div>
 	{% else %}
 		{% for item in items %}
-			{% if item.content[0]['#context'] and item.content[0]['#context'].is_link %}
-				{% set text_link %}
-				{{ item.content[0]['#context'].output }}
-				<i class="fas fa-chevron-right pl-1"></i>
-				{% endset %}
-				{{ link(text_link, item.content[0]['#context'].entity_url, { 'class':['btn','btn-info', 'btn-sm0'] }) }}
-			{% else %}
-				<div{{attributes.addClass(classes,'field__item')}} dddd="dddd">{{ item.content }}</div>
-			{% endif %}
+			<div{{attributes}}>{{ item.content }}</div>
 		{% endfor %}
 	{% endif %}
 {% else %}
-	<div{{attributes.addClass(classes)}}>
-		<div{{title_attributes.addclass(title_classes)}}>{{ label }}</div>
+	<div{{attributes}}>
+		<div{{title_attributes.addClass(title_classes)}}>{{ label }}</div>
 		{% if multiple %}
-			<div class='field__items'>
+			<div>
 			{% endif %}
 			{% for item in items %}
-				<div{{item.attributes.addClass('field__item')}}>{{ item.content }}</div>
+				<div{{item.attributes}}>{{ item.content }}</div>
 			{% endfor %}
 			{% if multiple %}
 			</div>
 		{% endif %}
 	</div>
 {% endif %}
-{{dump()}}
