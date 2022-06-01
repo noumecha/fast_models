@@ -5,7 +5,7 @@
 				{% if content.t_image %}
 					{{ content.t_image }}
 				{% endif %}
-				{% if content.date_show_day or content.date_show_date %}
+				{% if content.date_show_day|has_value or content.date_show_date|has_value %}
 					<div class="date-show">
 						<div {{ region_attributes.date_show_day.addClass('date-show__day')}}>
 							{{ content.date_show_day }}
