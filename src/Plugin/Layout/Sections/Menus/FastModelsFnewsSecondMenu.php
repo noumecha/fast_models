@@ -78,9 +78,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
     private function getMenus(array $fn_first_nav) {
         foreach ($fn_first_nav as $k => $m) {
             if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'system_menu_block') {
-                // header menu
-                $fn_first_nav[$k]['#children'] = "check-by-noumel";
-                
+                               
                 $fn_first_nav[$k]['#attributes'] = [
                     'class' => [
                         'sn-bloc'
