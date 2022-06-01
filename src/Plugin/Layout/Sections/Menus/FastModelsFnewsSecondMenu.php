@@ -64,8 +64,67 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
         // TODO Auto-generated method stub
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
-        
+        if (is_array($build['fn_second_nav_content']))
+            $build['fn_second_nav_content'] = $this->getMenus($build['fn_second_nav_content']);
+   
+        dump($build);
         return $build;
+    }
+
+    /**
+     * 
+     * {@inheritdoc}
+     */
+    private function getMenus(array $fn_first_nav) {
+        foreach ($fn_first_nav as $k => $m) {
+            if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'system_menu_block') {
+                // header menu
+                //$fn_first_nav[$k]['#children'] = "";
+                //
+                /*$fn_first_nav[$k]['#attributes'] = [
+                    'class' => [
+                        'first-nav'
+                    ]
+                ];*/                
+                // add class
+                /*$fn_first_nav[$k]['content']['#attributes'] = [
+                'class' => [
+                    'nav-list'
+                ]
+                ];*/
+                //
+                $this->formatListMenus($fn_first_nav[$k]['content']['#items']);
+            }
+        }
+        return $fn_first_nav;
+    }
+
+    /**
+     * 
+     * {@inheritdoc}
+     */
+
+    private function formatListMenus(array &$items) {
+        foreach ($items as $k => $item) {
+            if (!empty($item['attributes'])) {
+                $attribute = $item['attributes'];
+                $attribute->addClass('nav-item');
+                // add sub menu
+                if ($item['is_expanded']) {
+                $attribute->addClass('sub-alt');
+                }
+                // menu actif
+                if ($item['in_active_trail']) {
+                $attribute->addClass('nav-item--active');
+                }
+                $items[$k]['attributes'] = $attribute;
+                //
+                if (!empty($item['below'])) {
+                $this->formatListMenus($item['below']);
+                $items[$k]['below'] = $item['below'];
+                }
+            }
+        }
     }
 
     /**
