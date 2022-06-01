@@ -15,5 +15,4 @@ function template_preprocess_layoutfield_f_news_teaser_service(&$vars) {
       $items[$delta] = $vars['element'][$delta];
     }
     $vars['items'] = $items;
- dump($vars);
 }
