@@ -1,5 +1,5 @@
-dump(content.tag_show)
-dump(content.head_nav)
+{{dump(content.tag_show)}}
+{{dump(content.head_nav)}}
 {% if content %}
 	<div {{ attributes.addClass('teaser-service') }}>
 		<div class="">
@@ -21,7 +21,9 @@ dump(content.head_nav)
 				{% endif %}
 				{% if content.tag_show  %}
 					<div class="tag-show">
-						{{content.tag_show}}
+						<div class="tag-show__tag">
+							{{ content.tag_show }}
+						</div>
 					</div>
 				{% endif %}
 			</div>
@@ -29,8 +31,11 @@ dump(content.head_nav)
 		<div class="teaser-service__body ">
 			{% if content.head_nav  %}
 				<div {{ region_attributes.head_nav.addClass('head-nav')}}>
+					<div class="link-label">
+						{{ content.head_nav }}
 
-					{{content.head_nav}}
+					</div>
+
 				</div>
 			{% endif %}
 
