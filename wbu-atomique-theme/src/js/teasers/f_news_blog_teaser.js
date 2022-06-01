@@ -1,1 +1,1 @@
-import "@stephane888/wbu-atomique/scss/organisme/sections/theme_builder/f_news/blog-lists.scss";
+import "@stephane888/wbu-atomique/scss/organisme/sections/theme_builder/f_news/molecule/teaser/blog-single-card.scss";
