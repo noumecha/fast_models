@@ -64,10 +64,13 @@
 			{% endif %}
 			{% for item in items %}
 				<div{{item.attributes}}>{{ item.content }}</div>
+				<pre class="text-left">{{dump(item)}}</pre>
+
+
 			{% endfor %}
 			{% if multiple %}
 			</div>
 		{% endif %}
 	</div>
 {% endif %}
-<pre>{{dump()}}</pre>
+<pre class="text-left">{{dump()}}</pre>
