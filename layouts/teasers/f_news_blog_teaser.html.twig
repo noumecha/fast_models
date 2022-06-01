@@ -1,79 +1,89 @@
 {% if content %}
-<section {{ attributes.addClass('blog-list-section')}}>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-xl-8 mx-auto element ">
-                <div class="blog-single-card">
-                    <div class="blog-img">
-                        <a href="#" class="img-sup">
-                            {% if content %}
-                                {{ content.blog_teaser_image }}                            
-                            {% endif %}
-                            <div class="date-show">
-                                {% if content %}
-                                <span {{ region_attributes.blog_teaser_day.addClass('date-show__day')}}>
-                                    {{ content.blog_teaser_day }}
-                                </span>
-                                {% endif %}
-                                {% if content %}
-                                <span {{ region_attributes.blog_teaser_date.addClass('date-show__date')}}>
-                                    {{ content.blog_teaser_date }}
-                                </span>
-                                {% endif %}
-                            </div>
-                        </a>
-                    </div>
-                    <div class="d-flex flex-wrap py-3 align-items-center">
-                        <div class="blog-btn blog-btn-black ">
-                            {% if content %}
-                                {{ content.blog_teaser_btn_link }}
-                            {% endif %}
-                        </div>
-                        <div class="blog-btn ">
-                            {% if content %}
-                                {{ content.blog_teaser_btn_link_one }}
-                            {% endif %}
-                        </div>
-                        <div class="blog-btn ">
-                            {% if content %}
-                                {{ content.blog_teaser_btn_link_two }}
-                            {% endif %}
-                        </div>
-                        {% if content %}
-                        <span {{ region_attributes.blog_teaser_price.addClass('ml-auto','node-price')}}>
-                            {{ content.blog_teaser_price }}
-                        </span>
-                        {% endif %}
-                    </div>
-                </div>
-                {% if content%}
-                <div {{ region_attributes.blog_teaser_title.addClass('blog-post-title')}}>
-                    {{content.blog_teaser_title}}                    
-                </div>
-                {% endif %}
-                {% if content %}
-                <div {{ region_attributes.blog_teaser_info.addClass('pub-info')}}>
-                    {{ content.blog_teaser_info }}
-                </div>
-                {% endif %}
-                {% if content %}
-                <div {{ region_attributes.blog_teaser_preview.addClass('blog-preview')}}>
-                    {{ content.blog_teaser_preview }}
-                </div>
-                {% endif %}
-                <div class="details d-flex">
-                    {% if content %}
-                        {{ content.blog_teaser_link }}
-                    {% endif %}
-                    {% if content %}
-                    <p> 
-                        {{ content.blog_teaser_paragraphe }}
-                    </p>
-                    {% endif %}
-                    {% if content %}
-                        {{ content.blog_teaser_link_two}}
-                    {% endif %}
-                </div>
-            </div>
-</section>
-{% endif %}
+	<section {{ attributes.addClass('blog-list-section')}}>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-xl-8 mx-auto element ">
+					<div class="blog-single-card">
+						<div class="blog-img">
+							<a href="#" class="img-sup">
+								{% if content %}
+									{{ content.blog_teaser_image }}
+								{% endif %}
+								<div class="date-show">
+									{% if content %}
+										<span {{ region_attributes.blog_teaser_day.addClass('date-show__day')}}>
+											{{ content.blog_teaser_day }}
+										</span>
+									{% endif %}
+									{% if content %}
+										<span {{ region_attributes.blog_teaser_date.addClass('date-show__date')}}>
+											{{ content.blog_teaser_date }}
+										</span>
+									{% endif %}
+								</div>
+							</a>
+						</div>
+						<div class="d-flex flex-wrap py-3 align-items-center">
+
+							{% if content.btn_promoted %}
+								<div class="blog-btn blog-btn-black">
+									{{ content.btn_promoted }}
+								</div>
+							{% endif %}
+
+							{% if content.tag_btn_list %}
+								{{ content.tag_btn_list }}
+							{% endif %}
+
+							{% if content.blog_teaser_price %}
+								<span {{ region_attributes.blog_teaser_price.addClass('ml-auto','node-price')}}>
+									{{ content.blog_teaser_price }}
+								</span>
+							{% endif %}
+						</div>
+					</div>
+					{% if content.blog_teaser_title %}
+						<div {{ region_attributes.blog_teaser_title.addClass('blog-post-title')}}>
+							{{content.blog_teaser_title}}
+						</div>
+					{% endif %}
+
+					<div class='pub-info d-flex'>
+						{% if content.info_date %}
+							{{ content.info_date }}
+						{% endif %}
+                        {% if content.info_author %}
+                                <p class="px-3">/</p>
+								{{ content.info_author }}
+							{% endif %}
+					</div>
+
+					{% if content.blog_teaser_desc %}
+						<div {{ region_attributes.blog_teaser_desc.addClass('blog-preview')}}>
+							{{ content.blog_teaser_desc }}
+						</div>
+					{% endif %}
+					<div class="details d-flex">
+						{% if content.read_more_text %}
+							<div class="read-more-btn">
+								{{ content.read_more_text}}
+							</div>
+						{% endif %}
+
+						{% if content.log_in_link %}
+							<div class=" ml-3 link-comment">
+								{{ content.log_in_link}}
+								{{ content.log_in_text}}
+							</div>
+						{% endif %}
+						{% if content.comment %}
+							<div class=" ml-3 link-comment">
+								{{ content.comment}}
+							</div>
+						{% endif %}
+
+
+					</div>
+				</div>
+			</section>
+		{% endif %}

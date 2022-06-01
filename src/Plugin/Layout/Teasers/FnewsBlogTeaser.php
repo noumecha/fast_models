@@ -28,14 +28,11 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      "blog_teaser_date" = {
  *          "label" = @Translation("blog_teaser_date"),     
  *      },
- *      "blog_teaser_btn_link" = {
- *          "label" = @Translation("blog_teaser_btn_link"),     
+ *      "btn_promoted" = {
+ *          "label" = @Translation("btn_promoted"),     
  *      },
- *      "blog_teaser_btn_link_one" = {
- *          "label" = @Translation("blog_teaser_btn_link_one"),     
- *      },
- *      "blog_teaser_btn_link_two" = {
- *          "label" = @Translation("blog_teaser_btn_link_two"),     
+ *      "tag_btn_list" = {
+ *          "label" = @Translation("tag_btn_list"),     
  *      },
  *      "blog_teaser_price" = {
  *          "label" = @Translation("blog_teaser_price"),     
@@ -43,20 +40,14 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      "blog_teaser_title" = {
  *          "label" = @Translation("blog_teaser_title"),     
  *      },
- *      "blog_teaser_info" = {
- *          "label" = @Translation("blog_teaser_info"),     
+ *      "blog_teaser_desc" = {
+ *          "label" = @Translation("blog_teaser_desc"),     
  *      },
- *      "blog_teaser_preview" = {
- *          "label" = @Translation("blog_teaser_preview"),
+ *      "info_date" = {
+ *          "label" = @Translation("info_date"),     
  *      },
- *      "blog_teaser_link" = {
- *          "label" = @Translation("blog_teaser_link"),     
- *      },
- *      "blog_teaser_paragraphe" = {
- *          "label" = @Translation("blog_teaser_paragraphe"),     
- *      },
- *      "blog_teaser_link_two" = {
- *          "label" = @Translation("blog_teaser_link_two"),     
+ *      "info_author" = {
+ *          "label" = @Translation("info_author"),
  *      }
  *  }
  * )
@@ -89,7 +80,7 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
         // TODO Auto-generated method stub
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
-        
+        dump($build);
         return $build;
     }
 
@@ -129,34 +120,21 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
                             'value' => "july,2019"
                         ]
                     ],
-                    'blog_teaser_btn_link' => [
-                        'url' => [
-                            'label' => 'Lien 1',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "promoted",
-                                'class' => "link-btn"
-                            ]
+                    'btn_promoted' => [
+                        'text_html' => [
+                            'label' => 'Lien promoted',
+                            'value' => "promoted"
                         ]
                     ],
-                    'blog_teaser_btn_link_one' => [
-                        'url' => [
-                            'label' => 'Lien 2',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "Sports",
-                                'class' => "link-btn"
-                            ]
-                        ]
-                    ],
-                    'blog_teaser_btn_link_two' => [
-                        'url' => [
-                            'label' => 'Lien 3',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "Sports",
-                                'class' => "link-btn"
-                            ]
+                    'tag_btn_list' => [
+                        'text_html' => [
+                            'label' => 'list tags',
+                            'value' => '<div class="blog-btn ">
+                            <a href="#" class="link-btn">Sports</a>
+                        </div>
+                        <div class="blog-btn ">
+                            <a href="#" class="link-btn">Lifestyle</a>
+                        </div>'
                         ]
                     ],
                     'blog_teaser_price' => [
@@ -171,47 +149,22 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
                             'value' => "<a class='link-title' href=''>Here’s what happened to the stock market</a>"
                         ]
                     ],
-                    'blog_teaser_info' => [
+                    'info_date' => [
                         'text_html' => [
                             'label' => '',
-                            'value' => "<p>
-                                            MON, 05/04/2020 - 20:17 / BY ADMIN
-                                        </p>"
+                            'value' => "MON, 05/04/2020 - 20:17"
                         ]
                     ],
-                    'blog_teaser_preview' => [
+                    'info_author' => [
                         'text_html' => [
-                            'label' => 'Preview',
-                            'value' => "<p>
-                                            A tellus risus dis. Orci sagittis sociosqu senectus est facilisis est facilisis neque rutrum
-                                            dapibus!
-                                        </p>"
+                            'label' => 'info author',
+                            'value' => "admin2"
                         ]
-                    ],
-                    'blog_teaser_link' => [
-                        'url' => [
-                            'label' => 'Lien bas 1',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "Read More",
-                                'class' => "read-more-btn"
-                            ]
-                        ]
-                    ],
-                    'blog_teaser_paragraphe' => [
+                    ]
+                    'blog_teaser_desc' => [
                         'text_html' => [
-                            'label' => 'Paragaphe bas',
-                            'value' => "<a href='#' class='log-link'>Log In</a> to post comments"
-                        ]
-                    ],
-                    'blog_teaser_link_two' => [
-                        'url' => [
-                            'label' => 'Lien bas 2',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "1 comment",
-                                'class' => "link-comment"
-                            ]
+                            'label' => 'bloc description',
+                            'value' => " A tellus risus dis. Orci sagittis sociosqu senectus est facilisis est facilisis neque rutrum"
                         ]
                     ]
                 ]
