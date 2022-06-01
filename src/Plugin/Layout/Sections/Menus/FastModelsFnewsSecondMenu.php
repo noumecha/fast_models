@@ -81,7 +81,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
                                
                 $fn_scd_nav[$k]['#attributes'] = [
                     'class' => [
-                        'sn-bloc-no-fake'
+                        'sn-bloc'
                     ]
                 ];               
                 // add class
@@ -94,7 +94,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
                 $this->formatListMenus($fn_scd_nav[$k]['content']['#items']);
             }
         }
-        return $$fn_scd_nav;
+        return $fn_scd_nav;
     }
 
     /**
