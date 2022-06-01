@@ -80,7 +80,7 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
         // TODO Auto-generated method stub
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
-        dump($build);
+       // dump($build);
         return $build;
     }
 
