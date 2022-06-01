@@ -6,21 +6,24 @@
 					<div class="blog-single-card">
 						<div class="blog-img">
 							<a href="#" class="img-sup">
-								{% if content %}
+								{% if content.blog_teaser_image %}
 									{{ content.blog_teaser_image }}
 								{% endif %}
+                                {% if content.blog_teaser_day|has_value or content.blog_teaser_date|has_value %}
 								<div class="date-show">
-									{% if content %}
+										{% if content.blog_teaser_day %}
 										<span {{ region_attributes.blog_teaser_day.addClass('date-show__day')}}>
 											{{ content.blog_teaser_day }}
 										</span>
 									{% endif %}
-									{% if content %}
+									
+									{% if content.blog_teaser_date %}
 										<span {{ region_attributes.blog_teaser_date.addClass('date-show__date')}}>
 											{{ content.blog_teaser_date }}
 										</span>
 									{% endif %}
 								</div>
+                                {% endif %}
 							</a>
 						</div>
 						<div class="d-flex flex-wrap py-3 align-items-center">

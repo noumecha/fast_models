@@ -160,7 +160,7 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
                             'label' => 'info author',
                             'value' => "admin2"
                         ]
-                    ]
+                    ],
                     'blog_teaser_desc' => [
                         'text_html' => [
                             'label' => 'bloc description',
