@@ -5,18 +5,19 @@
 				{% if content.t_image %}
 					{{ content.t_image }}
 				{% endif %}
-				{% if content.date_show_day  %}
+				{% if content.date_show_day or content.date_show_date %}
 					<div class="date-show">
 						<div {{ region_attributes.date_show_day.addClass('date-show__day')}}>
 							{{ content.date_show_day }}
 						</div>
-						{% if content.date_show_date %}
-							<div {{ region_attributes.date_show_date.addClass('date-show__date')}}>
-								{{ content.date_show_date }}
-							</div>
-						{% endif %}
+
+						<div {{ region_attributes.date_show_date.addClass('date-show__date')}}>
+							{{ content.date_show_date }}
+						</div>
+
 					</div>
 				{% endif %}
+
 				{% if content.tag_show  %}
 					{{ content.tag_show }}
 				{% endif %}
