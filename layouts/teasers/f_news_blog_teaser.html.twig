@@ -55,7 +55,7 @@
 						{% if content.info_date %}
 							{{ content.info_date }}
 						{% endif %}
-                        {% if content.info_author %}
+                        {% if content.info_author|has_value %}
                                 <p class="px-3">/</p>
 								{{ content.info_author }}
 							{% endif %}

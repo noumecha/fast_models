@@ -80,7 +80,8 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
         // TODO Auto-generated method stub
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
-        dump($build);
+        $build["tag_show"]["fee1312f-1da6-4047-90b3-33bd04291165"]["content"]["#theme"] = "layoutfield_f_news_blog_teaser";
+        //dump($build);
         return $build;
     }
 
