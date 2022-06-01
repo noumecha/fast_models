@@ -75,26 +75,26 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
      * 
      * {@inheritdoc}
      */
-    private function getMenus(array $fn_first_nav) {
-        foreach ($fn_first_nav as $k => $m) {
+    private function getMenus(array $fn_scd_nav) {
+        foreach ($fn_scd_nav as $k => $m) {
             if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'system_menu_block') {
                                
-                $fn_first_nav[$k]['#attributes'] = [
+                $fn_scd_nav[$k]['#attributes'] = [
                     'class' => [
-                        'sn-bloc'
+                        'sn-bloc-no-fake'
                     ]
                 ];               
                 // add class
-                $fn_first_nav[$k]['content']['#attributes'] = [
+                $fn_scd_nav[$k]['content']['#attributes'] = [
                     'class' => [
                         'sn-list'
                     ]
                 ];
                 //
-                $this->formatListMenus($fn_first_nav[$k]['content']['#items']);
+                $this->formatListMenus($fn_scd_nav[$k]['content']['#items']);
             }
         }
-        return $fn_first_nav;
+        return $$fn_scd_nav;
     }
 
     /**
