@@ -1,7 +1,40 @@
 {% if content %}
-<header {{ attributes.addClass('fnews-header')}} >
-    {% if content.fn_second_nav %}
-        {{ content.fn_second_nav }}
-    {% endif %}
+<nav {{ attributes.addClass('second-nav')}}>
+    <div class="container-fluid content">
+        {% if content.fn_sencond_nav_logo %}
+        <div {{ region_attributes.fn_sencond_nav_logo.addClass('second-nav__brand')}}>
+            {{ content.fn_sencond_nav_logo}}
+        </div>
+        {% endif %}
+        <div class="su-bloc">
+            {% if content.fn_second_nav_content %}
+            <ul {{ region_attributes.fn_second_nav_content.addClass('sn-list')}}>
+                {{ content.fn_second_nav_content }}
+            </ul>
+            {% endif %}
+            {% if content.fn_sencond_nav_search %}
+            <a href="#" {{ region_attributes.fn_sencond_nav_search.addClass('sn-search')}}>
+                {{ content.fn_sencond_nav_search}}                
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</nav>
+<div class="sn-search-popup">
+    <div class="container">
+        <div class="spu-content">
+            {% if content.fn_popup_icon %}
+            <span {{ region_attributes.fn_popup_icone.addClass('sn-hide')}}>
+                {{ content.fn_popup_icone }}
+            </span>
+            {% endif %}
+            {% if content.fn_popup_search %}
+            <div {{ region_attributes.fn_popup_search.addClass('search-input')}}>
+                {{ content.fn_popup_search }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
 </header>
 {% endif %}
