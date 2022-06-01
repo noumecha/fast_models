@@ -5,7 +5,7 @@ namespace Drupal\fast_models\Plugin\Layout\Teasers;
 use Drupal\bootstrap_styles\StylesGroup\StylesGroupManager;
 use Drupal\formatage_models\FormatageModelsThemes;
 use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
-
+use Drupal\Core\Render\Element;
 /**
  * 
  * F_news Teaser Service Sections
