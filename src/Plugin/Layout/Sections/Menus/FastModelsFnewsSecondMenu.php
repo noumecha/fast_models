@@ -86,9 +86,9 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
                 ];               
                 // add class
                 $fn_first_nav[$k]['content']['#attributes'] = [
-                'class' => [
-                    'sn-list'
-                ]
+                    'class' => [
+                        'sn-list'
+                    ]
                 ];
                 //
                 $this->formatListMenus($fn_first_nav[$k]['content']['#items']);
