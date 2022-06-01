@@ -53,7 +53,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     
     if (is_array($build['fn_first_nav']))
       $build['fn_first_nav'] = $this->getMenus($build['fn_first_nav']);
-    
+   
     return $build;
   }
   

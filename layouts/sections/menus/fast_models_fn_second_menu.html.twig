@@ -1,9 +1,9 @@
 {% if content %}
 <nav {{ attributes.addClass('second-nav')}}>
     <div class="container-fluid content">
-        {% if content.fn_sencond_nav_logo %}
-        <div {{ region_attributes.fn_sencond_nav_logo.addClass('second-nav__brand')}}>
-            {{ content.fn_sencond_nav_logo}}
+        {% if content.fn_second_nav_logo %}
+        <div {{ region_attributes.fn_second_nav_logo.addClass('second-nav__brand')}}>
+            {{ content.fn_second_nav_logo}}
         </div>
         {% endif %}
         <div class="su-bloc">
@@ -12,9 +12,9 @@
                 {{ content.fn_second_nav_content }}
             </ul>
             {% endif %}
-            {% if content.fn_sencond_nav_search %}
-            <a href="#" {{ region_attributes.fn_sencond_nav_search.addClass('sn-search')}}>
-                {{ content.fn_sencond_nav_search}}                
+            {% if content.fn_second_nav_search %}
+            <a href="#" {{ region_attributes.fn_second_nav_search.addClass('sn-search')}}>
+                {{ content.fn_second_nav_search }}                
             </a>
             {% endif %}
         </div>
