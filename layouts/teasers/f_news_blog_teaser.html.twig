@@ -42,7 +42,10 @@
 		</div>
 		{% if content.blog_teaser_title %}
 			<div {{ region_attributes.blog_teaser_title.addClass('blog-post-title')}}>
-				{{content.blog_teaser_title}}
+				<div class="link-title">
+					{{content.blog_teaser_title}}
+
+				</div>
 			</div>
 		{% endif %}
 
