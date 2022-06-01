@@ -17,7 +17,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *   path = "layouts/sections/menus",
  *   template = "fast_models_fn_second_menu",
  *   library = "fast_models/fast_models_fn_second_menu",
- *   default_region = "fn_second_nav",
+ *   default_region = "fn_second_nav_content",
  *   regions = {
  *      "fn_second_nav_content" = {
  *          "label" = @Translation("fn_second_nav_content"),
@@ -79,19 +79,19 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
         foreach ($fn_first_nav as $k => $m) {
             if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'system_menu_block') {
                 // header menu
-                //$fn_first_nav[$k]['#children'] = "";
-                //
-                /*$fn_first_nav[$k]['#attributes'] = [
+                $fn_first_nav[$k]['#children'] = "check-by-noumel";
+                
+                $fn_first_nav[$k]['#attributes'] = [
                     'class' => [
-                        'first-nav'
+                        'sn-bloc'
                     ]
-                ];*/                
+                ];               
                 // add class
-                /*$fn_first_nav[$k]['content']['#attributes'] = [
+                $fn_first_nav[$k]['content']['#attributes'] = [
                 'class' => [
-                    'nav-list'
+                    'sn-list'
                 ]
-                ];*/
+                ];
                 //
                 $this->formatListMenus($fn_first_nav[$k]['content']['#items']);
             }
@@ -109,16 +109,6 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
             if (!empty($item['attributes'])) {
                 $attribute = $item['attributes'];
                 $attribute->addClass('nav-item');
-                // add sub menu
-                if ($item['is_expanded']) {
-                $attribute->addClass('sub-alt');
-                }
-                // menu actif
-                if ($item['in_active_trail']) {
-                $attribute->addClass('nav-item--active');
-                }
-                $items[$k]['attributes'] = $attribute;
-                //
                 if (!empty($item['below'])) {
                 $this->formatListMenus($item['below']);
                 $items[$k]['below'] = $item['below'];
