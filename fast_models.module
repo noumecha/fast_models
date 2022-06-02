@@ -22,6 +22,14 @@ function fast_models_theme() {
     ],
     'file' => 'fast_models.theme.inc'
   ];
+ // pre-formatage et template pour le menu.
+  $hooks['layoutmenu_fast_models_fn_second_menu'] = [
+    'render element' => 'element',
+    'preprocess functions' => [
+      'template_preprocess_layoutmenu_fast_models_fn_second_menu'
+    ],
+    'file' => 'fast_models.theme.inc'
+  ];
   /* formatage de la liste des tags */
   $hooks['layoutfield_f_news_teaser_service'] = [
     'render element' => 'element',
