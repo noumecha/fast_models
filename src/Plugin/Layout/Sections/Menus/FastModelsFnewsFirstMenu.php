@@ -1,4 +1,9 @@
 <?php
+/**
+ * Fast_ models_first menu
+ * 
+ * @{inhreitdoc}
+ */
 
 namespace Drupal\fast_models\Plugin\Layout\Sections\Menus;
 
@@ -7,7 +12,6 @@ use Drupal\bootstrap_styles\StylesGroup\StylesGroupManager;
 use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
 
 /**
- *
  * Fast Models fn first menu
  *
  * @Layout (
@@ -26,6 +30,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * )
  *
  */
+
 class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   
   /**
@@ -33,6 +38,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
    * {@inheritdoc}
    * @see \Drupal\formatage_models\Plugin\Layout\FormatageModels::__construct()
    */
+  
   public function __construct(array $configuration, $plugin_id, $plugin_definition, StylesGroupManager $styles_group_manager) {
     // TODO Auto-generated method stub
     parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);

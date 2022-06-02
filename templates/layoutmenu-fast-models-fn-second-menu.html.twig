@@ -48,9 +48,7 @@
 						{{ menus.menu_links(item.below, attributes, menu_level + 1) }}
 					{% else %}
 						{% if menu_level == 0 and loop.index == 1 and show_icone_home == true %}
-							<a href="/" class="nav-link">
-								<i class="fa fa-home"></i>
-							</a>
+							<a href="/" class="nav-link"></a>
 						{% else %}
 							{{ link(item.title, item.url, {'class': link_classes}) }}
 						{% endif %}
