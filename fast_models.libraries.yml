@@ -255,3 +255,9 @@ fast_models_sticky_author:
   css:
     theme:
       layouts/css/fast_models_sticky_author.css: {}
+fast_models_article_section:
+  js:
+    layouts/js/fast_models_article_section.js: {}
+  css:
+    theme:
+      layouts/css/fast_models_article_section.css: {}

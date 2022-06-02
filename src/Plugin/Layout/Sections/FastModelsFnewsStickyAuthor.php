@@ -16,7 +16,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  path = "layouts/sections",
  *  template = "fast_models_sticky_author",
  *  library = "fast_models/fast_models_sticky_author",
- *  default_region = "fast_models_sticky_author",
+ *  default_region = "sticky_author_image",
  *  regions = {
  *       "sticky_author_image" = {
  *          "label" = @Translation("sticky_author_image"),
