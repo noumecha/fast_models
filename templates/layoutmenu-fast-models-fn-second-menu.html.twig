@@ -33,8 +33,6 @@
       {% if items %}
         {% if menu_level == 0 %}
           <ul{{ attributes.addClass('sn-list') }}>
-        {% else %}
-          <ul>
         {% endif %}
         {% for item in items %}
           <li{{ item.attributes }}>
@@ -45,7 +43,7 @@
 			%}
 			{% if item.below %}
 				{{ link(item.title, item.url, {'class': link_classes}) }}
-            	{#{ menus.menu_links(item.below, attributes, menu_level + 1) }#}
+            	{{ menus.menu_links(item.below, attributes, menu_level + 1) }}
             {% endif %}
           </li>
         {% endfor %}
