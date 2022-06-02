@@ -29,28 +29,16 @@
 	{% if items %}
 		{% if menu_level == 0 %}
 			<ul {{attributes}}>
-		{% else %}
-			<ul class="sub-menu">
-        {% endif %}
 			{% for item in items %}
-				{%
-        set classes = [
-        ]
-      %}
+				{% set classes = []%}
 				<li{{item.attributes.addClass(classes)}}>
-					{%
-          set link_classes = [
-            'nav-item',
-          ]
-        %}
+					{% set link_classes = [
+            			'nav-item',
+          			]
+        			%}
 					{% if item.below %}
-						{{ link(item.title, item.url, {'class': link_classes, 'data-toggle': 'dropdown', 'aria-expanded': 'false', 'aria-haspopup': 'true' }) }}
-						{{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-					{% else %}
-						{% if menu_level == 0 and loop.index == 1 and show_icone_home == true %}
+						{% if menu_level == 0 %}
 							<a href="/" class="nav-link"></a>
-						{% else %}
-							{{ link(item.title, item.url, {'class': link_classes}) }}
 						{% endif %}
 					{% endif %}
 				</li>

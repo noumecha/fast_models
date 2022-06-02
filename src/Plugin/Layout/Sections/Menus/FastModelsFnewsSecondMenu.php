@@ -78,7 +78,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
         foreach ($fn_scd_nav as $k => $m) {
             if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'system_menu_block') {
                                
-                $fn_scd_nav[$k]['#attributes'] = [
+                /*$fn_scd_nav[$k]['#attributes'] = [
                     'class' => [
                         'sn-bloc'
                     ]
@@ -92,7 +92,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
                 // set a new theme hoock () : refers to .theme.inc file
                 $fn_scd_nav[$k]['content']['#theme'] = 'layoutmenu_fast_models_fn_second_menu';
                 //
-                $this->formatListMenus($fn_scd_nav[$k]['content']['#items']);
+                $this->formatListMenus($fn_scd_nav[$k]['content']['#items']);*/
             }
         }
         return $fn_scd_nav;
