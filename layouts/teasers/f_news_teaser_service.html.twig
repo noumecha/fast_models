@@ -1,3 +1,6 @@
+{{dump(content.tag_show)}}
+
+
 {% if content %}
 	<div {{ attributes.addClass('teaser-service') }}>
 		<div class="">
@@ -19,16 +22,17 @@
 				{% endif %}
 				{% if content.tag_show  %}
 					<div class="tag-show">
-						{{content.tag_show}}
+						<div class="tag-show__tag">
+							{{ content.tag_show }}
+						</div>
 					</div>
 				{% endif %}
 			</div>
 		</div>
 		<div class="teaser-service__body ">
 			{% if content.head_nav  %}
-				<div {{ region_attributes.head_nav.addClass('head-nav')}}>
-
-					{{content.head_nav}}
+				<div {{ region_attributes.head_nav}}>
+					{{ content.head_nav }}
 				</div>
 			{% endif %}
 
