@@ -249,3 +249,9 @@ fast_models_fn_second_menu:
   css:
     theme:
       layouts/css/fast_models_fn_second_menu.css: {}
+fast_models_sticky_author:
+  js:
+    layouts/js/fast_models_sticky_author.js: {}
+  css:
+    theme:
+      layouts/css/fast_models_sticky_author.css: {}
