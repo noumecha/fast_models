@@ -66,7 +66,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
         FormatageModelsThemes::formatSettingValues($build);
         if (is_array($build['fn_second_nav_content']))
             $build['fn_second_nav_content'] = $this->getMenus($build['fn_second_nav_content']);
-   
+        dump($build);
         return $build;
     }
 
