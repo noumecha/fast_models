@@ -30,8 +30,17 @@ function fast_models_theme() {
     ],
     'file' => 'fast_models.theme.inc'
   ];
-  /* formatage de la liste des tags */
+ 
+  /* formatage de la liste des head_nav */
   $hooks['layoutfield_f_news_teaser_service'] = [
+    'render element' => 'element',
+    'preprocess functions' => [
+      'template_preprocess_layoutfield_f_news_teaser_service'
+    ],
+    'file' => 'fast_models.theme.inc'
+  ];
+  /* formatage de la liste des tag_show */
+  $hooks['layoutfield_f_news_teaser_service_tag'] = [
     'render element' => 'element',
     'preprocess functions' => [
       'template_preprocess_layoutfield_f_news_teaser_service'

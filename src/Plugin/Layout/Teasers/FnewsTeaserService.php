@@ -72,6 +72,8 @@ class FnewsTeaserService extends FormatageModelsTeasers
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
         $build["head_nav"]["7d339ed1-f3bd-4407-83d1-2bfeeeb92d43"]["content"]["#theme"] = "layoutfield_f_news_teaser_service";
+        $build["tag_show"]["f49ef975-9c7f-444e-b36a-05ababb03b4c"]["content"]["#theme"] = "layoutfield_f_news_teaser_service_tag";
+
        //dump($build);
         return $build;
     }
