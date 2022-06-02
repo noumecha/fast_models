@@ -33,17 +33,19 @@
       {% if items %}
         {% if menu_level == 0 %}
           <ul{{ attributes.addClass('sn-list') }}>
+        {% else %}
+          <ul>
         {% endif %}
         {% for item in items %}
           <li{{ item.attributes }}>
+            {{ link(item.title, item.url) }}
 			{% 
 				set link_classes = [
-					'nav-link',
+					'nav-link'
 				]
 			%}
-			{% if item.below %}
-				{{ link(item.title, item.url, {'class': link_classes}) }}
-            	{{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+            {% if item.below %}
+              {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
             {% endif %}
           </li>
         {% endfor %}
