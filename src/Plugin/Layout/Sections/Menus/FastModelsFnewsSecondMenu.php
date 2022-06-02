@@ -82,12 +82,6 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
                     'class' => [
                         'sn-bloc'
                     ]
-                ];               
-                // add class
-                $fn_scd_nav[$k]['content']['#attributes'] = [
-                    'class' => [
-                        'sn-list'
-                    ]
                 ];
                 // set a new theme hoock () : refers to .theme.inc file
                 $fn_scd_nav[$k]['content']['#theme'] = 'layoutmenu_fast_models_fn_second_menu';
