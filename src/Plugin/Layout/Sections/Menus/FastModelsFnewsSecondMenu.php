@@ -28,9 +28,6 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "fn_second_nav_search" = {
  *          "label" = @Translation("fn_second_nav_search"),     
  *      },
- *      "fn_popup_icon" = {
- *          "label" = @Translation("fn_popup_icon"),     
- *      },
  *      "fn_popup_search" = {
  *          "label" = @Translation("fn_popup_search"),     
  *      }
@@ -140,12 +137,6 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
                         'text_html' => [
                             'label' => 'Logo',
                             'value' => "<a href='#' class=''>storibon</a>"
-                        ]
-                    ],
-                    'fn_popup_icon' => [
-                        'text_html' => [
-                            'label' => "Pop Up icon",
-                            'value' => "<i class='wbu-close'></i>"
                         ]
                     ],
                     'fn_popup_search' => [
