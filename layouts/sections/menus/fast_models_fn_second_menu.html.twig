@@ -23,11 +23,11 @@
 <div class="sn-search-popup">
     <div class="container">
         <div class="spu-content">
-            {% if content.fn_popup_icon %}
-            <span {{ region_attributes.fn_popup_icon.addClass('sn-hide')}}>
-                {{ content.fn_popup_icone }}
+            
+            <span class="sn-hide">
+            	<i class='wbu-close'></i>
             </span>
-            {% endif %}
+            
             {% if content.fn_popup_search %}
             <div {{ region_attributes.fn_popup_search.addClass('search-input')}}>
                 {{ content.fn_popup_search }}
@@ -36,5 +36,8 @@
         </div>
     </div>
 </div>
+{% if content.fn_popup_search.layout_builder_add_block %}
+	{{ content.fn_popup_search }}
+{% endif %}
 </header>
 {% endif %}
