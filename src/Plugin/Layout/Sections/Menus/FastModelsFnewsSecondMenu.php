@@ -64,9 +64,9 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
         // TODO Auto-generated method stub
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
-        if (is_array($build['fast_models_fn_second_menu']['fn_second_nav_content']))
-            $build['fast_models_fn_second_menu']['fn_second_nav_content'] = $this->getMenus($build['fast_models_fn_second_menu']['fn_second_nav_content']);
-        dump($build['fast_models_fn_second_menu']);
+        if (is_array($build['fn_second_nav_content']))
+            $build['fn_second_nav_content'] = $this->getMenus($build['fn_second_nav_content']);
+        dump($build['fn_second_nav_content']);
         return $build;
     }
 
