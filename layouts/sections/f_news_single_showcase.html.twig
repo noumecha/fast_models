@@ -15,11 +15,13 @@
 							</p>
 						{% endif %}
 					</div>
+                    <div class="video-handler">
 					{% if content.full_image_video %}
-						<div {{region_attributes.full_image_video.addClass('video-handler')}}>
+						<div {{region_attributes.full_image_video.addClass('video-sup')}}>
 							{{ content.full_image_video }}
 						</div>
 					{% endif %}
+                    </div>
 					<div class="tag-list">
 						{% if content.tag_button %}
 							<div {{region_attributes.tag_button.addClass('fn-tag-btn ')}}>
