@@ -48,6 +48,18 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      },
  *      "info_author" = {
  *          "label" = @Translation("info_author"),
+ *      },
+ *      "read_more_text" = {
+ *          "label" = @Translation("read_more_text"),     
+ *      },
+ *      "log_in_link" = {
+ *          "label" = @Translation("log_in_link"),
+ *      },
+ *      "log_in_text" = {
+ *          "label" = @Translation("log_in_text"),
+ *      },
+ *      "comment" = {
+ *          "label" = @Translation("comment"),
  *      }
  *  }
  * )
@@ -166,6 +178,27 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
                         'text_html' => [
                             'label' => 'bloc description',
                             'value' => " A tellus risus dis. Orci sagittis sociosqu senectus est facilisis est facilisis neque rutrum"
+                        ]
+                    ],'read_more_text' => [
+                        'text_html' => [
+                            'label' => 'read more text',
+                            'value' => "Read More"
+                        ]
+                    ],'log_in_link' => [
+                        'text_html' => [
+                            'label' => 'log in link',
+                            'value' => "Log in"
+                        ]
+                    ],'log_in_text' => [
+                        'text_html' => [
+                            'label' => 'Text login',
+                            'value' => "to post comments"
+                        ]
+                    ],
+                     'comment' => [
+                        'text_html' => [
+                            'label' => 'Nombre de commentaire',
+                            'value' => "2 comments"
                         ]
                     ]
                 ]
