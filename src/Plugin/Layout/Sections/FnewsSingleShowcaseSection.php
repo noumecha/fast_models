@@ -143,11 +143,11 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
                     'full_image_video' => [
                         'text_html' => [
                             'label' => 'Video image',
-                            'value' => "<a href='https://www.youtube.com/watch?v=ViuDsy7yb8M' class='video-sup'>
+                            'value' => "<div class='video-sup'>
                                             <img class='card-img'
                                                 src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/video_thumbnails/ViuDsy7yb8M.jpg?itok=NZNg1pjc'
                                             alt=''>
-                                        </a>"
+                                        </div>"
                         ]
                     ],
                     'tag_button' => [
