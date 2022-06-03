@@ -19,20 +19,8 @@
 				</div>
 
 			{% endif %}
-			{% if content.teaser_tech_role %}
-				<div class="pub-info d-flex">
-					{% if content %}
-						<div {{ region_attributes.teaser_tech_image.addClass('img-profile')}}>
-							{{ content.teaser_tech_image }}
-						</div>
-					{% endif %}
-					{% if content %}
-						<div {{ region_attributes.teaser_tech_role.addClass('role')}}>
-							{{ content.teaser_tech_role }}
-						</div>
-					{% endif %}
-				</div>
-
+			{% if content.teaser_tech_user %}
+				{{content.teaser_tech_user}}
 			{% endif %}
 		</div>
 	{% endif %}

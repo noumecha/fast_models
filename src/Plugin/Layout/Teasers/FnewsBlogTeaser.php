@@ -48,6 +48,18 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      },
  *      "info_author" = {
  *          "label" = @Translation("info_author"),
+ *      },
+ *      "read_more_text" = {
+ *          "label" = @Translation("read_more_text"),     
+ *      },
+ *      "log_in_link" = {
+ *          "label" = @Translation("log_in_link"),
+ *      },
+ *      "log_in_text" = {
+ *          "label" = @Translation("log_in_text"),
+ *      },
+ *      "comment" = {
+ *          "label" = @Translation("comment"),
  *      }
  *  }
  * )
@@ -80,8 +92,8 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
         // TODO Auto-generated method stub
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
-        $build["tag_btn_list"]["939af357-8adb-4966-a87f-839ccfd89e6a"]["content"]["#theme"] = "layoutfield_f_news_blog_teaser";
-      //  dump($build);
+        $build["tag_btn_list"]["8f44d654-c35e-49f8-9425-a0507e9918fe"]["content"]["#theme"] = "layoutfield_f_news_blog_teaser";
+        //dump($build);
         return $build;
     }
 
@@ -166,6 +178,27 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
                         'text_html' => [
                             'label' => 'bloc description',
                             'value' => " A tellus risus dis. Orci sagittis sociosqu senectus est facilisis est facilisis neque rutrum"
+                        ]
+                    ],'read_more_text' => [
+                        'text_html' => [
+                            'label' => 'read more text',
+                            'value' => "Read More"
+                        ]
+                    ],'log_in_link' => [
+                        'text_html' => [
+                            'label' => 'log in link',
+                            'value' => "Log in"
+                        ]
+                    ],'log_in_text' => [
+                        'text_html' => [
+                            'label' => 'Text login',
+                            'value' => "to post comments"
+                        ]
+                    ],
+                     'comment' => [
+                        'text_html' => [
+                            'label' => 'Nombre de commentaire',
+                            'value' => "2 comments"
                         ]
                     ]
                 ]

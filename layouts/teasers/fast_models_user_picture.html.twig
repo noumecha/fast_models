@@ -1,0 +1,16 @@
+{% if content %}
+	<div class="pub-info">
+		{% if content.img_author %}
+			<div class="img-profile">
+				{{ content.img_author}}
+			</div>
+		{% endif %}
+		{% if content.author %}
+			<div class="role">
+				{{ content.author }}
+			</div>
+		{% endif %}
+
+	</div>
+
+{% endif %}
