@@ -236,7 +236,13 @@ fast_models_article_card_section:
   css:
     theme:
       layouts/css/fast_models_article_card_section.css: {}
-## menu library there 
+fast_models_user_picture:
+  js:
+    layouts/js/fast_models_user_picture.js: {}
+  css:
+    theme:
+      layouts/css/fast_models_user_picture.css: {}
+## menu library there
 fast_models_fn_first_menu:
   js:
     layouts/js/fast_models_fn_first_menu.js: {}
