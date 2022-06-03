@@ -79,6 +79,25 @@ class FnewsFirstServiceSection extends FormatageModelsSection
             $build['head_nav'] = $this->getMenus($build['head_nav']);
         return $build;
     }
+    /**
+     * 
+     * {@inheritdoc}
+     */
+    private function getMenus(array $fn_scd_nav) {
+        foreach ($fn_scd_nav as $k => $m) {
+            if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'field_block') {
+                               
+                $fn_scd_nav[$k]['#attributes'] = [
+                    'class' => [
+                        'blog-btn'
+                    ]
+                ];
+                // set a new theme hoock () : refers to .theme.inc file
+                $fn_scd_nav[$k]['content']['#theme'] = 'layoutfield_f_news_bloag_teaser';
+            }
+        }
+        return $fn_scd_nav;
+    }
 
     /**
      * 

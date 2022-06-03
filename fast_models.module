@@ -62,12 +62,6 @@ function fast_models_theme() {
       'template_preprocess_layoutfield_f_news_article_tag'
     ]
   ];
-  // hook for first-service section head-nav  
-  $hooks['layoutfield_f_news_firs_service_section'] = [
-    'render element' => 'element',
-    'preprocess functions' => [
-      'template_preprocess_layoutfield_f_news_teaser_service'
-    ]
-  ];
+  
   return $hooks;
 }
