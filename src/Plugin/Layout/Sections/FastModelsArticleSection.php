@@ -25,7 +25,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "article_text" = {
  *          "label" = @Translation("article_text"),     
  *      },
- *      "article_text" = {
+ *      "article_video" = {
  *          "label" = @Translation("article_video"),     
  *      }
  *  }
