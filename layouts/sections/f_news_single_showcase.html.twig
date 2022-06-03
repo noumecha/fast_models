@@ -1,35 +1,41 @@
 {% if content %}
-<article {{attributes.addClass('single-showcase_fnews')}}>
-    <div class="container">
-        {% if content.full_image %}
-        <a href="#" {{ region_attributes.full_image.addClass('ssf__img ')}}>
-            {{ content.full_image }}
-        </a>
-        {% endif %}
-        <div class="my-5">
-            {% if content.paragraph_one %}
-            <p {{ region_attributes.paragraph_one.addClass('ssf-paragraph')}}>
-                {{ content.paragraph_one }}
-            </p>
-            {% endif %}
-        </div>
-        {% if content.full_image_video %}
-        <div {{region_attributes.full_image_video.addClass('video-handler')}}>
-            {{ content.full_image_video }}
-        </div>
-        {% endif %}
-        <div class="tag-list">
-            {% if content.tag_button %}
-            <div {{region_attributes.tag_button.addClass('fn-tag-btn ')}}>
-                {{ content.tag_button }}
-            </div>
-            {% endif %}
-            {% if content.tag_button %}
-            <div {{region_attributes.tag_button_one.addClass('fn-tag-btn ')}}>
-                {{ content.tag_button_one }}
-            </div>
-            {% endif %}
-        </div>
-    </div>
-</article>
+	<article {{attributes.addClass('single-showcase_fnews')}}>
+		<div class="container">
+			<div class="row flex-wrap-reverse">
+				<div class="col-md-8">
+					{% if content.full_image %}
+						<a href="#" {{ region_attributes.full_image.addClass('ssf__img ')}}>
+							{{ content.full_image }}
+						</a>
+					{% endif %}
+					<div class="my-5">
+						{% if content.paragraph_one %}
+							<p {{ region_attributes.paragraph_one.addClass('ssf-paragraph')}}>
+								{{ content.paragraph_one }}
+							</p>
+						{% endif %}
+					</div>
+					{% if content.full_image_video %}
+						<div {{region_attributes.full_image_video.addClass('video-handler')}}>
+							{{ content.full_image_video }}
+						</div>
+					{% endif %}
+					<div class="tag-list">
+						{% if content.tag_button %}
+							<div {{region_attributes.tag_button.addClass('fn-tag-btn ')}}>
+								{{ content.tag_button }}
+							</div>
+						{% endif %}
+						{% if content.tag_button %}
+							<div {{region_attributes.tag_button_one.addClass('fn-tag-btn ')}}>
+								{{ content.tag_button_one }}
+							</div>
+						{% endif %}
+					</div>
+
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</article>
 {% endif %}
