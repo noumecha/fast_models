@@ -22,19 +22,12 @@
 						</div>
 					{% endif %}
                     </div>
+                    {% if content.tag_list_item %}
 					<div class="tag-list">
-						{% if content.tag_button %}
-							<div {{region_attributes.tag_button.addClass('fn-tag-btn ')}}>
-								{{ content.tag_button }}
-							</div>
-						{% endif %}
-						{% if content.tag_button %}
-							<div {{region_attributes.tag_button_one.addClass('fn-tag-btn ')}}>
-								{{ content.tag_button_one }}
-							</div>
-						{% endif %}
+                    {#{region_attributes.tag_list_item.addClass('fn-tag-btn ')}#}
+					    {{ content.tag_list_item }}
 					</div>
-
+                    {% endif %}
 				</div>
 				<div class="col-md-4">
                     {% if content %}

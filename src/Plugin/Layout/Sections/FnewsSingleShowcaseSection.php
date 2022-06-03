@@ -148,15 +148,9 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
                                         alt=''>"
                         ]
                     ],
-                    'tag_button' => [
+                    'tag_list_item' => [
                         'text_html' => [
-                            'label' => 'Boutton un',
-                            'value' => "<span href='#' class='link-btn'>tag 1</span>"
-                        ]
-                    ],
-                    'tag_button_one' => [
-                        'text_html' => [
-                            'label' => 'Boutton deux',
+                            'label' => 'Tags list items',
                             'value' => "<span href='#' class='link-btn'>tag 1</span>"
                         ]
                     ],
