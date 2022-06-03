@@ -40,12 +40,6 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "full_image_video" = {
  *          "label" = @Translation("full_image_video"),
  *      },
- *      "single_title" = {
- *          "label" = @Translation("single_title"),
- *      },
- *      "paragraph_two" = {
- *          "label" = @Translation("paragraph_two"),     
- *      },
  *      "tag_button" = {
  *          "label" = @Translation("tag_button"),     
  *      },
@@ -164,23 +158,6 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
                                                 src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/video_thumbnails/ViuDsy7yb8M.jpg?itok=NZNg1pjc'
                                             alt=''>
                                         </a>"
-                        ]
-                    ],
-                    'single_title' => [
-                        'text_html' => [
-                            'label' => 'Titre',
-                            'value' => "Showcase specifics"
-                        ]
-                    ],
-                    'paragraph_two' => [
-                        'text_html' => [
-                            'label' => 'Paragraphe trois',
-                            'value' => "Compellingly <a href='#'>recaptiualize enterprise-wide web-readiness</a>
-                                        for
-                                        robust strategic theme areas. Synergistically
-                                        reconceptualize user-centric functionalities via revolutionary strategic theme areas. Progressively
-                                        transition
-                                        out-of-the-box leadership skills rather than top-line and <a href='#'>this is a hover link.</a>"
                         ]
                     ],
                     'tag_button' => [

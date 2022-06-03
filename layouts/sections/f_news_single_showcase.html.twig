@@ -38,22 +38,6 @@
             {{ content.full_image_video }}
         </div>
         {% endif %}
-        <div class="row ss-two-bloc">
-            <div  class="col-12 col-md-6">
-                {% if content.single_title %}
-                <h4 {{region_attributes.single_title.addClass('ssf-h4')}}>
-                    {{ content.single_title }}
-                </h4>
-                {% endif %}
-            </div>
-            <div class="col-12 col-md-6">
-                {% if content.paragraph_two %}
-                <p {{ region_attributes.paragraph_two.addClass('ssf-paragraph','pt-0')}}>
-                    {{ content.paragraph_two }}
-                </p>
-                {% endif %}
-            </div>
-        </div>
         <div class="tag-list">
             {% if content.tag_button %}
             <div {{region_attributes.tag_button.addClass('fn-tag-btn ')}}>
