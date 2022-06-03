@@ -15,122 +15,113 @@
 							</p>
 						{% endif %}
 					</div>
-                    <div class="video-handler">
-					{% if content.full_image_video %}
-						<div {{region_attributes.full_image_video.addClass('video-sup')}}>
-							{{ content.full_image_video }}
+					<div class="video-handler">
+						{% if content.full_image_video %}
+							<div {{region_attributes.full_image_video.addClass('video-sup')}}>
+								{{ content.full_image_video }}
+							</div>
+						{% endif %}
+					</div>
+					{% if content.tag_list_item %}
+						<div
+							class="tag-list">
+							{#{region_attributes.tag_list_item.addClass('fn-tag-btn ')}#}
+							{{ content.tag_list_item }}
 						</div>
 					{% endif %}
-                    </div>
-                    {% if content.tag_list_item %}
-					<div class="tag-list">
-                    {#{region_attributes.tag_list_item.addClass('fn-tag-btn ')}#}
-					    {{ content.tag_list_item }}
-					</div>
-                    {% endif %}
 				</div>
 				<div class="col-md-4">
-                    {% if content %}
-                    <div {{ attributes.addClass('sticky-author-fnews')}}>
-                        <div class="saf-author">
-                            {% if content.sticky_author_image %}
-                            <div {{ region_attributes.sticky_author_image.addClass('saf-author__img')}}>
-                                 {{ content.sticky_author_image }}
-                            </div>
-                            {% endif %}
-                            {% if content.sticky_author_role %}
-                            <div {{ region_attributes.sticky_author_role.addClass('saf-author__title') }}>
-                                {{ content.sticky_author_role }}
-                            </div>
-                            {% endif %}
-                        </div>
-                        <div class="saf-desc">
-                            {% if content.sticky_author_pub %}
-                                <div {{ region_attributes.sticky_author_pub.addClass('saf-desc__title') }}>
-                                    {{ content.sticky_author_pub }}
-                                </div>
-                            {% endif %}
-                            {% if content.sticky_author_date_one %}
-                                <div {{ region_attributes.sticky_author_date_one.addClass('saf-desc__desc')}}>
-                                    {{ content.sticky_author_date_one }}
-                                </div>
-                            {% endif %}
-                        </div>
-                        <div class="saf-desc">
-                            {% if content.sticky_author_update %}
-                                <div {{ region_attributes.sticky_author_update.addClass('saf-desc__title')}}>
-                                    {{ content.sticky_author_update }}
-                                </div>
-                            {% endif %}
-                            {% if content.sticky_author_date_two %}
-                                <div {{ region_attributes.sticky_author_date_two.addClass('saf-desc__desc')}}>
-                                    {{ content.sticky_author_date_two }}
-                                </div>
-                            {% endif %}
-                        </div>
-                        <div class="saf-desc">
-                            {% if content.sticky_author_number %}
-                                <div {{ region_attributes.sticky_author_number.addClass('saf-desc__title')}}>
-                                    {{ content.sticky_author_number }}
-                                </div>
-                            {% endif %}
-                            {% if content.sticky_author_read %}
-                                <div {{ region_attributes.sticky_author_read.addClass('saf-desc__desc')}}>
-                                    {{ content.sticky_author_read }}
-                                </div>
-                            {% endif %}
-                        </div>
-                        <div class="saf-btn">
-                            {% if content.sticky_author_status %}
-                                <div {{ region_attributes.sticky_author_status.addClass('saf-btn__btn')}}>
-                                    {{ content.sticky_author_status }}
-                                </div>
-                            {% endif %}
-                            {% if content.sticky_author_status_one %}
-                                <div {{ region_attributes.sticky_author_status_one.addClass('saf-btn__btn')}}>
-                                    {{ content.sticky_author_status_one }}
-                                </div>
-                            {% endif %}
-                        </div>
-                        {% if content.sticky_author_icon_contener %}
-                        <div {{ region_attributes.sticky_author_icon_contener.addClass('saf-social')}}>
-                            {{ content.sticky_author_icon_contener }}
-                        </div>
-                        {% endif %}
-                    </div>
-                    {% endif %}
 
-                </div>
+					<div class='sticky-author-fnews'>
+						<div class="saf-author">
+							{% if content.sticky_author_image %}
+								<div {{ region_attributes.sticky_author_image.addClass('saf-author__img')}}>
+									{{ content.sticky_author_image }}
+								</div>
+							{% endif %}
+							{% if content.sticky_author_role %}
+								<div {{ region_attributes.sticky_author_role.addClass('saf-author__title') }}>
+									{{ content.sticky_author_role }}
+								</div>
+							{% endif %}
+						</div>
+						<div class="saf-desc">
+							{% if content.sticky_author_pub %}
+								<div {{ region_attributes.sticky_author_pub.addClass('saf-desc__title') }}>
+									{{ content.sticky_author_pub }}
+								</div>
+							{% endif %}
+							{% if content.sticky_author_date_one %}
+								<div {{ region_attributes.sticky_author_date_one.addClass('saf-desc__desc')}}>
+									{{ content.sticky_author_date_one }}
+								</div>
+							{% endif %}
+						</div>
+						<div class="saf-desc">
+							{% if content.sticky_author_update %}
+								<div {{ region_attributes.sticky_author_update.addClass('saf-desc__title')}}>
+									{{ content.sticky_author_update }}
+								</div>
+							{% endif %}
+							{% if content.sticky_author_date_two %}
+								<div {{ region_attributes.sticky_author_date_two.addClass('saf-desc__desc')}}>
+									{{ content.sticky_author_date_two }}
+								</div>
+							{% endif %}
+						</div>
+						<div class="saf-desc">
+							{% if content.sticky_author_number %}
+								<div {{ region_attributes.sticky_author_number.addClass('saf-desc__title')}}>
+									{{ content.sticky_author_number }}
+								</div>
+							{% endif %}
+							{% if content.sticky_author_read %}
+								<div {{ region_attributes.sticky_author_read.addClass('saf-desc__desc')}}>
+									{{ content.sticky_author_read }}
+								</div>
+							{% endif %}
+						</div>
+						<div class="saf-btn">
+							{% if content.sticky_author_status %}
+								<div {{ region_attributes.sticky_author_status.addClass('saf-btn__btn')}}>
+									{{ content.sticky_author_status }}
+								</div>
+							{% endif %}
+							{% if content.sticky_author_status_one %}
+								<div {{ region_attributes.sticky_author_status_one.addClass('saf-btn__btn')}}>
+									{{ content.sticky_author_status_one }}
+								</div>
+							{% endif %}
+						</div>
+						{% if content.sticky_author_icon_contener %}
+							<div {{ region_attributes.sticky_author_icon_contener.addClass('saf-social')}}>
+								{{ content.sticky_author_icon_contener }}
+							</div>
+						{% endif %}
+					</div>
+
+
+				</div>
 			</div>
 		</div>
 	</article>
 {% endif %}
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="facebook-f" viewBox="0 0 320 512">
-        <path
-              d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z">
-        </path>
-    </symbol>
+	<symbol id="facebook-f" viewbox="0 0 320 512">
+		<path d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path>
+	</symbol>
 
-    <symbol id="print" viewBox="0 0 512 512">
-        <path
-              d="M448 192H64C28.65 192 0 220.7 0 256v96c0 17.67 14.33 32 32 32h32v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h32c17.67 0 32-14.33 32-32V256C512 220.7 483.3 192 448 192zM384 448H128v-96h256V448zM432 296c-13.25 0-24-10.75-24-24c0-13.27 10.75-24 24-24s24 10.73 24 24C456 285.3 445.3 296 432 296zM128 64h229.5L384 90.51V160h64V77.25c0-8.484-3.375-16.62-9.375-22.62l-45.25-45.25C387.4 3.375 379.2 0 370.8 0H96C78.34 0 64 14.33 64 32v128h64V64z">
-        </path>
-    </symbol>
-    <symbol id="envelope" viewBox="0 0 512 512">
-        <path
-              d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z">
-        </path>
-    </symbol>
+	<symbol id="print" viewbox="0 0 512 512">
+		<path d="M448 192H64C28.65 192 0 220.7 0 256v96c0 17.67 14.33 32 32 32h32v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h32c17.67 0 32-14.33 32-32V256C512 220.7 483.3 192 448 192zM384 448H128v-96h256V448zM432 296c-13.25 0-24-10.75-24-24c0-13.27 10.75-24 24-24s24 10.73 24 24C456 285.3 445.3 296 432 296zM128 64h229.5L384 90.51V160h64V77.25c0-8.484-3.375-16.62-9.375-22.62l-45.25-45.25C387.4 3.375 379.2 0 370.8 0H96C78.34 0 64 14.33 64 32v128h64V64z"></path>
+	</symbol>
+	<symbol id="envelope" viewbox="0 0 512 512">
+		<path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"></path>
+	</symbol>
 
-    <symbol id="twitter" viewBox="0 0 512 512">
-        <path
-              d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z">
-        </path>
-    </symbol>
-    <symbol id="instagram" viewBox="0 0 448 512">
-        <path
-              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-        </path>
-    </symbol>
+	<symbol id="twitter" viewbox="0 0 512 512">
+		<path d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path>
+	</symbol>
+	<symbol id="instagram" viewbox="0 0 448 512">
+		<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+	</symbol>
 </svg>
