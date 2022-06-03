@@ -31,20 +31,17 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "service_promote" = {
  *          "label" = @Translation("service_promote"),     
  *      },
- *      "service_tristique" = {
- *          "label" = @Translation("service_tristique"),     
- *      },
- *      "service_allo" = {
- *          "label" = @Translation("service_allo"),
+ *      "head_nav" = {
+ *          "label" = @Translation("head_nav"),     
  *      },
  *      "service_text" = {
  *          "label" = @Translation("service_text"),
  *      },
- *      "service_link" = {
- *          "label" = @Translation("service_link"),
+ *      "service_title" = {
+ *          "label" = @Translation("service_title"),
  *      },
- *      "service_link_one" = {
- *          "label" = @Translation("service_link_one"),     
+ *      "read_more_text" = {
+ *          "label" = @Translation("read_more_text"),     
  *      }
  * }
  * )
@@ -122,50 +119,31 @@ class FnewsFirstServiceSection extends FormatageModelsSection
                             'value' => "promoted"
                         ]
                     ],
-                    'service_tristique' => [
-                        'url' => [
-                            'label' => 'lien 2',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "tristique",
-                                'class' => "link-label"
-                            ]
+                    'head_nav' => [
+                        'text_html' => [
+                            'label' => 'Head nav',
+                            'value' => '<div class="head-nav">
+                            <div class="link-label"> <a href="#">tristique</div>
+                            <div class="link-label"> <a href="#">allo</div>
+                        </div>'
                         ]
                     ],
-                    'service_allo' => [
-                        'url' => [
-                            'label' => 'lien 3',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "allo",
-                                'class' => "link-label"
-                            ]
-                        ]
-                    ],
-                    'service_link' => [
-                        'url' => [
-                            'label' => 'lien bas 1',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "First Service",
-                                'class' => "node-title"
-                            ]
+                    'service_title' => [
+                        'text_html' => [
+                            'label' => 'Title',
+                            'value' => "First Service"
                         ]
                     ],
                     'service_text' => [
                         'text_html' => [
-                            'label' => 'texte',
+                            'label' => 'description',
                             'value' => "Phosfluorescently e-enable adaptive synergy for strategic quality vectors. Continually transform fully tested expertise <a href='#'>with competitive technologies.</a> Appropriately communicate adaptive imperatives rather than value-added potentialities. Conveniently harness."
                         ]
                     ],
-                    'service_link_one' => [
-                        'url' => [
-                            'label' => 'lien bas 2',
-                            'value' => [
-                                'link' => "#",
-                                'text' => "read more",
-                                'class' => "node-readmore"
-                            ]
+                    'read_more_text' => [
+                        'text_html' => [
+                            'label' => 'Read More text',
+                            'value' => "read more"
                         ]
                     ]
                 ]

@@ -1,61 +1,59 @@
 {% if content %}
-<section class="first-service-fnews">
-    <div class="container">
-        <div class="first-service row">
-            <div class="col-12 col-lg-8">
-                <a href="#" class="first-service__img ">
-                    {% if content %}
-                        {{ content.image_left }}
-                    {% endif %}
-                    <div class="date-show">
-                        {% if content %}
-                        <span {{ region_attributes.service_day.addClass('date-show__day')}}>
-                            {{ content.service_day }}
-                        </span>
-                        {% endif %}
-                        {% if content %}
-                        <span {{ region_attributes.service_date.addClass('date-show__date')}}>*
-                            {{ content.service_date }}
-                        </span>
-                        {% endif %}
-                    </div>
-                </a>
+	<section class="first-service-fnews">
+		<div class="container">
+			<div class="first-service row">
+				<div class="col-12 col-lg-8">
+					<a href="#" class="first-service__img ">
+						{% if content.image_left %}
+							{{ content.image_left }}
+						{% endif %}
+						<div class="date-show">
+							{% if content.service_day %}
+								<span {{ region_attributes.service_day.addClass('date-show__day')}}>
+									{{ content.service_day }}
+								</span>
+							{% endif %}
+							{% if content.service_date %}
+								<span {{ region_attributes.service_date.addClass('date-show__date')}}>
+									{{ content.service_date }}
+								</span>
+							{% endif %}
+						</div>
+					</a>
 
-            </div>
-            <div class="first-service__body col-12 col-lg-4">
+				</div>
+				<div class="first-service__body col-12 col-lg-4">
+					<div class="head-nav-div">
+						{% if content.service_promote %}
+							<div {{ region_attributes.service_promote.addClass('promoted-label')}}>
+								{{ content.service_promote }}
+							</div>
+						{% endif %}
+						{% if content.head_nav  %}
+							<div {{ region_attributes.head_nav}}>
+								{{ content.head_nav }}
+							</div>
+						{% endif %}
+					</div>
 
-                <ul class="head-nav">
-                    <li>
-                    {% if content %}                        
-                    <span {{ region_attributes.service_promote.addClass('promoted-label')}}>
-                        {{ content.service_promote }}
-                    </span>
-                    {% endif %}
-                    </li>                    
-                    <li>
-                    {% if content %}
-                        {{ content.service_tristique }}
-                    {% endif %} 
-                    </li>
-                    <li>
-                    {% if content %}  
-                        {{ content.service_allo}}
-                    {% endif %}
-                    </li>
-                 </ul>
-                {% if content %}
-                    {{ content.service_link }}
-                {% endif %}
-                {% if content %}
-                <p {{ region_attributes.service_text.addClass('node-desc')}}>
-                    {{ content.service_text }}
-                </p>
-                {% endif %}
-                {% if content %}
-                    {{ content.service_link_one }}
-                {% endif %}
-            </div>
-        </div>
-    </div>
-</section>
+					{% if content.service_title %}
+						<div class="node-title">
+							{{ content.service_title }}
+						</div>
+					{% endif %}
+					{% if content..service_text %}
+						<p {{ region_attributes.service_text.addClass('node-desc')}}>
+							{{ content.service_text }}
+						</p>
+					{% endif %}
+
+					{% if content.read_more_text %}
+						<div class="node-readmore">
+							{{ content.read_more_text }}
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</section>
 {% endif %}
