@@ -75,7 +75,8 @@ class FnewsFirstServiceSection extends FormatageModelsSection
         // TODO Auto-generated method stub
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
-        
+        if (is_array($build['head_nav']))
+            $build['head_nav'] = $this->getMenus($build['head_nav']);
         return $build;
     }
 
