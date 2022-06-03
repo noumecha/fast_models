@@ -7,24 +7,27 @@
 						{% if content.image_left %}
 							{{ content.image_left }}
 						{% endif %}
-						<div class="date-show">
-							{% if content.service_day %}
-								<span {{ region_attributes.service_day.addClass('date-show__day')}}>
-									{{ content.service_day }}
-								</span>
-							{% endif %}
-							{% if content.service_date %}
-								<span {{ region_attributes.service_date.addClass('date-show__date')}}>
-									{{ content.service_date }}
-								</span>
-							{% endif %}
-						</div>
+						{% if content.service_day|has_value or content.service_date|has_value %}
+							<div class="date-show">
+								{% if content.service_day %}
+									<span {{ region_attributes.service_day.addClass('date-show__day')}}>
+										{{ content.service_day }}
+									</span>
+								{% endif %}
+								{% if content.service_date %}
+									<span {{ region_attributes.service_date.addClass('date-show__date')}}>
+										{{ content.service_date }}
+									</span>
+								{% endif %}
+							</div>
+
+						{% endif %}
 					</a>
 
 				</div>
 				<div class="first-service__body col-12 col-lg-4">
 					<div class="head-nav-div">
-						{% if content.service_promote %}
+						{% if content.service_promote|has_value %}
 							<div {{ region_attributes.service_promote.addClass('promoted-label')}}>
 								{{ content.service_promote }}
 							</div>
