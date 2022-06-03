@@ -30,8 +30,8 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *      "teaser_tech_image" = {
  *          "label" = @Translation("teaser_tech_image"),     
  *      },
- *      "teaser_tech_role" = {
- *          "label" = @Translation("teaser_tech_role"),     
+ *      "teaser_tech_user" = {
+ *          "label" = @Translation("teaser_tech_user"),     
  *      }
  *  }
  * )
@@ -116,10 +116,17 @@ class FnewsTeaserTech extends FormatageModelsTeasers
                                  alt="">'
                         ]
                     ],
-                    'teaser_tech_role' => [
+                    'teaser_tech_user' => [
                         'text_html' => [
-                            'label' => 'Role',
-                            'value' => "<p> Admin </p>"
+                            'label' => 'User',
+                            'value' => '<div class="pub-info">
+                            <div class="img-profile">
+                                <img class="img" src="https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/thumbnail/public/pictures/2019-08/avatar_0.jpg?itok=QV437nlh" alt="">
+                            </div>
+                            <div class="role">
+                                    Admin
+                            </div>
+                        </div>'
                         ]
                     ]
                 ]
