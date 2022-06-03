@@ -2,52 +2,52 @@
 <article {{attributes.addClass('single-showcase_fnews')}}>
     <div class="container">
         <div class="ss-author">
-            {% if content %}
+            {% if content.author_image %}
                 {{ content.author_image }}
             {% endif %}
-            {% if content %}
+            {% if content.author_name %}
             <h6 {{ region_attributes.author_name.addClass('ss-author__author')}}>
                 {{ content.author_name }}
             </h6>
             {% endif %}
         </div>
-        {% if content %}
+        {% if content.paragraph %}
         <p {{ region_attributes.paragraph.addClass('ssf-paragraph', 'pt-0')}}>
             {{ content.paragraph }}
         </p>
         {% endif %}
-        {% if content %}
+        {% if content.full_image %}
         <a href="#" {{ region_attributes.full_image.addClass('ssf__img ')}}>
             {{ content.full_image }}
         </a>
         {% endif %}
         <div class="my-5">
-            {% if content %}
+            {% if content.paragraph_one %}
             <p {{ region_attributes.paragraph_one.addClass('ssf-paragraph')}}>
                 {{ content.paragraph_one }}
             </p>
             {% endif %}
-            {% if content %}
+            {% if content.text_quote %}
             <blockquote {{ region_attributes.text_quote.addClass('ssf-bq')}}>
                 {{ content.text_quote }}
             </blockquote>
             {% endif %}
         </div>
-        {% if content %}
+        {% if content.full_image_video %}
         <div {{region_attributes.full_image_video.addClass('video-handler')}}>
             {{ content.full_image_video }}
         </div>
         {% endif %}
         <div class="row ss-two-bloc">
             <div  class="col-12 col-md-6">
-                {% if content %}
+                {% if content.single_title %}
                 <h4 {{region_attributes.single_title.addClass('ssf-h4')}}>
                     {{ content.single_title }}
                 </h4>
                 {% endif %}
             </div>
             <div class="col-12 col-md-6">
-                {% if content %}
+                {% if content.paragraph_two %}
                 <p {{ region_attributes.paragraph_two.addClass('ssf-paragraph','pt-0')}}>
                     {{ content.paragraph_two }}
                 </p>
@@ -55,12 +55,12 @@
             </div>
         </div>
         <div class="tag-list">
-            {% if content %}
+            {% if content.tag_button %}
             <div {{region_attributes.tag_button.addClass('fn-tag-btn ')}}>
                 {{ content.tag_button }}
             </div>
             {% endif %}
-            {% if content %}
+            {% if content.tag_button %}
             <div {{region_attributes.tag_button_one.addClass('fn-tag-btn ')}}>
                 {{ content.tag_button_one }}
             </div>
