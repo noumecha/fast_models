@@ -19,12 +19,6 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  library = "fast_models/f_news_single_showcase",
  *  default_region = "content",
  *  regions = {
- *      "author_name" = {
- *          "label" = @Translation("author_name"),
- *      },
- *      "paragraph" = {
- *          "label" = @Translation("paragraph"),
- *      },
  *      "full_image" = {
  *          "label" = @Translation("full_image"),     
  *      },
@@ -92,21 +86,6 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
                     'loader' => 'static'
                 ],
                 'fields' => [
-                    'author_name' => [
-                        'text_html' => [
-                            'label' => 'Nom auteur',
-                            'value' => "admin"
-                        ]
-                    ],
-                    'paragraph' => [
-                        'text_html' => [
-                            'label' => 'Paragraphe un',
-                            'value' => "Phosfluorescently e-enable adaptive synergy for strategic quality vectors.
-                                        Continually
-                                        transform fully tested expertise
-                                        with competitive technologies. Appropriately communicate adaptive imperatives rather than value-added."
-                        ]
-                    ],
                     'full_image' => [
                         'text_html' => [
                             'label' => 'Image un',

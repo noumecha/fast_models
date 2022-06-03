@@ -1,18 +1,6 @@
 {% if content %}
 <article {{attributes.addClass('single-showcase_fnews')}}>
     <div class="container">
-        <div class="ss-author">
-            {% if content.author_name %}
-            <h6 {{ region_attributes.author_name.addClass('ss-author__author')}}>
-                {{ content.author_name }}
-            </h6>
-            {% endif %}
-        </div>
-        {% if content.paragraph %}
-        <p {{ region_attributes.paragraph.addClass('ssf-paragraph', 'pt-0')}}>
-            {{ content.paragraph }}
-        </p>
-        {% endif %}
         {% if content.full_image %}
         <a href="#" {{ region_attributes.full_image.addClass('ssf__img ')}}>
             {{ content.full_image }}
