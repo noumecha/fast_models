@@ -40,16 +40,14 @@
 					</div>
 
 					{% if content.service_title %}
-						<div {{ region_attributes.service_text.addClass('node-title')}}>
-
-
+						<div {{ region_attributes.service_title.addClass('node-title')}}>
 							{{ content.service_title }}
 						</div>
 					{% endif %}
-					{% if content..service_text %}
-						<p {{ region_attributes.service_text.addClass('node-desc')}}>
+					{% if content.service_text %}
+						<div {{ region_attributes.service_text.addClass('node-desc')}}>
 							{{ content.service_text }}
-						</p>
+						</div>
 					{% endif %}
 
 					{% if content.read_more_text %}
