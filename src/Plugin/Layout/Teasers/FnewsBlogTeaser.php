@@ -93,7 +93,7 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
         $build["tag_btn_list"]["939af357-8adb-4966-a87f-839ccfd89e6a"]["content"]["#theme"] = "layoutfield_f_news_blog_teaser";
-      //  dump($build);
+        dump($build);
         return $build;
     }
 
