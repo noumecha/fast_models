@@ -34,7 +34,11 @@
 					</div>
 
 				</div>
-				<div class="col-md-4"></div>
+                {% if content.sticky_author %}
+				<div class="col-md-4">
+                    {{ content.sticky_author }}
+                </div>
+                {% endif %}
 			</div>
 		</div>
 	</article>

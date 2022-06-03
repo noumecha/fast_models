@@ -33,6 +33,9 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      },
  *      "tag_button_one" = {
  *          "label" = @Translation("tag_button_one"),     
+ *      },
+ *      "sticky_author" = {
+ *          "label" = @Translation("sticky_author"),     
  *      }
  *  }
  * )
@@ -127,6 +130,12 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
                         'text_html' => [
                             'label' => 'Boutton deux',
                             'value' => "<span href='#' class='link-btn'>tag 1</span>"
+                        ]
+                    ],
+                    'sticky_author' => [
+                        'text_html' => [
+                            'label' => 'Sticky',
+                            'value' => ""
                         ]
                     ]
                 ]
