@@ -4,67 +4,50 @@
         <div class="hbf-content">
             <div class="hbf-breadcrumbs">
                 <ul class="hbf-list">
-                    {% if content %}
+                    {% if content.hero_link %}
                     <li {{ region_attributes.hero_link.addClass('hbf-list__item ')}}>
                         {{ content.hero_link }}
                     </li>
                     {% endif %}
-                    {% if content %}
+                    {% if content.heor_link_one %}
                     <li {{ region_attributes.hero_link_one.addClass('hbf-list__item ')}}>
                         {{ content.hero_link_one }}
                     </li>
                     {% endif %}
-                    {% if content %}
+                    {% if content.hero_link_two %}
                     <li {{ region_attributes.hero_link_two.addClass('hbf-list__item ')}}>
                         {{ content.hero_link_two }}
                     </li>
                     {% endif %}
                 </ul>
             </div>
-            {% if content %}
+            {% if content.hero_simple_title %}
             <div {{region_attributes.hero_simple_title.addClass('current-blog')}}>
                 {{ content.hero_simple_title }}
             </div>
             {% endif %}
-            {% if content %}
+            {% if content.hero_title %}
             <h2 {{ region_attributes.hero_title.addClass('hbf-title')}}>
                 {{ content.hero_title }}
             </h2>
             {% endif %}
             <div class="hbf-tag">
                 <ul class="hbf-list">
-                    {% if content %}
+                    {% if content.hero_sublink %}
                     <li {{ region_attributes.hero_sublink.addClass('hbf-tag__item')}}>
                         {{ content.hero_sublink }}
                     </li>
                     {% endif %}
-                    {% if content %}
+                    {% if content.hero_date %}
                     <li {{ region_attributes.hero_date.addClass('hbf-tag__item')}}>
                         {{ content.hero_date }}
                     </li>
                     {% endif %}
-                    <li class="hbt-social">
-                        {% if content %}
-                        <a href="#" {{ region_attributes.hero_icon.addClass('hbt-social__btn')}}>
-                            {{ content.hero_icon }}
-                        </a>
-                        {% endif %}
-                        {% if content %}
-                        <a href="#" {{ region_attributes.hero_icon_one.addClass('hbt-social__btn')}}>
-                            {{ content.hero_icon_one }}
-                        </a>
-                        {% endif %}
-                        {% if content %}
-                        <a href="#" {{ region_attributes.hero_icon_two.addClass('hbt-social__btn')}}>
-                            {{ content.hero_icon_two }}
-                        </a>
-                        {% endif %}
-                        {% if content %}
-                        <a href="#" {{ region_attributes.hero_icon_three.addClass('hbt-social__btn')}}>
-                            {{ content.hero_icon_three }}
-                        </a>
-                        {% endif %}
+                    {% if content.hero_icon_contener %}>
+                    <li {{ region_attributes.hero_icon_contener.addClass('hbt-social')}}>
+                        {{ content.hero_icon_contener }}    
                     </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>

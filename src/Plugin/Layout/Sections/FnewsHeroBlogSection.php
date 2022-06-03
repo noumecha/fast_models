@@ -40,17 +40,8 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "hero_date" = {
  *          "label" = @Translation("hero_date"),
  *      },
- *      "hero_icon" = {
- *          "label" = @Translation("hero_icon"),     
- *      },
- *      "hero_icon_one" = {
- *          "label" = @Translation("hero_icon_one"),     
- *      },
- *      "hero_icon_two" = {
- *          "label" = @Translation("hero_icon_two"),     
- *      },
- *      "hero_icon_three" = {
- *          "label" = @Translation("hero_icon_three"),     
+ *      "hero_icon_contener" = {
+ *          "label" = @Translation("hero_icon_contener"),     
  *      }
  *  }
  *)
@@ -145,36 +136,29 @@ class FnewsHeroBlogSection extends FormatageModelsSection
                             'value' => "<a href='#'>may 02, 2302</a>"
                         ]
                     ],
-                    'hero_icon' => [
+                    'hero_icon_contener' => [
                         'text_html' => [
-                            'label' => 'icone 1',
-                            'value' => " <svg>
-                                            <use xlink:href='#facebook-f'></use>
-                                        </svg>"
-                        ]
-                    ],
-                    'hero_icon_one' => [
-                        'text_html' => [
-                            'label' => 'icone 2',
-                            'value' => "<svg>
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>"
-                        ]
-                    ],
-                    'hero_icon_two' => [
-                        'text_html' => [
-                            'label' => 'icone 3',
-                            'value' => "<svg>
-                                            <use xlink:href='#envelope'></use>
-                                        </svg>"
-                        ]
-                    ],
-                    'hero_icon_three' => [
-                        'text_html' => [
-                            'label' => 'icone 4',
-                            'value' => "<svg>
-                                            <use xlink:href='#print'></use>
-                                        </svg>"
+                            'label' => 'icones',
+                            'value' => '<a href="#" class="hbt-social__btn">
+                                            <svg>
+                                                <use xlink:href="#facebook-f"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="hbt-social__btn">
+                                            <svg>
+                                                <use xlink:href="#twitter"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="hbt-social__btn">
+                                            <svg>
+                                                <use xlink:href="#envelope"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="hbt-social__btn">
+                                            <svg>
+                                                <use xlink:href="#print"></use>
+                                            </svg>
+                                        </a>'
                         ]
                     ]
                 ]
