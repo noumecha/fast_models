@@ -2,9 +2,6 @@
 <article {{attributes.addClass('single-showcase_fnews')}}>
     <div class="container">
         <div class="ss-author">
-            {% if content.author_image %}
-                {{ content.author_image }}
-            {% endif %}
             {% if content.author_name %}
             <h6 {{ region_attributes.author_name.addClass('ss-author__author')}}>
                 {{ content.author_name }}
@@ -26,11 +23,6 @@
             <p {{ region_attributes.paragraph_one.addClass('ssf-paragraph')}}>
                 {{ content.paragraph_one }}
             </p>
-            {% endif %}
-            {% if content.text_quote %}
-            <blockquote {{ region_attributes.text_quote.addClass('ssf-bq')}}>
-                {{ content.text_quote }}
-            </blockquote>
             {% endif %}
         </div>
         {% if content.full_image_video %}

@@ -19,9 +19,6 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  library = "fast_models/f_news_single_showcase",
  *  default_region = "content",
  *  regions = {
- *      "author_image" = {
- *          "label" = @Translation("author_image"),     
- *      },
  *      "author_name" = {
  *          "label" = @Translation("author_name"),
  *      },
@@ -33,9 +30,6 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      },
  *      "paragraph_one" = {
  *          "label" = @Translation("paragraph_one"),
- *      },
- *      "text_quote" = {
- *          "label" = @Translation("text_quote"),     
  *      },
  *      "full_image_video" = {
  *          "label" = @Translation("full_image_video"),
@@ -98,13 +92,6 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
                     'loader' => 'static'
                 ],
                 'fields' => [
-                    'author_image' => [
-                        'text_html' => [
-                            'label' => 'image auteur',
-                            'value' => "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzrtaXGkXhkLIV4Du-Lg0JPJ5I84RQb8RvIA&usqp=CAU'
-                                        alt='' class='ss-author__img'>"
-                        ]
-                    ],
                     'author_name' => [
                         'text_html' => [
                             'label' => 'Nom auteur',
@@ -139,15 +126,6 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
                                         Quickly
                                         enable prospective technology
                                         rather than open-source technologies."
-                        ]
-                    ],
-                    'text_quote' => [
-                        'text_html' => [
-                            'label' => 'Quote',
-                            'value' => 'Completely parallel task market positioning interfaces through visionary niche
-                                        markets,
-                                        proactively
-                                        incentivize sticky quality vectors before future-proof internal or "organic" sources.'
                         ]
                     ],
                     'full_image_video' => [
