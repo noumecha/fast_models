@@ -143,7 +143,7 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
                     'full_image_video' => [
                         'text_html' => [
                             'label' => 'Video image',
-                            'value' => "<img class='card-img'
+                            'value' => "<img class=''
                                                 src='https://demo.morethanthemes.com/flashyplus-news8/default/sites/default/files/styles/mt_large/public/video_thumbnails/ViuDsy7yb8M.jpg?itok=NZNg1pjc'
                                         alt=''>"
                         ]
