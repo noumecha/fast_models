@@ -28,11 +28,8 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "full_image_video" = {
  *          "label" = @Translation("full_image_video"),
  *      },
- *      "tag_button" = {
- *          "label" = @Translation("tag_button"),     
- *      },
- *      "tag_button_one" = {
- *          "label" = @Translation("tag_button_one"),     
+ *      "tag_list_item" = {
+ *          "label" = @Translation("tag_list_item"),     
  *      },
  *       "sticky_author_image" = {
  *          "label" = @Translation("sticky_author_image"),
