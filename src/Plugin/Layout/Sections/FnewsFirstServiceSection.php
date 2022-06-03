@@ -93,7 +93,7 @@ class FnewsFirstServiceSection extends FormatageModelsSection
                     ]
                 ];
                 // set a new theme hoock () : refers to .theme.inc file
-                $fn_scd_nav[$k]['content']['#theme'] = 'layoutfield_f_news_bloag_teaser';
+                $fn_scd_nav[$k]['content']['#theme'] = 'layoutfield_f_news_teaser_service';
             }
         }
         return $fn_scd_nav;
