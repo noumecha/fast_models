@@ -61,6 +61,6 @@ function fast_models_theme() {
     'preprocess functions' => [
       'template_preprocess_layoutfield_f_news_article_tag'
     ]
-  ]
+  ];
   return $hooks;
 }
