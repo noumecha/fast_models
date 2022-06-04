@@ -97,8 +97,8 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
         // TODO Auto-generated method stub
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
-       /* if (is_array($build['tag_list_item']))
-            $build['tag_list_item'] = $this->getMenus($build['tag_list_item']);*/
+        if (is_array($build['tag_list_item']))
+            $build['tag_list_item'] = $this->getMenus($build['tag_list_item']);
         dump($build['tag_list_item']);
         return $build;
     }
