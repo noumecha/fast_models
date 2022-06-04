@@ -109,21 +109,20 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
      */
     private function getMenus(array $fn_scd_nav) {
         foreach ($fn_scd_nav as $k => $m) {
-            /*if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'system_menu_block') {
+            if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'field_block') {
                                
                 $fn_scd_nav[$k]['#attributes'] = [
                     'class' => [
-                        'sn-bloc'
+                        'blog-btn'
                     ]
                 ];
                 // set a new theme hoock () : refers to .theme.inc file
-                $fn_scd_nav[$k]['content']['#theme'] = 'layoutmenu_fast_models_fn_second_menu';
-                //
-                $this->formatListMenus($fn_scd_nav[$k]['content']['#items']);
-            }*/
+                $fn_scd_nav[$k]['content']['#theme'] = 'layoutfield_f_news_bloag_teaser';
+            }
         }
         return $fn_scd_nav;
     }
+
     /**
      * 
      * {@inheritdoc}
