@@ -82,31 +82,9 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
         $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/sections/fnews_single_showcase_map.png");
-        /*if (is_array($build['tag_list_item']))
-            $build['tag_list_item'] = $this->getMenus($build['tag_list_item']);*/
-        dump($build['tag_list_item']);
+        
+        dump($build);
         return $build;
-    }
-    /**
-     * 
-     * {@inheritdoc}
-     */
-    private function getMenus(array $fn_scd_nav) {
-        foreach ($fn_scd_nav as $k => $m) {
-            /*if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'system_menu_block') {
-                               
-                $fn_scd_nav[$k]['#attributes'] = [
-                    'class' => [
-                        'sn-bloc'
-                    ]
-                ];
-                // set a new theme hoock () : refers to .theme.inc file
-                $fn_scd_nav[$k]['content']['#theme'] = 'layoutmenu_fast_models_fn_second_menu';
-                //
-                $this->formatListMenus($fn_scd_nav[$k]['content']['#items']);
-            }*/
-        }
-        return $fn_scd_nav;
     }
     /**
      * 
