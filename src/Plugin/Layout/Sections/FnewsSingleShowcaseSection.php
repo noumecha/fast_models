@@ -99,7 +99,7 @@ class FnewsSingleShowcaseSection extends FormatageModelsSection
         FormatageModelsThemes::formatSettingValues($build);
         if (is_array($build['tag_list_item']))
             $build['tag_list_item'] = $this->getMenus($build['tag_list_item']);
-        dump($build['tag_list_item']);
+        //dump($build['tag_list_item']);
         return $build;
     }
 
