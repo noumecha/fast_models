@@ -92,9 +92,31 @@ class FnewsBlogTeaser extends FormatageModelsTeasers
         // TODO Auto-generated method stub
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
-        $build["tag_btn_list"]["8f44d654-c35e-49f8-9425-a0507e9918fe"]["content"]["#theme"] = "layoutfield_f_news_blog_teaser";
-        //dump($build);
+        if (is_array($build['tag_btn_list']))
+            $build['tag_btn_list'] = $this->getMenus($build['tag_btn_list']);
+        //dump($build['tag_btn_list']);
+        
         return $build;
+    }
+
+    /**
+     * 
+     * {@inheritdoc}
+     */
+    private function getMenus(array $fn_scd_nav) {
+        foreach ($fn_scd_nav as $k => $m) {
+            if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'field_block') {
+                               
+                $fn_scd_nav[$k]['#attributes'] = [
+                    'class' => [
+                        'blog-btn'
+                    ]
+                ];
+                // set a new theme hoock () : refers to .theme.inc file
+                $fn_scd_nav[$k]['content']['#theme'] = 'layoutfield_f_news_bloag_teaser';
+            }
+        }
+        return $fn_scd_nav;
     }
 
     /**

@@ -55,5 +55,12 @@ function fast_models_theme() {
     ],
     'file' => 'fast_models.theme.inc'
   ];
+  // hook for tag list on articles section 
+  $hooks['layoutfield_f_news_article_tag'] = [
+    'render element' => 'element',
+    'preprocess functions' => [
+      'template_preprocess_layoutfield_f_news_article_tag'
+    ]
+  ]
   return $hooks;
 }
