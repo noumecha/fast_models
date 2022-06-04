@@ -1,8 +1,14 @@
 <div class="tag-list">
 	{% for item in items %}
 		<div class="fn-tag-btn ">
-			<div class="link-btn nav-link">
-				{{ item }}
+			<div class="link-btn">
+                {% 
+                    set link_classes = [
+                        'nav-link'
+                    ]
+                %}
+                {{ link(item.title, item.url, {'class': link_classes}) }}
+				{#{ item }#}
 			</div>
 		</div>
 	{% endfor %}
