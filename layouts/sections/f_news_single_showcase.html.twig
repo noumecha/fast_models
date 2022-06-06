@@ -4,15 +4,15 @@
 			<div class="row flex-wrap-reverse">
 				<div class="col-md-8">
 					{% if content.full_image|has_value %}
-						<a href="#" {{ region_attributes.full_image.addClass('ssf__img ')}}>
+						<a href="#" {{ region_attributes.full_image.addClass('ssf__img ','mb-5')}}>
 							{{ content.full_image }}
 						</a>
 					{% endif %}
-					<div class="my-5">
+					<div class="mb-5">
 						{% if content.paragraph_one|has_value %}
-							<p {{ region_attributes.paragraph_one.addClass('ssf-paragraph')}}>
+							<div {{ region_attributes.paragraph_one.addClass('ssf-paragraph')}}>
 								{{ content.paragraph_one }}
-							</p>
+							</div>
 						{% endif %}
 					</div>
 					<div class="video-handler">
