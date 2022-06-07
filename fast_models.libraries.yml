@@ -267,3 +267,9 @@ fast_models_article_section:
   css:
     theme:
       layouts/css/fast_models_article_section.css: {}
+fast_models_four_col:
+  js:
+    layouts/js/fast_models_four_col.js: {}
+  css:
+    theme:
+      layouts/css/fast_models_four_col.css: {}

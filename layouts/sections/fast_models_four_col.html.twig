@@ -1,0 +1,24 @@
+{% if content %}
+<div class="row">
+    {% if content.col_one %}
+    <div class="col-lg-3">
+        {{ content.col_one }}
+    </div>
+    {% endif %}
+    {% if content.col_two %}
+    <div class="col-lg-3">
+        {{ content.col_two }}
+    </div>
+    {% endif %}
+    {% if content.col_three %}
+    <div class="col-lg-3">
+        {{ content.col_three }}
+    </div>
+    {% endif %}
+    {% if content.col_four %}
+    <div class="col-lg-3">
+        {{ content.col_four }}
+    </div>
+    {% endif %}
+</div>
+{% endif %}
