@@ -1,17 +1,17 @@
 {% if content %}
 <div {{ attributes.addClass('row','justify-content-center','text-center')}} >
     {% if content.col_one %}
-    <div {{ region_attributes.col_one.addClass('col-lg-3')}}>
+    <div {{ region_attributes.col_one.addClass('col-lg-4')}}>
         {{ content.col_one }}
     </div>
     {% endif %}
     {% if content.col_two %}
-    <div {{ region_attributes.col_two.addClass('col-lg-3')}}>
+    <div {{ region_attributes.col_two.addClass('col-lg-4')}}>
         {{ content.col_two }}
     </div>
     {% endif %}
     {% if content.col_three %}
-    <div {{ region_attributes.col_three.addClass('col-lg-3')}}>
+    <div {{ region_attributes.col_three.addClass('col-lg-4')}}>
         {{ content.col_three }}
     </div>
     {% endif %}
