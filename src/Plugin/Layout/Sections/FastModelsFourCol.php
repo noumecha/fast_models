@@ -10,12 +10,12 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * 
  * Four column section block 
  *  @Layout (
- *  id = "fast_models_three_col",
- *  label = @Translation("fast_models_three_col"),
+ *  id = "fast_models_four_col",
+ *  label = @Translation("fast_models_four_col"),
  *  category = @Translation("fast_models"),
  *  path = "layouts/sections",
- *  template = "fast_models_three_col",
- *  library = "fast_models/fast_models_three_col",
+ *  template = "fast_models_four_col",
+ *  library = "fast_models/fast_models_four_col",
  *  default_region = "col_one",
  *  regions = {
  *      "col_one" = {
@@ -26,6 +26,9 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      },
  *      "col_three" = {
  *          "label" = @Translation("col_three"),     
+ *      },
+ *      "col_four" = {
+ *          "label" = @Translation("col_four"),     
  *      }
  *  }
  * )
@@ -71,7 +74,7 @@ class FastModelThreeCol extends FormatageModelsSection
     {
         return parent::defaultConfiguration() + [
             'css' => '',
-            'threecol' => [
+            'fourcol' => [
                 'builder-form' => true,
                 'info' => [
                     'title' => 'Contenu',
@@ -93,6 +96,12 @@ class FastModelThreeCol extends FormatageModelsSection
                     'col_three' => [
                         'text_html' => [
                             'label' => 'col 3',
+                            'value' => ''
+                        ]
+                    ],
+                    'col_four' => [
+                        'text_html' => [
+                            'label' => 'col 4',
                             'value' => ''
                         ]
                     ]
