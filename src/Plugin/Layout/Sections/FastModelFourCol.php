@@ -31,7 +31,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *          "label" = @Translation("col_four"),     
  *      }
  *  }
- * 
+ * )
  */
 
 class FastModelFourCol extends FormatageModelsSection
