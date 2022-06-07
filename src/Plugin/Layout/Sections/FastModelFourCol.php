@@ -104,7 +104,7 @@ class FastModelFourCol extends FormatageModelsSection
                             'label' => 'col 4',
                             'value' => ''
                         ]
-                    ],
+                    ]
                 ]
             ]
         ];
