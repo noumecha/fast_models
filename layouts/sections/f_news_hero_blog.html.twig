@@ -4,46 +4,46 @@
         <div class="hbf-content">
             <div class="hbf-breadcrumbs">
                 <ul class="hbf-list">
-                    {% if content.hero_link %}
+                    {% if content.hero_link|has_value %}
                     <li {{ region_attributes.hero_link.addClass('hbf-list__item ')}}>
                         {{ content.hero_link }}
                     </li>
                     {% endif %}
-                    {% if content.heor_link_one %}
+                    {% if content.heor_link_one|has_value %}
                     <li {{ region_attributes.hero_link_one.addClass('hbf-list__item ')}}>
                         {{ content.hero_link_one }}
                     </li>
                     {% endif %}
-                    {% if content.hero_link_two %}
+                    {% if content.hero_link_two|has_value %}
                     <li {{ region_attributes.hero_link_two.addClass('hbf-list__item ')}}>
                         {{ content.hero_link_two }}
                     </li>
                     {% endif %}
                 </ul>
             </div>
-            {% if content.hero_simple_title %}
+            {% if content.hero_simple_title|has_value %}
             <div {{region_attributes.hero_simple_title.addClass('current-blog')}}>
                 {{ content.hero_simple_title }}
             </div>
             {% endif %}
-            {% if content.hero_title %}
+            {% if content.hero_title|has_value %}
             <h2 {{ region_attributes.hero_title.addClass('hbf-title')}}>
                 {{ content.hero_title }}
             </h2>
             {% endif %}
             <div class="hbf-tag">
                 <ul class="hbf-list">
-                    {% if content.hero_sublink %}
+                    {% if content.hero_sublink|has_value %}
                     <li {{ region_attributes.hero_sublink.addClass('hbf-tag__item')}}>
                         {{ content.hero_sublink }}
                     </li>
                     {% endif %}
-                    {% if content.hero_date %}
+                    {% if content.hero_date|has_value %}
                     <li {{ region_attributes.hero_date.addClass('hbf-tag__item')}}>
                         {{ content.hero_date }}
                     </li>
                     {% endif %}
-                    {% if content.hero_icon_contener %}>
+                    {% if content.hero_icon_contener|has_value %}>
                     <li {{ region_attributes.hero_icon_contener.addClass('hbt-social')}}>
                         {{ content.hero_icon_contener }}    
                     </li>
