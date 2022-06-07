@@ -10,12 +10,12 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * 
  * Four column section block 
  *  @Layout (
- *  id = "fast_models_four_col",
- *  label = @Translation("fast_models_four_col"),
+ *  id = "fast_models_three_col",
+ *  label = @Translation("fast_models_three_col"),
  *  category = @Translation("fast_models"),
  *  path = "layouts/sections",
- *  template = "fast_models_four_col",
- *  library = "fast_models/fast_models_four_col",
+ *  template = "fast_models_three_col",
+ *  library = "fast_models/fast_models_three_col,
  *  default_region = "col_one",
  *  regions = {
  *      "col_one" = {
@@ -26,15 +26,12 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      },
  *      "col_three" = {
  *          "label" = @Translation("col_three"),     
- *      },
- *      "col_four" = {
- *          "label" = @Translation("col_four"),     
  *      }
  *  }
  * )
  */
 
-class FastModelFourCol extends FormatageModelsSection
+class FastModelThreeCol extends FormatageModelsSection
 {
 
     /**
@@ -46,7 +43,7 @@ class FastModelFourCol extends FormatageModelsSection
     {
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
-        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/sections/fast_models_four_col_map.png");
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/sections/fast_models_three_col_map.png");
 
     }
 
@@ -74,7 +71,7 @@ class FastModelFourCol extends FormatageModelsSection
     {
         return parent::defaultConfiguration() + [
             'css' => '',
-            'fourcol' => [
+            'threecol' => [
                 'builder-form' => true,
                 'info' => [
                     'title' => 'Contenu',
