@@ -15,7 +15,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  category = @Translation("fast_models"),
  *  path = "layouts/sections",
  *  template = "fast_models_three_col",
- *  library = "fast_models/fast_models_three_col,
+ *  library = "fast_models/fast_models_three_col",
  *  default_region = "col_one",
  *  regions = {
  *      "col_one" = {
