@@ -34,7 +34,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * )
  */
 
-class FastModelFourCol extends FormatageModelsSection
+class FastModelsFourCol extends FormatageModelsSection
 {
 
     /**
