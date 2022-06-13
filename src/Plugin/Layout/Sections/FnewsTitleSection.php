@@ -89,7 +89,7 @@ class FnewsTitleSection extends FormatageModelsSection
                         ]
                     ],
                     'more_btn_text' => [
-                        'link' => [
+                        'url' => [
                             'label' => 'link',
                             'value' => [
                                 'link' => "#",
