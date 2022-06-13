@@ -96,9 +96,13 @@ class FnewsRightLeftImageSection extends FormatageModelsSection
                         ]
                     ],
                     'right_left_button' => [
-                        'text_html' => [
+                        'url' => [
                             'label' => 'Button',
-                            'value' => "learn more <i class='btn-angle-right'></i>"
+                            'value' => [
+                                'link' => "#",
+                                'text' => "learn more <i class='btn-angle-right'></i>",
+                                'class' => "load-more-button"
+                            ]
                         ]
                     ],
                     'right_left_image' => [

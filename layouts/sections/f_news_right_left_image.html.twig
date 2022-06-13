@@ -3,8 +3,8 @@
     <div class="container">
         <div class="irl-bloc row justify-content-between">
             <div class="irl-bloc__text col-12 col-md-6">
-                {% if content %}
-                    <h4 {{ region_attributes.right_left_title('irl-bloc__title')}}>
+                {% if content.right_left_title %}
+                    <h4 {{ region_attributes.right_left_title.addClass('irl-bloc__title')}}>
                         {{ content.right_left_title }}                        
                     </h4>
                 {% endif %}
@@ -13,14 +13,12 @@
                     {{ content.right_left_text }}                    
                 </p>
                 {% endif %}
-                {% if content %}
-                <a {{ region_attributes.right_left_button.addClass('load-more-button')}} href="#">
+                {% if content.right_left_button %}
                     {{ content.right_left_button }}
-                </a>
                 {% endif %}
             </div>
             <div class="irl-bloc__img col-12 col-md-6">
-                {% if content %}
+                {% if content.right_left_image %}
                 <a href="#" {{ region_attributes.right_left_image.addClass('ibi__img')}}>
                     {{ content.right_left_image }}                    
                 </a>
