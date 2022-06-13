@@ -18,9 +18,11 @@
 			{% endif %}
 		</div>
 		<div class="more-link">
-		{% if content.more_btn_text %}
-			{{ content.more_btn_text }}
-		{% endif %}
+			{% if content.more_btn_text %}
+				<div {{ region_attributes.more_btn_text.addClass('link')}}>
+					{{ content.more_btn_text }}
+				</div>
+			{% endif %}
 		</div>
 		
 
