@@ -94,7 +94,7 @@ class FnewsTitleSection extends FormatageModelsSection
                             'value' => [
                                 'link' => "#",
                                 'text' => "More",
-                                'class' => "link"
+                                'class' => "more-link"
                             ]
                         ]
                     ],
