@@ -89,9 +89,13 @@ class FnewsTitleSection extends FormatageModelsSection
                         ]
                     ],
                     'more_btn_text' => [
-                        'text_html' => [
-                            'label' => 'read_title',
-                            'value' => '<a href="#">More</a>'
+                        'link' => [
+                            'label' => 'link',
+                            'value' => [
+                                'link' => "#",
+                                'text' => "More",
+                                'class' => "link"
+                            ]
                         ]
                     ],
                     'fnews_subtitle' => [
