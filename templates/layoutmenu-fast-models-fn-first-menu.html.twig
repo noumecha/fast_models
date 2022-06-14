@@ -57,7 +57,8 @@
 					{% endif %}
 				</li>
 			{% endfor %}
-			<div class="header_search_1 d-flex align-items-center">
+		</ul>
+		<div class="header_search_1 d-flex align-items-center">
 			{% if logged_in == true %}
 				<a href="/user/logout" id="header-search-button">
 					<i class="fas fa-sign-out-alt"></i>
@@ -68,7 +69,6 @@
 					{{ 'Login'|trans }}
 			</a>
 			{% endif %}
-			</div>
-		</ul>
+		</div>
 	{% endif %}
 {% endmacro %}
