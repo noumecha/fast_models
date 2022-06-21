@@ -12,7 +12,7 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  * 
  * @Layout (
  *  id = "vesper_service_card",
- *  label = @Translation("vesper more card"),
+ *  label = @Translation("vesper service card"),
  *  category = @Translation("fast_models"),
  *  path = "layouts/teasers",
  *  template = "vesper_service_card",
