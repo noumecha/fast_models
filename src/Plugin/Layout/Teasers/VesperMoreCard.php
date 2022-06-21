@@ -47,7 +47,7 @@ class VesperMoreCard extends FormatageModelsTeasers
     {
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
-        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/teasers/vesper-card-service.png");
+        $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/teasers/more-card-item.png");
     }
 
     /**
@@ -65,7 +65,7 @@ class VesperMoreCard extends FormatageModelsTeasers
         return $build;
     }
 
- 
+
 
     /**
      * 
