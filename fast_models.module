@@ -22,7 +22,8 @@ function fast_models_theme() {
     ],
     'file' => 'fast_models.theme.inc'
   ];
- // pre-formatage et template pour le menu.
+  
+  // pre-formatage et template pour le menu.
   $hooks['layoutmenu_fast_models_fn_second_menu'] = [
     'render element' => 'element',
     'preprocess functions' => [
@@ -30,7 +31,7 @@ function fast_models_theme() {
     ],
     'file' => 'fast_models.theme.inc'
   ];
- 
+  
   /* formatage de la liste des head_nav */
   $hooks['layoutfield_f_news_teaser_service'] = [
     'render element' => 'element',
@@ -55,7 +56,7 @@ function fast_models_theme() {
     ],
     'file' => 'fast_models.theme.inc'
   ];
-  // hook for tag list on articles section 
+  // hook for tag list on articles section
   $hooks['layoutfield_f_news_article_tag'] = [
     'render element' => 'element',
     'preprocess functions' => [
