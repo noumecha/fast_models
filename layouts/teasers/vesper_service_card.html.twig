@@ -1,0 +1,20 @@
+{% if content %}
+	<div class="vesper-service-card aos-init" data-aos="fade-up" data-aos-delay="100">
+		{% if content.icon %}
+			<div class="icon">
+				{{ content.icon }}
+			</div>
+		{% endif %}
+		{% if content.title %}
+			<div class="title">
+				{{ content.title }}
+			</div>
+		{% endif %}
+		{% if content.desc %}
+			<div class="description">
+				{{ content.desc }}
+			</div>
+		{% endif %}
+	</div>
+
+{% endif %}
