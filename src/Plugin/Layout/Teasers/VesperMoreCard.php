@@ -110,7 +110,7 @@ class VesperMoreCard extends FormatageModelsTeasers
                     'title' => [
                         'text_html' => [
                             'label' => 'Title',
-                            'value' => "<a href="">Limere Radses</a>"
+                            'value' => '<a href="">Limere Radses</a>'
                         ]
                     ],
                     'desc' => [
