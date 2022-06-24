@@ -1,0 +1,39 @@
+{% if content %}
+	<div class="box aos-init" data-aos="zoom-in-up" data-aos-delay="200">
+		<div class="illustration ">
+			{% if content.icone %}
+				<div class="icon">
+					{{ content.icone }}
+				</div>
+			{% endif %}
+		</div>
+
+		{% if content.title %}
+			<h3>
+				{{ content.title }}
+			</h3>
+
+		{% endif %}
+		{% if content.desc %}
+
+			<div class="desc">
+				{{ content.desc }}
+			</div>
+
+		{% endif %}
+		{% if content.price %}
+			<h4>
+				{{ content.price }}
+			</h4>
+		{% endif %}
+		{% if content.list_item %}
+			{{content.list_item}}
+		{% endif %}
+		{% if content.link %}
+			<div class="btn-wrap">
+				{{content.link}}
+			</div>
+		{% endif %}
+	</div>
+
+{% endif %}
