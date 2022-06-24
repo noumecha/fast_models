@@ -42,7 +42,7 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  * 
  */
 
-class VesperServiceCard extends FormatageModelsTeasers
+class VesperTeaserPrice extends FormatageModelsTeasers
 {
     /**
      *
