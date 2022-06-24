@@ -30,15 +30,22 @@ module.exports = {
   fm_featured_section: "./src/js/sections/fm_featured_section.js",
   fast_models_archive_teaser: "./src/js/teasers/fast_models_archive_teaser.js",
   f_news_bac_to_top: "./src/js/sections/f_news_bac_to_top",
-  fast_model_fnews_proposition: "./src/js/sections/fast_model_fnews_proposition",
+  fast_model_fnews_proposition:
+    "./src/js/sections/fast_model_fnews_proposition",
   fast_models_hero_section: "./src/js/sections/fast_models_hero_section.js",
   fast_models_list_articles: "./src/js/sections/fast_models_list_articles.js",
   fast_models_lal_teaser: "./src/js/teasers/fast_models_lal_teaser.js",
   fast_models_controls_teaser: "./src/js/teasers/fast_models_controls_teaser",
-  fast_models_article_card_section: "./src/js/sections/fast_models_article_card_section",
-  fast_models_fn_first_menu: "./src/js/sections/menus/fast_models_fn_first_menu",
-  fast_models_fn_second_menu: "./src/js/sectionS/menus/fast_models_fn_second_menu",
+  fast_models_article_card_section:
+    "./src/js/sections/fast_models_article_card_section",
+  fast_models_fn_first_menu:
+    "./src/js/sections/menus/fast_models_fn_first_menu",
+  fast_models_fn_second_menu:
+    "./src/js/sectionS/menus/fast_models_fn_second_menu",
   fast_models_sticky_author: "./src/js/sections/fast_models_sticky_author",
+  //agence constant teaser
+  agence_constant_teaser_service:
+    "./src/js/teasers/agence_constant_teaser_service.js"
 };
 
 // export default {

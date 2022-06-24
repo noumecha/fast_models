@@ -1,0 +1,26 @@
+{% if content %}
+
+	<div class="sac-service aos-init" data-aos="fade-up" data-aos-delay="200">
+		<div class="icon aos-init" data-aos="fade-down" data-aos-delay="300">
+			{% if content.icone %}
+				{{content.icone}}
+			{% endif %}
+		</div>
+		<div class="text-content">
+			{% if content.title %}
+				<h2 class="tc-title">
+					{{content.title}}
+				</h2>
+			{% endif %}
+
+			{% if content.desc %}
+				<div class="tc-desc">
+					{{content.desc}}
+				</div>
+			{% endif %}
+
+		</div>
+
+
+	</div>
+{% endif %}
