@@ -1,5 +1,5 @@
 {% if content %}
-	<div class="vesper-service-card aos-init" data-aos="fade-up" data-aos-delay="100">
+	<div {{attributes.addClass(['vesper-service-card','aos-init']).setAttribute('data-aos','fade-up').setAttribute('data-aos-delay','200')}}>
 		{% if content.icon %}
 			<div class="icon">
 				{{ content.icon }}

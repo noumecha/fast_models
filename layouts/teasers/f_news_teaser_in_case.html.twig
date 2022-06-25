@@ -17,7 +17,7 @@
 				{% if content.teaser_in_case_date %}
 					<div {{ region_attributes.teaser_in_case_date.addClass('bib-date') }}>
 						{{ content.teaser_in_case_date }}
-						{% if content.categorie %}
+						{% if content.categorie|has_value %}
 							<div class="px-2">/</div>
 							<div class="bib-date-cat">
 								{{content.categorie}}

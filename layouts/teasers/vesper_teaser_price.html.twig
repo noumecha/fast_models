@@ -8,17 +8,17 @@
 			{% endif %}
 		</div>
 		{% if content.title %}
-			<h3>
+			<h3 {{region_attributes.title.addClass(['title-r',''])}}>
 				{{ content.title }}
 			</h3>
 		{% endif %}
 		{% if content.desc %}
-			<div class="desc">
+			<div {{region_attributes.desc.addClass(['desc-r','desc'])}}>
 				{{ content.desc }}
 			</div>
 		{% endif %}
 		{% if content.price %}
-			<h4>
+			<h4 {{region_attributes.price.addClass(['price-r','desc'])}}>
 				{{ content.price }}
 			</h4>
 		{% endif %}
@@ -26,7 +26,7 @@
 			{{content.list_item}}
 		{% endif %}
 		{% if content.link %}
-			<div {{region_attributes.link.addClass(['link','btn-wrap'])}}>
+			<div {{region_attributes.link.addClass(['link-r','btn-wrap'])}}>
 				{{content.link}}
 			</div>
 		{% endif %}

@@ -1,26 +1,22 @@
 {% if content %}
-
-	<div class="sac-service aos-init" data-aos="fade-up" data-aos-delay="200">
-		<div class="icon aos-init" data-aos="fade-down" data-aos-delay="300">
+	<div {{attributes.addClass(['sac-service','aos-init']).setAttribute('data-aos','fade-up').setAttribute('data-aos-delay','200')}}>
+		<div {{region_attributes.icone.addClass(['icon-r','icon','aos-init']).setAttribute('data-aos','fade-down').setAttribute('data-aos-delay','300')}}>
 			{% if content.icone %}
-				{{content.icone}}
+				{{content.icone|layout_value}}
 			{% endif %}
 		</div>
-		<div class="text-content">
+		<div class='text-content'>
 			{% if content.title %}
-				<h2 class="tc-title">
+				<h2 {{ region_attributes.title.addClass(['tc-title'])}}>
 					{{content.title}}
 				</h2>
 			{% endif %}
 
 			{% if content.desc %}
-				<div class="tc-desc">
+				<div {{ region_attributes.desc.addClass(['tc-desc'])}}>
 					{{content.desc}}
 				</div>
 			{% endif %}
-
 		</div>
-
-
 	</div>
 {% endif %}
