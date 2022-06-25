@@ -1,25 +1,21 @@
 {% if content %}
-	<div class="box aos-init" data-aos="zoom-in-up" data-aos-delay="200">
+	<div {{attributes.addClass(['box','aos-init']).setAttribute('data-aos','zoom-in-up').setAttribute('data-aos-delay','200')}}>
 		<div class="illustration ">
 			{% if content.icone %}
-				<div class="icon">
-					{{ content.icone }}
+				<div {{region_attributes.icone.addClass(['icon','icone'])}}>
+					{{ content.icone|layout_value }}
 				</div>
 			{% endif %}
 		</div>
-
 		{% if content.title %}
 			<h3>
 				{{ content.title }}
 			</h3>
-
 		{% endif %}
 		{% if content.desc %}
-
 			<div class="desc">
 				{{ content.desc }}
 			</div>
-
 		{% endif %}
 		{% if content.price %}
 			<h4>
@@ -30,10 +26,9 @@
 			{{content.list_item}}
 		{% endif %}
 		{% if content.link %}
-			<div class="btn-wrap">
+			<div {{region_attributes.link.addClass(['link','btn-wrap'])}}>
 				{{content.link}}
 			</div>
 		{% endif %}
 	</div>
-
 {% endif %}
