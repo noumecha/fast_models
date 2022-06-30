@@ -1,0 +1,34 @@
+{% if content %}
+	<div {{attributes.addClass(['box','aos-init']).setAttribute('data-aos','zoom-in-up').setAttribute('data-aos-delay','200')}}>
+		<div class="illustration ">
+			{% if content.icone %}
+				<div {{region_attributes.icone.addClass(['icon','icone'])}}>
+					{{ content.icone|layout_value }}
+				</div>
+			{% endif %}
+		</div>
+		{% if content.title %}
+			<h3 {{region_attributes.title.addClass(['title-r',''])}}>
+				{{ content.title }}
+			</h3>
+		{% endif %}
+		{% if content.desc %}
+			<div {{region_attributes.desc.addClass(['desc-r','desc'])}}>
+				{{ content.desc }}
+			</div>
+		{% endif %}
+		{% if content.price %}
+			<h4 {{region_attributes.price.addClass(['price-r',''])}}>
+				{{ content.price }}
+			</h4>
+		{% endif %}
+		{% if content.list_item %}
+			{{content.list_item}}
+		{% endif %}
+		{% if content.link %}
+			<div {{region_attributes.link.addClass(['link-r','btn-wrap'])}}>
+				{{content.link}}
+			</div>
+		{% endif %}
+	</div>
+{% endif %}

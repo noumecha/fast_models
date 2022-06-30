@@ -279,3 +279,18 @@ fast_models_four_col:
   css:
     theme:
       layouts/css/fast_models_four_col.css: {}
+
+##vesper library
+
+vesper_more_card:
+  js:
+    layouts/js/vesper_more_card.js: {}
+  css:
+    theme:
+      layouts/css/vesper_more_card.css: {}
+vesper_service_card:
+  js:
+    layouts/js/vesper_service_card.js: {}
+  css:
+    theme:
+      layouts/css/vesper_service_card.css: {}
