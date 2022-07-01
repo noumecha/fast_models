@@ -19,11 +19,8 @@ use Drupal\formatage_models\Plugin\Layout\Teasers\FormatageModelsTeasers;
  *  library = "fast_models/fast_models_controls_teaser",
  *  default_region = "controls_title",
  *  regions = {
- *      "controls_buttons" = {
- *          "label" = @Translation("controls_buttons"),     
- *      },
- *      "controls_title" = {
- *          "label" = @Translation("controls_title"),     
+ *      "controls_content" = {
+ *          "label" = @Translation("controls_content"),     
  *      }
  *  }
  * )
@@ -75,22 +72,9 @@ class FastModelsControlsTeaser extends FormatageModelsTeasers
                     'loader' => 'static'
                 ],
                 'fields' => [
-                    'controls_buttons' => [
+                    'controls_content' => [
                         'text_html' => [
-                            'label' => 'Bouttons',
-                            'value' => '
-                                <button class="sc-btn play-pause">
-                                    <i class="wbu-pause"></i>
-                                    <i class="wbu-play"></i>
-                                </button>
-                                <button class="sc-btn"><i class="wbu-angle-left"></i></button>
-                                <button class="sc-btn"><i class="wbu-angle_right"></i></button>
-                            '
-                        ]
-                    ],
-                    'controls_title' => [
-                        'text_html' => [
-                            'label' => 'Titre',
+                            'label' => 'contenu',
                             'value' => "<a href='#'>Where can you find fresh fruits nowadays</a>"
                         ]
                     ]
