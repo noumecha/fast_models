@@ -165,7 +165,7 @@ class FastModelsFnewsStickyAuthor extends FormatageModelsSection
                     'sticky_author_icon_contener' => [
                         'text_html' => [
                             'label' => 'Image contener',
-                            'value' => '<a href="#" class="saf-social__btn">
+                            'value' => '<a href="#" class="saf-social__btn facebookShare">
                                             <svg>
                                                 <use xlink:href="#facebook-f"></use>
                                             </svg>
