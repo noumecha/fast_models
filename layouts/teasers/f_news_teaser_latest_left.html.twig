@@ -1,21 +1,21 @@
 {% if content %}
-<div class="single-post d-flex">
-    {% if content %}
-    <div {{region_attributes.teaser_latest_image.addClass('post-img-handler')}}>
-        {{content.teaser_latest_image}}
-    </div>
-    {% endif %}
-    <div class="info d-block">
-        {% if content %}
-        <div {{region_attributes.teaser_latest_text.addClass('post-link')}}>
-            {{ content.teaser_latest_text }}
-        </div>
-        {% endif %}
-        {% if content %}
-        <div {{region_attributes.teaser_latest_date.addClass('posted-date')}}>
-            {{ content.teaser_latest_date}}
-        </div>
-        {% endif %}
-    </div>
-</div>
+	<div class="single-post d-flex">
+		{% if content %}
+			<div {{region_attributes.teaser_latest_image.addClass('post-img-handler')}}>
+				{{content.teaser_latest_image}}
+			</div>
+		{% endif %}
+		<div class="info d-block">
+			{% if content %}
+				<h5 {{region_attributes.teaser_latest_text.addClass('post-link')}}>
+					{{ content.teaser_latest_text }}
+				</h5>
+			{% endif %}
+			{% if content %}
+				<div {{region_attributes.teaser_latest_date.addClass('posted-date')}}>
+					{{ content.teaser_latest_date}}
+				</div>
+			{% endif %}
+		</div>
+	</div>
 {% endif %}
