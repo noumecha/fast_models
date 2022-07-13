@@ -139,22 +139,22 @@ class FnewsHeroBlogSection extends FormatageModelsSection
                     'hero_icon_contener' => [
                         'text_html' => [
                             'label' => 'icones',
-                            'value' => '<a href="#" class="hbt-social__btn">
+                            'value' => '<a href="#" class="hbt-social__btn facebookShare">
                                             <svg>
-                                                <use xlink:href="#facebook-f"></use>
+                                                <use xlink:href="#facebook-f "></use>
                                             </svg>
                                         </a>
-                                        <a href="#" class="hbt-social__btn">
+                                        <a href="#" class="hbt-social__btn twitterShare">
                                             <svg>
                                                 <use xlink:href="#twitter"></use>
                                             </svg>
                                         </a>
-                                        <a href="#" class="hbt-social__btn">
+                                        <a href="#" class="hbt-social__btn emailShare">
                                             <svg>
                                                 <use xlink:href="#envelope"></use>
                                             </svg>
                                         </a>
-                                        <a href="#" class="hbt-social__btn">
+                                        <a href="#" class="hbt-social__btn printButton">
                                             <svg>
                                                 <use xlink:href="#print"></use>
                                             </svg>
