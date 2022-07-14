@@ -99,8 +99,8 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection
                 $attribute = $item['attributes'];
                 $attribute->addClass('nav-item');
                 if (!empty($item['below'])) {
-                $this->formatListMenus($item['below']);
-                $items[$k]['below'] = $item['below'];
+                    $this->formatListMenus($item['below']);
+                    $items[$k]['below'] = $item['below'];
                 }
             }
         }
