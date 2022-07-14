@@ -1,7 +1,22 @@
 {% if content %}
 <header {{ attributes.addClass('fnews-header')}} >
-    {% if content.fn_first_nav %}
-        {{ content.fn_first_nav }}
-    {% endif %}
+    <nav class="first-nav ">
+        <div class="first-nav__brand">
+            <a href="#">
+                storibon
+
+            </a>
+            <!-- <img class="img-fluid"
+                 src="https://upload.wikimedia.org/wikipedia/fr/a/a9/Ripple_logo_entreprise_2015.png"
+                 alt=""> -->
+        </div>
+        <a href="#" class="menu-icons">
+            <span class="burger"> <i class="wbu-bars"></i></span>
+            <span class="xmark"> <i class="wbu-close"></i></span>
+        </a>
+        {% if content.fn_first_nav %}
+            {{ content.fn_first_nav }}
+        {% endif %}
+    </nav>
 </header>
 {% endif %}
