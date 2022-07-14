@@ -79,7 +79,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
         //
         $fn_first_nav[$k]['#attributes'] = [
           'class' => [
-            'first-nav-noumel'
+            'first-nav'
           ]
         ];
         // set new theme.
