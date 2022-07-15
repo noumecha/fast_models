@@ -1,10 +1,10 @@
 <?php
+
 /**
  * Fast_ models_first menu
- * 
+ *
  * @{inhreitdoc}
  */
-
 namespace Drupal\fast_models\Plugin\Layout\Sections\Menus;
 
 use Drupal\formatage_models\FormatageModelsThemes;
@@ -30,7 +30,6 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  * )
  *
  */
-
 class FastModelsFnewsFirstMenu extends FormatageModelsSection {
   
   /**
@@ -38,7 +37,6 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
    * {@inheritdoc}
    * @see \Drupal\formatage_models\Plugin\Layout\FormatageModels::__construct()
    */
-  
   public function __construct(array $configuration, $plugin_id, $plugin_definition, StylesGroupManager $styles_group_manager) {
     // TODO Auto-generated method stub
     parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
@@ -59,7 +57,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
     
     if (is_array($build['fn_first_nav']))
       $build['fn_first_nav'] = $this->getMenus($build['fn_first_nav']);
-    //dump($build['fn_first_nav']);
+    // dump($build['fn_first_nav']);
     return $build;
   }
   
@@ -82,6 +80,7 @@ class FastModelsFnewsFirstMenu extends FormatageModelsSection {
             'first-nav'
           ]
         ];
+        
         // set new theme.
         $fn_first_nav[$k]['content']['#theme'] = 'layoutmenu_fast_models_fn_first_menu';
         
