@@ -6,7 +6,7 @@
 					<ul class="hbf-list">
 						{% if content.hero_link|has_value %}
 
-							{% for item in content.hero_link|array_elements(region_attributes.hero_link.addClass('list-item')) %}
+							{% for item in content.hero_link|array_elements(region_attributes.hero_link.addClass('hbf-list__item')) %}
 								{{ item }}
 							{% endfor %}
 						{% endif %}
@@ -31,8 +31,7 @@
 				<div class="hbf-tag">
 					<ul class="hbf-list">
 						{% if content.hero_sublink|has_value %}
-
-							{% for item in content.hero_sublink|array_elements(region_attributes.hero_sublink.addClass('hero-sublink')) %}
+							{% for item in content.hero_sublink|array_elements(region_attributes.hero_sublink.addClass('hbf-tag__item')) %}
 								{{ item }}
 							{% endfor %}
 						{% endif %}
