@@ -84,8 +84,8 @@ class FnewsHeroBlogSection extends FormatageModelsSection
     {
         return parent::defaultConfiguration() + [
             'css' => '',
-            'region_css_hero_link': => 'hbf-list__item',
-            'region_css_hero_sublink': => 'hbf-tag__item',
+            'region_css_hero_link' => 'hbf-list__item',
+            'region_css_hero_sublink' => 'hbf-tag__item',
             'fnews_hero_blog' => [
                 'builder-form' => true,
                 'info' => [
