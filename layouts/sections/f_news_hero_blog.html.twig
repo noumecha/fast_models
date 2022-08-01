@@ -5,15 +5,12 @@
 				<div class="hbf-breadcrumbs">
 					<ul class="hbf-list">
 						{% if content.hero_link|has_value %}
-							<li {{ region_attributes.hero_link.addClass('hbf-list__item ')}}>
-								{{ content.hero_link }}
-							</li>
+
+							{% for item in content.hero_link|array_elements(region_attributes.hero_link.addClass('list-item')) %}
+								{{ item }}
+							{% endfor %}
 						{% endif %}
-						{% if content.heor_link_one|has_value %}
-							<li {{ region_attributes.hero_link_one.addClass('hbf-list__item ')}}>
-								{{ content.hero_link_one }}
-							</li>
-						{% endif %}
+
 						{% if content.hero_link_two|has_value %}
 							<li {{ region_attributes.hero_link_two.addClass('hbf-list__item ')}}>
 								{{ content.hero_link_two }}
@@ -34,9 +31,10 @@
 				<div class="hbf-tag">
 					<ul class="hbf-list">
 						{% if content.hero_sublink|has_value %}
-							<li {{ region_attributes.hero_sublink.addClass('hbf-tag__item')}}>
-								{{ content.hero_sublink }}
-							</li>
+
+							{% for item in content.hero_sublink|array_elements(region_attributes.hero_sublink.addClass('hero-sublink')) %}
+								{{ item }}
+							{% endfor %}
 						{% endif %}
 						{% if content.hero_date|has_value %}
 							<li {{ region_attributes.hero_date.addClass('hbf-tag__item')}}>

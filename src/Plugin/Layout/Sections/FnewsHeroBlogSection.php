@@ -21,10 +21,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  regions = {
  *      "hero_link" = {
  *          "label" = @Translation("hero_link"),
- *      },
- *      "hero_link_one" = {
- *          "label" = @Translation("hero_link_one"),
- *      },
+ *      }, 
  *      "hero_link_two" = {
  *          "label" = @Translation("hero_link_two"),
  *      },
@@ -87,6 +84,8 @@ class FnewsHeroBlogSection extends FormatageModelsSection
     {
         return parent::defaultConfiguration() + [
             'css' => '',
+            'region_css_hero_link': => 'hbf-list__item',
+            'region_css_hero_sublink': => 'hbf-tag__item',
             'fnews_hero_blog' => [
                 'builder-form' => true,
                 'info' => [
@@ -99,13 +98,7 @@ class FnewsHeroBlogSection extends FormatageModelsSection
                             'label' => 'lien 1',
                             'value' => "<a href='#'>home</a>"
                         ]
-                    ],
-                    'hero_link_one' => [
-                        'text_html' => [
-                            'label' => 'lien 2',
-                            'value' => "<a href='#'>blog</a>"
-                        ]
-                    ],
+                    ], 
                     'hero_link_two' => [
                         'text_html' => [
                             'label' => 'lien 2',
