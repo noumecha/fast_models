@@ -4,24 +4,27 @@
         <div class="irl-bloc row justify-content-between">
             <div class="irl-bloc__text col-12 col-md-6">
                 {% if content.right_left_title %}
-                    <h4 {{ region_attributes.right_left_title.addClass('irl-bloc__title')}}>
-                        {{ content.right_left_title }}                        
-                    </h4>
+                <h1 {{ region_attributes.right_left_title.addClass(['irl-bloc__title','h1'])}}>
+                    {{ content.right_left_title }}                        
+                </h1>
                 {% endif %}
-                {% if content %}
-                <p {{ region_attributes.right_left_text.addClass('irl-bloc__desc')}}>
+                {% if content.right_left_text %}
+                <div {{ region_attributes.right_left_text.addClass('irl-bloc__desc')}}>
                     {{ content.right_left_text }}                    
-                </p>
+                </div>
                 {% endif %}
                 {% if content.right_left_button %}
-                    {{ content.right_left_button }}
+                    {% for item in content.right_left_button|array_elements(region_attributes.right_left_button.addClass('')) %}
+                        {{ item }}
+                    {% endfor %}
+                    {#{ content.right_left_button }#}
                 {% endif %}
             </div>
             <div class="irl-bloc__img col-12 col-md-6">
                 {% if content.right_left_image %}
-                <a href="#" {{ region_attributes.right_left_image.addClass('ibi__img')}}>
+                <div {{ region_attributes.right_left_image.addClass('ibi__img')}}>
                     {{ content.right_left_image }}                    
-                </a>
+                </div>
                 {% endif %}
             </div>
         </div>
