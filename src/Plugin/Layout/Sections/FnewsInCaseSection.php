@@ -94,7 +94,7 @@ class FnewsInCaseSection extends FormatageModelsSection
                             'value' => [
                                 "link" => "#",
                                 "text" => "More",
-                                "class" => ""
+                                "class" => "link"
                             ]
                         ]
                     ]
