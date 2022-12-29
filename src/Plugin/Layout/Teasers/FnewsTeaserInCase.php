@@ -79,6 +79,9 @@ class FnewsTeaserInCase extends FormatageModelsTeasers
         return parent::defaultConfiguration() + [
             'css' => '',
             'ftic' => [
+                'region_css_teaser_in_case_text' => 'text-white h3',
+                'region_css_teaser_in_case_date' => 'text-white',
+                'region_css_teaser_in_case_author' => 'text-white h4',
                 'builder-form' => true,
                 'info' => [
                     'title' => 'Contenu',
