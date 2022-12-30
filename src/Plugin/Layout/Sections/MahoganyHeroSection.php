@@ -28,9 +28,6 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *      "link" = {
  *          "label" = @Translation("link"),     
  *      },
- *      "bullets" = {
- *          "label" = @Translation("bullets"),     
- *      }
  *  }
  * )
  * 
@@ -71,6 +68,8 @@ class MahoganyHeroSection extends FormatageModelsSection {
     {
       return parent::defaultConfiguration() + [
             'css' => '',
+            'region_css_titled' => 'text-white h1',
+            'region_css_link' => 'text-white',
             'mahogany' => [
               'builder-form' => true,
               'info' => [
@@ -96,19 +95,10 @@ class MahoganyHeroSection extends FormatageModelsSection {
                           'value' => [
                               "link" => "#",
                               "text" => "Visit Online Store",
-                              "class" => "btn btn-primary btn-lg text-center"
+                              "class" => "btn btn-primary btn-lg"
                           ]
                         ]
-                    ],
-                  'bullets' => [
-                      'text_html' => [
-                          'label' => 'Bullets',
-                          'value' => "
-                            <span class='dot' id='dot-one'></span>
-                            <span class='dot' id='dot-two'></span>
-                            <span class='dot' id='dot-three'></span>"
-                        ]
-                    ],
+                    ]
                 ]
             ]
         ];
