@@ -8,7 +8,7 @@
 		{% endif %}
 		<div class="bloc-img__body d-flex flex-column">
 			{% if content.teaser_in_case_text %}
-				<h3 {{ region_attributes.teaser_in_case_text.addClass(['bib-title','h3'])}}>
+				<h3 {{ region_attributes.teaser_in_case_text.addClass(['bib-title'])}}>
 					{{ content.teaser_in_case_text }}
 				</h3>
 			{% endif %}
@@ -25,7 +25,7 @@
 			{% endif %}
 		</div>
 		{% if content.teaser_in_case_author %}
-			<h4 {{ region_attributes.teaser_in_case_author.addClass(['bib-creator','h4']) }}>
+			<h4 {{ region_attributes.teaser_in_case_author.addClass(['bib-creator']) }}>
 				{{ content.teaser_in_case_author }}
 			</h4>
 		{% endif %}
