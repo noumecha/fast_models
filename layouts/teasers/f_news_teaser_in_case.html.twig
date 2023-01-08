@@ -1,39 +1,34 @@
 {% if content %}
-
-	<div class="bloc-img  ">
-		<div class="bloc-img-content">
-			<div class="bloc-img__img ">
-				{% if content.teaser_in_case_image %}
-					{{ content.teaser_in_case_image }}
-				{% endif %}
-			</div>
-
-			<div class="bloc-img__body d-flex flex-column">
-				{% if content.teaser_in_case_text %}
-					<h4 class="bib-title">
-						{{ content.teaser_in_case_text }}
-					</h4>
-				{% endif %}
-				{% if content.teaser_in_case_date %}
-					<div {{ region_attributes.teaser_in_case_date.addClass('bib-date') }}>
-						{{ content.teaser_in_case_date }}
-						{% if content.categorie|has_value %}
-							<div class="px-2">/</div>
-							<div class="bib-date-cat">
-								{{content.categorie}}
-							</div>
-						{% endif %}
-					</div>
-				{% endif %}
-
-			</div>
-			{% if content.teaser_in_case_author %}
-				<div {{ region_attributes.teaser_in_case_author.addClass('bib-creator') }}>
-					{{ content.teaser_in_case_author }}
+<div {{ attributes.addClass('bloc-img') }}>
+	<div class="bloc-img-content">
+		{% if content.teaser_in_case_image %}
+		<div {{ region_attributes.teaser_in_case_image.addClass('bloc-img__img ')}}>
+			{{ content.teaser_in_case_image }}
+		</div>
+		{% endif %}
+		<div class="bloc-img__body d-flex flex-column">
+			{% if content.teaser_in_case_text %}
+				<h3 {{ region_attributes.teaser_in_case_text.addClass(['bib-title'])}}>
+					{{ content.teaser_in_case_text }}
+				</h3>
+			{% endif %}
+			{% if content.teaser_in_case_date %}
+				<div {{ region_attributes.teaser_in_case_date.addClass('bib-date') }}>
+					{{ content.teaser_in_case_date }}
+					{% if content.categorie|has_value %}
+						<div class="px-2">/</div>
+						<div class="bib-date-cat">
+							{{content.categorie}}
+						</div>
+					{% endif %}
 				</div>
 			{% endif %}
-
 		</div>
+		{% if content.teaser_in_case_author %}
+			<h4 {{ region_attributes.teaser_in_case_author.addClass(['bib-creator']) }}>
+				{{ content.teaser_in_case_author }}
+			</h4>
+		{% endif %}
 	</div>
-
+</div>
 {% endif %}

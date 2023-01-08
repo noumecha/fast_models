@@ -1,32 +1,24 @@
 {% if content %}
-    <section {{attributes.addClass('mhgy-hero-section')}}>
+    {% if content.image.layout_builder_add_block %}
+        {{ content.image }}
+    {% endif %}
+    {% if content.image|layout_bg_img %}
+        {% set attributes = attributes.merge(content.image|layout_bg_img) %}
+	{% endif %}
+    <section {{ attributes.addClass('mhgy-hero-section') }}>
         <div class="container-flex">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div class="slider-item">
-                        {% if content.image %}
-                        <div {{region_attributes.image.addClass('slider-image')}}>
-                            {{ content.image }}
-                        </div>
-                        {% endif %}
-                        <div {{region_attributes.titled.addClass('slider-content', 'text-center')}}>
-                            {% if content.titled %}
-                            <h1 class="slider-title">
-                                {{ content.titled }}
-                            </h1>
-                            {% endif %}
-                            {% if content.link %}
-                            <div>
-                                {{ content.link }}
-                            </div>
-                            {% endif %}
-                            {% if content.bullets %}
-                            <div {{region_attributes.bullets.addClass('slider-bullets')}}>
-                                {{ content.bullets }}
-                            </div>
-                            {% endif %}
-                        </div>
-                    </div>
+            <div class="slider-content text-center">
+                {% if content.titled %}
+                <h1 {{ region_attributes.titled.addClass(['h1','slider-title'])}}>
+                    {{ content.titled }}
+                </h1>
+                {% endif %}
+                <div class="slider-link">
+                    {% if content.link %}
+                        {% for i in content.link|array_elements(region_attributes.link.addClass('')) %}
+                            {{ i }}
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </div>
         </div>

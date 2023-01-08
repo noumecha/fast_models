@@ -2,22 +2,28 @@
 	<div {{ attributes.addClass('in-case-fnews ')}}>
 		<div class="container">
 			{% if content %}
-				<h3 {{ region_attributes.title_center.addClass('icf-title') }}>
-					{{ content.title_center }}
-				</h3>
+			<h1 {{ region_attributes.title_center.addClass(['icf-title','h1']) }}>
+				{{ content.title_center }}
+			</h1>
 			{% endif %}
-			<div>
-				{% if content.teasers_in_case %}
-					{{ content.teasers_in_case}}
-				{% endif %}
+			<div class="row d-flex justify-content-center">
+			{% if content.teasers_in_case %}
+				{% for i in content.teasers_in_case|array_elements(region_attributes.teasers_in_case.addClass('')) %}
+					{{ i}}
+				{% endfor %}
+				{#{ content.teasers_in_case}#}
+			{% endif %}
 			</div>
 
 			{% if content.link %}
-				<div class="more-link">
+				{% for i in content.link|array_elements(region_attributes.link.addClass('more-link')) %}
+					{{ i }}
+				{% endfor %}
+				{#<div class="more-link">
 					<div class="link">
 						{{ content.link }}
 					</div>
-				</div>
+				</div>#}
 			{% endif %}
 
 		</div>

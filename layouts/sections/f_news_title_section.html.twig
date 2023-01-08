@@ -10,18 +10,24 @@
 				</h4>
 			{% endif %}
 		{% endif %}
-		<div class="container">
+		<div class="container d-flex">
 			{% if content.tech_content %}
-				<div {{ region_attributes.tech_content.addClass('stories-handler')}}>
+				{% for i in content.tech_content|array_elements(region_attributes.tech_content.addClass('')) %}
+					{{ i }}
+				{% endfor %}
+				{#<div {{ region_attributes.tech_content.addClass('stories-handler')}}>
 					{{ content.tech_content }}
-				</div>
+				</div>#}
 			{% endif %}
 		</div>
 		<div class="more-link">
 			{% if content.more_btn_text %}
-				<div {{ region_attributes.more_btn_text.addClass('link')}}>
+				{% for i in content.more_btn_text|array_elements(region_attributes.more_btn_text.addClass('')) %}
+					{{ i }}
+				{% endfor %}
+				{#<div {{ region_attributes.more_btn_text.addClass('link')}}>
 					{{ content.more_btn_text }}
-				</div>
+				</div>#}
 			{% endif %}
 		</div>
 		
