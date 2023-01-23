@@ -1,5 +1,5 @@
 {% if content %}
-	<div {{attributes.addClass(['box','aos-init']).setAttribute('data-aos','zoom-in-up').setAttribute('data-aos-delay','200')}}>
+	<div {{attributes.addClass(['vesper-teaser-price','aos-init']).setAttribute('data-aos','zoom-in-up').setAttribute('data-aos-delay','200')}}>
 		<div class="illustration ">
 			{% if content.icone %}
 				<div {{region_attributes.icone.addClass(['icon','icone'])}}>
@@ -8,7 +8,7 @@
 			{% endif %}
 		</div>
 		{% if content.title %}
-			<h3 {{region_attributes.title.addClass(['title-r',''])}}>
+			<h3 {{region_attributes.title.addClass(['title-r'])}}>
 				{{ content.title }}
 			</h3>
 		{% endif %}
@@ -18,12 +18,14 @@
 			</div>
 		{% endif %}
 		{% if content.price %}
-			<h4 {{region_attributes.price.addClass(['price-r',''])}}>
+			<h3 {{region_attributes.price.addClass(['price-r'])}}>
 				{{ content.price }}
-			</h4>
+			</h3>
 		{% endif %}
 		{% if content.list_item %}
-			{{content.list_item}}
+			<div {{region_attributes.list_item.addClass(['list_item'])}}>
+			    {{content.list_item}}
+			</div>
 		{% endif %}
 		{% if content.link %}
 			<div {{region_attributes.link.addClass(['link-r','btn-wrap'])}}>
