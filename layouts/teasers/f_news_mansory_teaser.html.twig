@@ -1,28 +1,24 @@
 {% if content %}
 <section {{ attributes.addClass('leader-mansory-handler')}}>
-    <div class="container">
-        <div class="row">
-            <div class=" col-md-6  p-sm-0">
-                <div class="single-mansory-card">
-                    {% if content.mansory_teaser_image %}
-                    <div {{ region_attributes.mansory_teaser_image.addClass('img-link')}}>
-                        {{ content.mansory_teaser_image }}                        
-                    </div>
-                    {% endif %}
-                    <div class="smc-body">
-                        {% if content.mansory_teaser_name %}
-                        <div {{ region_attributes.mansory_teaser_name.addClass(['member-name'])}}>
-                            {{ content.mansory_teaser_name }}
-                        </div>
-                        {% endif %}
-                        {% if content.mansory_teaser_role %}
-                        <div {{ region_attributes.mansory_teaser_role.addClass('member-role')}}>
-                            {{ content.mansory_teaser_role }}                            
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
+    <div class="single-mansory-card">
+        {% if content.mansory_teaser_image %}
+        <div {{ region_attributes.mansory_teaser_image.addClass(['img-link'])}}>
+            {{ content.mansory_teaser_image }}
+        </div>
+        {% endif %}
+        <div class="smc-body">
+            <div class="member-name">
+                {% if content.mansory_teaser_name %}
+                <h3 {{ region_attributes.mansory_teaser_name.addClass(['name'])}}>
+                    {{ content.mansory_teaser_name }}
+                </h3>
+                {% endif %}
             </div>
+            {% if content.mansory_teaser_role %}
+            <div {{ region_attributes.mansory_teaser_role.addClass(['member-role'])}}>
+                {{ content.mansory_teaser_role }}
+            </div>
+            {% endif %}
         </div>
     </div>
 </section>
