@@ -4,6 +4,7 @@ namespace Drupal\fast_models\Plugin\Layout\Sections\Menus;
 
 use Drupal\formatage_models\FormatageModelsThemes;
 use Drupal\bootstrap_styles\StylesGroup\StylesGroupManager;
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
 
 /**
@@ -36,7 +37,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *
  */
 class FastModelsFnewsSecondMenu extends FormatageModelsSection {
-  
+
   /**
    *
    * {@inheritdoc}
@@ -47,7 +48,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection {
     parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
     $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/menus/fast_models_fn_second_menu_map.png");
   }
-  
+
   /**
    *
    * {@inheritdoc}
@@ -55,7 +56,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection {
    *
    */
   public function build(array $regions) {
-    
+
     // TODO Auto-generated method stub
     $build = parent::build($regions);
     FormatageModelsThemes::formatSettingValues($build);
@@ -63,7 +64,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection {
       $build['fn_second_nav_content'] = $this->getMenus($build['fn_second_nav_content']);
     return $build;
   }
-  
+
   /**
    *
    * {@inheritdoc}
@@ -71,7 +72,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection {
   private function getMenus(array $fn_scd_nav) {
     foreach ($fn_scd_nav as $k => $m) {
       if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'system_menu_block') {
-        
+
         $fn_scd_nav[$k]['#attributes'] = [
           'class' => [
             'sn-bloc'
@@ -85,7 +86,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection {
     }
     return $fn_scd_nav;
   }
-  
+
   /**
    *
    * {@inheritdoc}
@@ -102,14 +103,41 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection {
       }
     }
   }
-  
+
+  /**
+   *
+   * {@inheritdoc}
+   */
+  public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
+    $config = $this->getConfiguration();
+    //dump($config);
+    $form = parent::buildConfigurationForm($form, $form_state);
+    $form['parent_container_class'] = [
+      '#type' => 'textfield',
+      '#title' => 'Definir la classe bootstrap (contaier ou container-fluid)',
+      '#default_value' => isset($config['parent_container_class']) ? $config['parent_container_class'] : '',
+    ];
+    return $form;
+  }
+
+  /**
+   *
+   * {@inheritdoc}
+   */
+  public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
+    parent::submitConfigurationForm($form, $form_state);
+
+    $this->configuration['parent_container_class'] = $form_state->getValue('parent_container_class');
+  }
+
   /**
    *
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
-    return parent::defaultConfiguration() + [
+    return [
       'css' => '',
+      'parent_container_class' => 'container-fluid',
       'derivate' => [
         'value' => 'default',
         'options' => [
@@ -150,7 +178,7 @@ class FastModelsFnewsSecondMenu extends FormatageModelsSection {
           ]
         ]
       ]
-    ];
+    ] + parent::defaultConfiguration();
   }
-  
+
 }
