@@ -3,9 +3,12 @@
 <div class="single-member-card">
         <div class="lutin">
             {% if content.teaser_member_image %}
-                {% for item in content.teaser_member_image|array_elements(region_attributes.teaser_member_image.assClass('img-link')) %}
+            <div {{ region_attributes.teaser_member_image.addClass('img-link') }} >
+                {{ content.teaser_member_image }}
+            </div>
+                {#% for item in content.teaser_member_image|array_elements(region_attributes.teaser_member_image.assClass('img-link')) %}
                     {{ item }}
-                {% endfor %}
+                {% endfor %#}
             {% endif %}
         </div>
         {% if content.teaser_member_role %}
