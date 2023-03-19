@@ -4,9 +4,9 @@
 			<div class="row flex-wrap-reverse">
 				<div class="col-md-8">
 					{% if content.full_image|has_value %}
-						<a href="#" {{ region_attributes.full_image.addClass('ssf__img ','mb-5')}}>
+						<div {{ region_attributes.full_image.addClass('ssf__img ','mb-5')}}>
 							{{ content.full_image }}
-						</a>
+						</div>
 					{% endif %}
 					<div class="mb-5">
 						{% if content.paragraph_one|has_value %}
