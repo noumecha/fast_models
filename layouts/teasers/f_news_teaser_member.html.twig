@@ -1,51 +1,32 @@
 {% if content %}
 <section {{ attributes.addClass('member-section-handler') }}>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-member-card">
-                    <div class="lutin  ">
-                        {% if content %}
-                        <a {{ region_attributes.teaser_member_image.addClass('img-link') }} href="#">
-                            {{ content.teaser_member_image }}                            
-                        </a>
-                        {% endif %}
-                    </div>
-                    {% if content %}
-                    <div {{ region_attributes.teaser_member_role.addClass('member-role','text-center','mt-4') }}>
-                        {{ content.teaser_member_role }}                       
-                    </div>
-                    {% endif %}
-                    {% if content %}
-                    <div {{ region_attributes.teaser_member_name.addClass('member-name','text-center','mt-4')}}>
-                        {{ content.teaser_member_name }}
-                    </div>
-                    {% endif %}
-                    <div class="social-links  text-center mt-4">
-                        {% if content %}
-                        <a href="#" {{ region_attributes.teaser_member_icon.addClass('icon') }} >
-                            {{ content.teaser_member_icon }}
-                        </a>
-                        {% endif %}
-                        {% if content %}
-                        <a href="#" {{ region_attributes.teaser_member_icon_one.addClass('icon') }}>
-                            {{ content.teaser_member_icon_one}}
-                        </a>
-                        {% endif %}
-                        {% if content %}
-                        <a href="#" {{ region_attributes.teaser_member_icon_two.addClass('icon') }}>
-                            {{ content.teaser_member_icon_two }}
-                        </a>
-                        {% endif %}
-                        {% if content %}
-                        <a href="#" {{ region_attributes.teaser_member_icon_three.addClass('icon') }}>
-                            {{ content.teaser_member_icon_three }}
-                        </a>
-                        {% endif %}
-                    </div>
-
-                </div>
+<div class="single-member-card">
+        <div class="lutin">
+            {% if content.teaser_member_image %}
+            <div {{ region_attributes.teaser_member_image.addClass('img-link') }} >
+                {{ content.teaser_member_image }}
             </div>
+                {#% for item in content.teaser_member_image|array_elements(region_attributes.teaser_member_image.assClass('img-link')) %}
+                    {{ item }}
+                {% endfor %#}
+            {% endif %}
+        </div>
+        {% if content.teaser_member_role %}
+        <div {{ region_attributes.teaser_member_role.addClass('member-role','text-center') }}>
+            {{ content.teaser_member_role }}
+        </div>
+        {% endif %}
+        {% if content.teaser_member_name %}
+        <h2 {{ region_attributes.teaser_member_name.addClass('member-name','text-center')}}>
+            {{ content.teaser_member_name }}
+        </h2>
+        {% endif %}
+        <div class="social-links  text-center">
+            {% if content.teaser_member_icon %}
+                {% for item in content.teaser_member_icon|array_elements(region_attributes.teaser_member_icon.addClass('icon')) %}
+                    {{ item }}
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 </section>

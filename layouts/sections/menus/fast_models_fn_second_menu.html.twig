@@ -1,6 +1,6 @@
 {% if content %}
 <nav {{ attributes.addClass('second-nav')}}>
-    <div class="container-fluid content">
+    <div class="{{ settings.parent_container_class }} content">
         {% if content.fn_second_nav_logo %}
         <div {{ region_attributes.fn_second_nav_logo.addClass('second-nav__brand')}}>
             {{ content.fn_second_nav_logo}}
@@ -14,7 +14,7 @@
             {% endif %}
             {% if content.fn_second_nav_search %}
             <a href="#" {{ region_attributes.fn_second_nav_search.addClass('sn-search')}}>
-                {{ content.fn_second_nav_search }}                
+                {{ content.fn_second_nav_search }}
             </a>
             {% endif %}
         </div>
@@ -23,11 +23,11 @@
 <div class="sn-search-popup">
     <div class="container">
         <div class="spu-content">
-            
+
             <span class="sn-hide">
             	<i class='wbu-close'></i>
             </span>
-            
+
             {% if content.fn_popup_search %}
             <div {{ region_attributes.fn_popup_search.addClass('search-input')}}>
                 {{ content.fn_popup_search }}

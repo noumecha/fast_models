@@ -48,7 +48,7 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *
  */
 class FnewsFirstServiceSection extends FormatageModelsSection {
-  
+
   /**
    *
    * {@inheritdoc}
@@ -59,7 +59,7 @@ class FnewsFirstServiceSection extends FormatageModelsSection {
     parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
     $this->pluginDefinition->set('icon', drupal_get_path('module', 'fast_models') . "/icons/sections/fnews_first_service_map.png");
   }
-  
+
   /**
    *
    * {@inheritdoc}
@@ -67,7 +67,7 @@ class FnewsFirstServiceSection extends FormatageModelsSection {
    *
    */
   public function build(array $regions) {
-    
+
     // TODO Auto-generated method stub
     $build = parent::build($regions);
     FormatageModelsThemes::formatSettingValues($build);
@@ -75,7 +75,7 @@ class FnewsFirstServiceSection extends FormatageModelsSection {
       // $build['head_nav'] = $this->getMenus($build['head_nav']);
       return $build;
   }
-  
+
   /**
    *
    * {@inheritdoc}
@@ -83,7 +83,7 @@ class FnewsFirstServiceSection extends FormatageModelsSection {
   private function getMenus(array $fn_scd_nav) {
     foreach ($fn_scd_nav as $k => $m) {
       if (isset($m['#base_plugin_id']) && $m['#base_plugin_id'] === 'field_block') {
-        
+
         $fn_scd_nav[$k]['#attributes'] = [
           'class' => [
             'blog-btn'
@@ -95,15 +95,17 @@ class FnewsFirstServiceSection extends FormatageModelsSection {
     }
     return $fn_scd_nav;
   }
-  
+
   /**
    *
    * {@inheritdoc}
    *
    */
   public function defaultConfiguration() {
-    return parent::defaultConfiguration() + [
+    return [
       'css' => '',
+      'region_tag_service_title' => 'h2',
+      'region_css_service_title' => 'h2',
       'fnews_first_servie' => [
         'builder-form' => true,
         'info' => [
@@ -164,7 +166,7 @@ class FnewsFirstServiceSection extends FormatageModelsSection {
           ]
         ]
       ]
-    ];
+    ] + parent::defaultConfiguration() ;
   }
-  
+
 }

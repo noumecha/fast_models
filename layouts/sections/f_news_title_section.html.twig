@@ -1,5 +1,5 @@
 {% if content %}
-	<section {{ attributes.addClass('tech-stories-section-handler') }}>
+	<section {{ attributes.addClass(['tech-stories-section-handler','container']) }}>
 		{% if content.fnews_title %}
 			<h3 {{ region_attributes.fnews_title.addClass('section-title','text-center') }}>
 				{{ content.fnews_title }}
@@ -10,14 +10,11 @@
 				</h4>
 			{% endif %}
 		{% endif %}
-		<div class="container d-flex">
+		<div class="row d-flex">
 			{% if content.tech_content %}
 				{% for i in content.tech_content|array_elements(region_attributes.tech_content.addClass('')) %}
 					{{ i }}
 				{% endfor %}
-				{#<div {{ region_attributes.tech_content.addClass('stories-handler')}}>
-					{{ content.tech_content }}
-				</div>#}
 			{% endif %}
 		</div>
 		<div class="more-link">
@@ -25,12 +22,9 @@
 				{% for i in content.more_btn_text|array_elements(region_attributes.more_btn_text.addClass('')) %}
 					{{ i }}
 				{% endfor %}
-				{#<div {{ region_attributes.more_btn_text.addClass('link')}}>
-					{{ content.more_btn_text }}
-				</div>#}
 			{% endif %}
 		</div>
-		
+
 
 	</section>
 {% endif %}
