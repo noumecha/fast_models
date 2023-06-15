@@ -7,9 +7,9 @@ use Drupal\formatage_models\FormatageModelsThemes;
 use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
 
 /**
- * 
- * Fnews hero bog Section 
- * 
+ *
+ * Fnews hero bog Section
+ *
  * @Layout (
  *  id = "f_news_hero_blog",
  *  label = @Translation("f_news_hero_blog"),
@@ -17,11 +17,11 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *  path = "layouts/sections",
  *  template = "f_news_hero_blog",
  *  library = "fast_models/f_news_hero_blog",
- *  default_region = "content",
+ *  default_region = "hero_bg_image",
  *  regions = {
  *      "hero_link" = {
  *          "label" = @Translation("hero_link"),
- *      }, 
+ *      },
  *      "hero_link_two" = {
  *          "label" = @Translation("hero_link_two"),
  *      },
@@ -29,16 +29,19 @@ use Drupal\formatage_models\Plugin\Layout\Sections\FormatageModelsSection;
  *          "label" = @Translation("hero_simple_title"),
  *      },
  *      "hero_title" = {
- *          "label" = @Translation("hero_title"),    
+ *          "label" = @Translation("hero_title"),
  *      },
  *      "hero_sublink" = {
- *          "label" = @Translation("hero_sublink"),     
+ *          "label" = @Translation("hero_sublink"),
  *      },
  *      "hero_date" = {
  *          "label" = @Translation("hero_date"),
  *      },
  *      "hero_icon_contener" = {
- *          "label" = @Translation("hero_icon_contener"),     
+ *          "label" = @Translation("hero_icon_contener"),
+ *      },
+ *      "hero_bg_image" = {
+ *          "label" = @Translation("hero_bg_image"),
  *      }
  *  }
  *)
@@ -52,7 +55,7 @@ class FnewsHeroBlogSection extends FormatageModelsSection
      * {@inheritdoc}
      * @see \Drupal\formatage_models\Plugin\Layout\FormatageModels::__construct()
      */
-    public function __construct(array $configuration, $plugin_id, $plugin_definition, StylesGroupManager $styles_group_manager) 
+    public function __construct(array $configuration, $plugin_id, $plugin_definition, StylesGroupManager $styles_group_manager)
     {
         // TODO Auto-generated method stub
         parent::__construct($configuration, $plugin_id, $plugin_definition, $styles_group_manager);
@@ -60,30 +63,35 @@ class FnewsHeroBlogSection extends FormatageModelsSection
     }
 
     /**
-     * 
+     *
      * {@inheritdoc}
      * @see \Drupal\formatage_models\Plugin\Layout\FormatageModels:build()
-     * 
+     *
      */
-    public function build(array $regions) 
+    public function build(array $regions)
     {
-        
+
         // TODO Auto-generated method stub
         $build = parent::build($regions);
         FormatageModelsThemes::formatSettingValues($build);
-        
+
         return $build;
     }
 
     /**
-     * 
+     *
      * {@inheritdoc}
-     * 
+     *
      */
-    public function defaultConfiguration() 
+    public function defaultConfiguration()
     {
         return parent::defaultConfiguration() + [
             'css' => '',
+            'derivate' => [
+                "options" => [
+                    "bg-image" => "bg-image"
+                ],
+            ],
             'region_css_hero_link' => 'hbf-list__item',
             'region_css_hero_sublink' => 'hbf-tag__item',
             'fnews_hero_blog' => [
@@ -98,7 +106,7 @@ class FnewsHeroBlogSection extends FormatageModelsSection
                             'label' => 'lien 1',
                             'value' => "<a href='#'>home</a>"
                         ]
-                    ], 
+                    ],
                     'hero_link_two' => [
                         'text_html' => [
                             'label' => 'lien 2',
@@ -121,6 +129,11 @@ class FnewsHeroBlogSection extends FormatageModelsSection
                         'text_html' => [
                             'label' => 'Lien Bas 1',
                             'value' => "<a href='#'>Finance</a>"
+                        ]
+                    ],
+                    'hero_bg_image' => [
+                        'img_bg' => [
+                            'label' => 'Image',
                         ]
                     ],
                     'hero_date' => [

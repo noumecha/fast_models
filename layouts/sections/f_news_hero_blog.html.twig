@@ -1,11 +1,16 @@
 {% if content %}
-	<div {{ attributes.addClass('hero-blog-fnews ') }}>
+    {% if content.hero_bg_image.layout_builder_add_block %}
+    	{{ content.hero_bg_image }}
+    {% endif %}
+    {% if content.hero_bg_image|layout_bg_img %}
+    	{% set attributes = attributes.merge(content.hero_bg_image|layout_bg_img) %}
+    {% endif %}
+	<div {{ attributes.addClass(['hero-blog-fnews']) }}>
 		<div class="container">
 			<div class="hbf-content">
 				<div class="hbf-breadcrumbs">
 					<ul class="hbf-list">
 						{% if content.hero_link|has_value %}
-
 							{% for item in content.hero_link|array_elements(region_attributes.hero_link.addClass('hbf-list__item')) %}
 								{{ item }}
 							{% endfor %}
