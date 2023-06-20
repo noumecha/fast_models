@@ -88,6 +88,7 @@ class FnewsHeroBlogSection extends FormatageModelsSection
         return parent::defaultConfiguration() + [
             'css' => '',
             'derivate' => [
+                'value' => '',
                 "options" => [
                     "bg-image" => "bg-image"
                 ],
