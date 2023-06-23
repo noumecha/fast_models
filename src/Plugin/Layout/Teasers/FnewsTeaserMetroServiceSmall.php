@@ -68,7 +68,7 @@ class FnewsTeaserMetroServiceSmall extends FormatageModelsTeasers {
    *
    */
   public function defaultConfiguration() {
-    return parent::defaultConfiguration() + [
+    return [
       'css' => '',
       'fntmss' => [
         'builder-form' => true,
@@ -105,7 +105,7 @@ class FnewsTeaserMetroServiceSmall extends FormatageModelsTeasers {
           ]
         ]
       ]
-    ];
+    ] + parent::defaultConfiguration();
   }
   
 }

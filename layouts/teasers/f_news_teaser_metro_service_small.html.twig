@@ -2,7 +2,7 @@
 	<div {{attributes.addClass('metro-service')}}>
 		{% if content.metro_teaser_small_image %}
 			{% set keySearch = {begin:1, number:1} %}
-			<div {{region_attributes.addClass('metro_teaser_small_image')}}>
+			<div {{region_attributes.metro_teaser_small_image.addClass('metro_teaser_small_image')}}>
 				{{ content.metro_teaser_small_image|layout_value_img(keySearch) }}
 			</div>
 		{% endif %}
