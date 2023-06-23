@@ -64,7 +64,7 @@ class FnewsTeaserMetroService extends FormatageModelsTeasers {
     // TODO Auto-generated method stub
     $build = parent::build($regions);
     FormatageModelsThemes::formatSettingValues($build);
-    
+    $this->messenger()->addWarning('deprecated layout : f_news_teaser_metro_service, please use orther f_news_teaser_metro_service(f_news_teaser_metro_service_small) ');
     return $build;
   }
   
