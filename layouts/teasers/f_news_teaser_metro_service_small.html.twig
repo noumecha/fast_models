@@ -1,10 +1,14 @@
 {% if content %}
 	<div {{attributes.addClass('metro-service')}}>
-		{% if content.metro_teaser_small_image %}
-			{% set keySearch = {begin:1, number:1} %}
-			<div {{region_attributes.metro_teaser_small_image.addClass('metro_teaser_small_image')}}>
-				{{ content.metro_teaser_small_image|layout_value_img(keySearch) }}
-			</div>
+		{% if content.metro_teaser_small_image %}			
+			{% if content.metro_teaser_small_image.layout_builder_add_block  %}
+			    {{ content.metro_teaser_small_image }}
+			{% else %}
+    			{% set keySearch = {begin:1, number:1} %}
+    			<div {{region_attributes.metro_teaser_small_image.addClass('metro_teaser_small_image')}}>
+    				{{ content.metro_teaser_small_image|layout_value_img(keySearch) }}
+    			</div>
+			{% endif %}
 		{% endif %}
 		<div class="metro-service__body">
 			{% if content.metro_teaser_small_title %}
